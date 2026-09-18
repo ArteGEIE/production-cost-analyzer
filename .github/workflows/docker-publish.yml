@@ -11,6 +11,9 @@ on:
   push:
     branches: [main]
     tags: ["v*"]
+  # Started by release.yml for tags it creates (tags pushed with the workflow
+  # token do not fire push events).
+  workflow_dispatch:
 
 permissions:
   contents: read

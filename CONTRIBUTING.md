@@ -58,5 +58,12 @@ with the running version for one release (rolling deployments).
 
 ## Releasing
 
-Maintainers tag `vX.Y.Z` on `main`. Adopters build the image from a tag; no public
-image is distributed (the organisation's registry policy does not allow public packages).
+1. Bump the version in a pull request: `npm version <patch|minor|major> --no-git-tag-version`,
+   commit, merge.
+2. Run the **Release** workflow from `main` (Actions → Release → Run workflow). It tags
+   `v<version>` from `package.json`, creates the GitHub release with generated notes and
+   publishes the maintainers' image for that tag. A hand-pushed `v*` tag runs the same
+   checks and fails if it does not match `package.json`.
+
+Adopters build the image from a tag; no public image is distributed (the organisation's
+registry policy does not allow public packages).
