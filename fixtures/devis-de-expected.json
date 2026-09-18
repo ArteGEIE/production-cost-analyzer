@@ -1,0 +1,34 @@
+{
+  "description": "Expected extraction for German sample budget — Berliner Dokfilm GmbH, reportage 26 min",
+  "meta": {
+    "producteur": "Berliner Dokfilm GmbH",
+    "titre": "Berlin: Zeitgeist einer Metropole",
+    "duree_minutes": 26,
+    "diffuseur": "ZDF",
+    "lieu_tournage": "Berlin",
+    "type_production": "reportage"
+  },
+  "total_devis": 47604,
+  "cout_minute": 1830.92,
+  "grille_cnc_summary": {
+    "1_droits_artistiques": 3000,
+    "2_personnel": 17680,
+    "3_interpretation": 0,
+    "4_charges_sociales": 9724,
+    "5_decors_costumes": 0,
+    "6_transport": 3500,
+    "7_tournage": 4200,
+    "8_post_production": 4500,
+    "9_assurance": 800,
+    "10_imprevus_fg_pd": 4200
+  },
+  "personnel_lines": [
+    { "poste_de": "Regisseur", "poste_fr": "Réalisateur", "jours": 15, "tarif": 320, "total": 4800 },
+    { "poste_de": "Produktionsleiter", "poste_fr": "Directeur de production", "jours": 10, "tarif": 240, "total": 2400 },
+    { "poste_de": "Produktionskoordinator", "poste_fr": "Chargé de production", "jours": 8, "tarif": 195, "total": 1560 },
+    { "poste_de": "Kameramann", "poste_fr": "Chef opérateur", "jours": 8, "tarif": 300, "total": 2400 },
+    { "poste_de": "Kameraassistent", "poste_fr": "Assistant caméra", "jours": 8, "tarif": 175, "total": 1400 },
+    { "poste_de": "Tonmeister", "poste_fr": "Ingénieur du son", "jours": 8, "tarif": 350, "total": 2800 },
+    { "poste_de": "Cutter", "poste_fr": "Chef monteur", "jours": 8, "tarif": 290, "total": 2320 }
+  ]
+}

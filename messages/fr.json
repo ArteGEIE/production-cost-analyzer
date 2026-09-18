@@ -1,0 +1,1005 @@
+{
+  "common": {
+    "loading": "Chargement…",
+    "language": "Langue",
+    "metadata": {
+      "title": "Analyse des coûts de production",
+      "description": "Extraction normalisée de devis PDF, vérification des conventions collectives, comparaison historique."
+    }
+  },
+  "productionLayout": {
+    "backToList": "Retour à la liste"
+  },
+  "nav": {
+    "title": "Coûts de production",
+    "productions": "Productions",
+    "analytics": "Comparatifs",
+    "settings": "Paramètres",
+    "guide": "Guide",
+    "import": "Importer",
+    "importButton": "Importer un devis",
+    "searchPlaceholder": "Rechercher une production…"
+  },
+  "config": {
+    "cncGrid": {
+      "1_droits_artistiques": "Droits artistiques",
+      "2_personnel": "Personnel",
+      "3_interpretation": "Interprétation",
+      "4_charges_sociales": "Charges sociales",
+      "5_decors_costumes": "Décors et costumes",
+      "6_transport": "Transport, défraiement, régie",
+      "7_tournage": "Moyens techniques de tournage",
+      "8_post_production": "Post-production",
+      "9_assurance": "Assurance",
+      "10_imprevus_fg_pd": "Imprévus, frais généraux, production déléguée"
+    },
+    "cncGridOrg": {
+      "1_droits_artistiques": "Droits artistiques",
+      "2_personnel": "Dépenses de personnel",
+      "3_interpretation": "Interprétation",
+      "4_charges_sociales": "Charges sociales",
+      "5_decors_costumes": "Décors et costumes",
+      "6_transport": "Transport, défraiement, régie",
+      "7_tournage": "Moyens techniques de tournage",
+      "8_post_production": "Post-production",
+      "9_assurance": "Assurance",
+      "10_imprevus_fg_pd": "Imprévus, frais généraux, production déléguée"
+    },
+    "statut": {
+      "conforme": {
+        "label": "Conforme",
+        "tooltip": "Tarif supérieur ou égal au minimum conventionnel"
+      },
+      "non_conforme": {
+        "label": "Non conforme",
+        "tooltip": "Tarif inférieur au minimum conventionnel"
+      },
+      "non_verifiable_forfait": {
+        "label": "Forfait",
+        "tooltip": "Montant forfaitaire — vérification CC non applicable"
+      },
+      "hors_nomenclature": {
+        "label": "Hors nomenclature",
+        "tooltip": "Ce poste n'est pas référencé dans la grille CC"
+      },
+      "non_verifiable_prestataire": {
+        "label": "Prestataire",
+        "tooltip": "Prestation externe — vérification CC non applicable"
+      },
+      "non_verifiable_etranger": {
+        "label": "Soc. étrangère",
+        "tooltip": "Société étrangère — conventions collectives françaises non applicables"
+      }
+    },
+    "accordTransparence": {
+      "fiction_70pct": "Fiction financée à plus de 70%",
+      "fiction_autre": "Fiction (hors coproductions internationales)",
+      "animation": "Animation",
+      "documentaire": "Documentaire",
+      "adaptation_spectacle": "Adaptation audiovisuelle de spectacle vivant"
+    },
+    "anomalies": {
+      "R1": "Non-conformité CC : {poste} à {tarif} €/j (minimum {minimum} €/j)",
+      "R1Details": "Écart de {ecart}% par rapport au minimum conventionnel",
+      "R3": "Structure atypique : {label} représente {ratio}% du total (seuil haut : {threshold}%)",
+      "R4": "Structure atypique : {label} ne représente que {ratio}% du total (seuil bas : {threshold}%)",
+      "R3R4Details": "Montant : {amount} € sur {total} €",
+      "R5": "Aucune charge sociale déclarée",
+      "R5Details": "Le devis ne comporte aucun montant de charges sociales",
+      "R6": "Taux de charges sociales bas : {rate}% (seuil : 50%)",
+      "R6Details": "Le taux moyen de charges sociales techniciens est inférieur à 50%",
+      "R7": "Coût/minute {direction, select, up {supérieur} down {inférieur} other {différent}} à la moyenne du producteur : {coutMinute} €/min vs {avg} €/min (écart {deviation}%)",
+      "R7Details": "Moyenne calculée sur {count} productions du même producteur"
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "subtitle": "Vue d'ensemble des coûts de production",
+    "kpis": {
+      "total": {
+        "label": "Productions analysées",
+        "tip": "Nombre de devis importés et analysés dans l'application."
+      },
+      "alerts": {
+        "label": "Alertes non-conformité",
+        "tip": "Nombre total de postes dont le tarif journalier est inférieur ou proche du minimum prévu par les conventions collectives (CC)."
+      },
+      "avg": {
+        "label": "Coût/minute moyen",
+        "tip": "Total du devis divisé par la durée du programme en minutes. Permet de comparer des productions de durées différentes."
+      },
+      "producers": {
+        "label": "Producteurs",
+        "tip": "Nombre de sociétés de production distinctes dans la base."
+      }
+    },
+    "chart": {
+      "title": "Coût/minute moyen par producteur",
+      "tooltip": "Moyenne du coût/minute de chaque producteur sur l'ensemble de ses devis. La ligne pointillée indique la moyenne globale tous producteurs confondus. Cliquez sur une barre pour voir le détail du producteur.",
+      "tooltipLabel": "Moyenne",
+      "refLineLabel": "Moy.",
+      "viewAll": "Voir tous les comparatifs →"
+    },
+    "recentTable": {
+      "title": "Derniers devis analysés",
+      "columns": {
+        "producer": "Producteur",
+        "title": "Titre",
+        "type": "Type",
+        "costPerMin": "Coût/min",
+        "date": "Date",
+        "alerts": "Alertes CC"
+      },
+      "alertsTitle": "Nombre de postes dont le tarif est inférieur ou proche du minimum des conventions collectives",
+      "viewAll": "Voir toutes les productions →"
+    }
+  },
+  "appHeader": {
+    "noResults": "Aucun résultat"
+  },
+  "authShell": {
+    "redirecting": "Redirection…"
+  },
+  "userMenu": {
+    "user": "Utilisateur",
+    "logout": "Se déconnecter"
+  },
+  "cncGridTable": {
+    "category": "Catégorie CNC",
+    "label": "Libellé organisation",
+    "amount": "Montant",
+    "percent": "%",
+    "total": "Total des catégories"
+  },
+  "confidenceBadge": {
+    "haute": "Confiance haute",
+    "moyenne": "Confiance moyenne",
+    "basse": "Confiance basse",
+    "inconnue": "Confiance inconnue"
+  },
+  "pdfViewerPanel": {
+    "title": "PDF du devis"
+  },
+  "productionList": {
+    "title": "Productions",
+    "compliance": {
+      "ccDetected": "Non-conformité CC détectée",
+      "issuesDetected": "Non-conformités détectées",
+      "noIssues": "Aucune non-conformité détectée"
+    },
+    "anomalyTooltip": "{count, plural, one {# non-conformité} other {# non-conformités}} — {statusTooltip}",
+    "filters": {
+      "all": "Tous",
+      "allTypes": "Tous les types",
+      "cncFunding": "Apport CNC",
+      "withCnc": "Avec apport CNC",
+      "noCnc": "Sans apport CNC",
+      "cncTooltip": "Indique si la production bénéficie d'un financement du Centre National du Cinéma (CNC).\nLes productions avec apport CNC doivent respecter la grille de classification CNC.",
+      "typeFilterLabel": "Filtrer par type",
+      "cncFilterLabel": "Filtrer par apport CNC",
+      "search": "Rechercher…"
+    },
+    "legend": {
+      "compliant": "Conforme",
+      "warning": "Attention",
+      "noncompliant": "Non-conformité CC"
+    },
+    "empty": {
+      "title": "Aucune production",
+      "description": "Importez votre premier devis pour commencer l'analyse.",
+      "import": "Importer un devis"
+    },
+    "noResults": {
+      "title": "Aucun résultat",
+      "description": "Essayez de modifier vos critères de recherche."
+    },
+    "table": {
+      "title": "Titre",
+      "producer": "Producteur",
+      "type": "Type",
+      "total": "Total",
+      "costPerMin": "Coût/min",
+      "date": "Date"
+    },
+    "counts": {
+      "production": "production",
+      "productionPlural": "productions",
+      "recorded": "enregistrée",
+      "recordedPlural": "enregistrées",
+      "result": "résultat",
+      "resultPlural": "résultats"
+    }
+  },
+  "productionTabs": {
+    "devis": "Devis",
+    "compliance": "Conformité",
+    "comparison": "Comparaison",
+    "notes": "Notes"
+  },
+  "monthPicker": {
+    "placeholder": "Sélectionner",
+    "previousYear": "Année précédente",
+    "nextYear": "Année suivante",
+    "months": [
+      "Janv.",
+      "Févr.",
+      "Mars",
+      "Avr.",
+      "Mai",
+      "Juin",
+      "Juil.",
+      "Août",
+      "Sept.",
+      "Oct.",
+      "Nov.",
+      "Déc."
+    ]
+  },
+  "signIn": {
+    "title": "Coût de production",
+    "heading": "Connexion",
+    "description": "Accédez à l'analyse des coûts de production",
+    "oidcButton": "Se connecter avec {provider}",
+    "demoButton": "Essayer la démo"
+  },
+  "upload": {
+    "status": {
+      "reading": "Lecture du PDF…",
+      "classifying": "Extraction et classification CNC…",
+      "saving": "Enregistrement du brouillon…",
+      "complete": "Extraction terminée",
+      "error": "Erreur d'extraction"
+    },
+    "page": {
+      "title": "Importer un devis",
+      "subtitle": "Uploadez un devis PDF pour obtenir une extraction normalisée sur la grille CNC.",
+      "subtitleTip": "L'application utilise l'intelligence artificielle pour lire le PDF du devis et en extraire automatiquement les montants, les postes et les tarifs. Ces données sont ensuite classées dans les 10 catégories de la grille CNC (Centre National du Cinéma), qui est le référentiel standard pour les budgets de production audiovisuelle.",
+      "cancel": "Annuler",
+      "newQuote": "Nouveau devis",
+      "extractionErrorTitle": "Erreur d'extraction"
+    },
+    "zone": {
+      "dropInstructions": "Glissez un devis PDF ici ou cliquez pour sélectionner",
+      "maxSize": "PDF, max 20 Mo",
+      "analyzing": "Analyse du devis en cours…",
+      "errors": {
+        "invalidType": "Seuls les fichiers PDF sont acceptés.",
+        "tooLarge": "Le fichier dépasse la limite de 20 Mo."
+      }
+    },
+    "errors": {
+      "draftNotCreated": "Le serveur n'a pas créé de brouillon."
+    },
+    "results": {
+      "extracting": "Extraction en cours…",
+      "producteur": "Producteur",
+      "duree": "Durée",
+      "type": "Type",
+      "diffuseur": "Diffuseur",
+      "lieuTournage": "Lieu de tournage",
+      "grilleCnc": "Grille CNC",
+      "totalDevis": "Total devis",
+      "coutMinute": "Coût / minute",
+      "postesNonClasses": "Postes non classés",
+      "suggestion": "suggestion : {category}"
+    }
+  },
+  "review": {
+    "back": "Retour",
+    "showPdf": "Voir le PDF",
+    "hidePdf": "Masquer le PDF",
+    "saving": "Enregistrement…",
+    "validate": "Valider et enregistrer",
+    "title": "Relire et corriger l'extraction",
+    "titleTip": "L'extraction automatique peut commettre des erreurs, notamment sur les devis peu structurés ou multilingues. Cette étape vous permet de vérifier et corriger les données avant enregistrement.",
+    "subtitle": "Vérifiez les données extraites, corrigez si nécessaire, puis validez pour enregistrer.",
+    "deltaAlert": {
+      "title": "Écart entre le total calculé et le PDF",
+      "body": "Le total recalculé à partir de la grille CNC ( <calculated></calculated> ) est <delta></delta> par rapport au total extrait du PDF ( <extracted></extracted> ). Vérifiez les lignes avant de valider."
+    },
+    "metadata": {
+      "title": "Métadonnées",
+      "confidenceTip": "Niveau de confiance de l'extraction automatique. Haute : devis structuré, données lisibles. Moyenne : quelques ambiguïtés. Basse : format atypique, vérification recommandée.",
+      "form": {
+        "producteur": "Producteur",
+        "titre": "Titre",
+        "duree": "Durée (minutes)",
+        "diffuseur": "Diffuseur",
+        "lieuTournage": "Lieu de tournage",
+        "dateDevis": "Date du devis",
+        "cncFunding": "Apport CNC",
+        "typeProduction": "Type de production",
+        "selectPlaceholder": "Sélectionner…",
+        "customTypePlaceholder": "Type personnalisé"
+      }
+    },
+    "grid": {
+      "title": "Grille CNC",
+      "titleTip": "Chaque ligne peut être modifiée. Pour déplacer une ligne vers une autre catégorie, cliquez sur l'icône ↕ en fin de ligne.",
+      "noLines": "Aucune ligne dans cette catégorie.",
+      "columns": {
+        "poste": "Poste (intitulé PDF)",
+        "posteSimple": "Poste",
+        "amount": "Montant",
+        "confidence": "Confiance",
+        "days": "Jours",
+        "dailyRate": "Tarif/jour",
+        "total": "Total",
+        "cc": "CC"
+      },
+      "subtotal": "Sous-total",
+      "subtotalPersonnel": "Sous-total personnel",
+      "moveTo": "Déplacer vers une autre catégorie",
+      "moveToPlaceholder": "Déplacer vers…",
+      "deleteLine": "Supprimer cette ligne",
+      "ccMinimum": "Min. {minimum} €/j",
+      "manuallyClassified": "Postes classés manuellement",
+      "remove": "Retirer",
+      "addLine": "Ajouter une ligne",
+      "calculatedTotal": "Total calculé",
+      "extractedTotal": "Total extrait (référence PDF)",
+      "delta": "Écart",
+      "avgRate": "Taux moyen : {value}"
+    },
+    "unclassified": {
+      "title": "Postes non classés",
+      "titleTip": "Postes du devis que l'IA n'a pas pu rattacher automatiquement à une catégorie CNC. Vous pouvez les classer manuellement.",
+      "summary": "{count, plural, one {# poste non classé} other {# postes non classés}}. Sélectionnez une catégorie CNC puis ajustez le montant dans le détail de la catégorie.",
+      "suggestion": "Suggestion : {category}",
+      "categoryPlaceholder": "Catégorie CNC…",
+      "classify": "Classer"
+    },
+    "errors": {
+      "notAuthenticated": "Non authentifié.",
+      "invalidData": "Données invalides.",
+      "productionNotFound": "Production introuvable.",
+      "saveFailed": "Erreur lors de l'enregistrement.",
+      "clientSaveFailed": "Une erreur est survenue lors de l'enregistrement."
+    }
+  },
+  "devis": {
+    "table": {
+      "poste": "Poste",
+      "montant": "Montant",
+      "confiance": "Confiance",
+      "jours": "Jours",
+      "tarifJour": "Tarif/jour",
+      "total": "Total",
+      "cc": "CC"
+    },
+    "confidenceTip": "Niveau de certitude de l'extraction automatique pour ce poste. Haute = classification claire. Moyenne = ambiguïté possible. Basse = vérification recommandée.",
+    "noLines": "Aucune ligne dans cette catégorie.",
+    "subtotal": "Sous-total",
+    "subtotalPersonnel": "Sous-total personnel",
+    "ccMinimum": "Min. {minimum} €/j",
+    "imprevusTip": "Imprévus, Frais Généraux (FG) et frais de Production Déléguée (PD). Poste budgétaire couvrant les aléas et la marge du producteur.",
+    "avgRate": "Taux moyen : {value}",
+    "chargesSocialesTip": "Taux moyen de charges sociales calculé sur l'ensemble des postes de personnel technique. Le taux standard pour les intermittents (CDDU) se situe entre 64% et 67%.",
+    "metadata": {
+      "producteur": "Producteur",
+      "type": "Type",
+      "duree": "Durée",
+      "dureeValue": "{minutes} min",
+      "diffuseur": "Diffuseur",
+      "lieuTournage": "Lieu de tournage"
+    },
+    "grid": {
+      "title": "Grille CNC",
+      "titleTip": "Le devis est classé selon les 10 catégories du Centre National du Cinéma (CNC), le référentiel standard pour les budgets de production audiovisuelle en France."
+    },
+    "shareOfTotal": "Part du total du devis",
+    "totalDevisLabel": "Total devis",
+    "coutMinuteLabel": "Coût/minute",
+    "footer": {
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "deleting": "Suppression…",
+      "save": "Enregistrer",
+      "saving": "Enregistrement…",
+      "edit": "Éditer"
+    },
+    "confirmDelete": "Supprimer cette production ? Cette action est irréversible.",
+    "errors": {
+      "unexpectedError": "Une erreur inattendue s'est produite lors de l'enregistrement.",
+      "invalidData": "Données invalides.",
+      "updateFailed": "Erreur lors de la mise à jour.",
+      "deleteFailed": "Erreur lors de la suppression."
+    }
+  },
+  "compliance": {
+    "summary": {
+      "title": "Résumé de conformité",
+      "titleTip": "Rapport de conformité aux conventions collectives (CC). Les CC fixent les tarifs journaliers minimums pour chaque métier de la production audiovisuelle (CDDU — Contrat à Durée Déterminée d'Usage, catégorie B, hors fiction et flux, base 8 heures).",
+      "critical": "{count, plural, one {# critique} other {# critiques}}",
+      "attention": "{count} attention",
+      "info": "{count} info",
+      "none": "Aucune non-conformité",
+      "detected": "{count, plural, one {# non-conformité détectée} other {# non-conformités détectées}}",
+      "noneDetected": "Aucune non-conformité critique"
+    },
+    "ccSection": {
+      "title": "Non-conformités CC ({count})",
+      "tooltip": "R1 (Non-conformité) : le tarif journalier est inférieur au minimum conventionnel — risque juridique."
+    },
+    "structuralSection": {
+      "title": "Non-conformités structurelles",
+      "tooltip": "Anomalies structurelles : la répartition du budget entre catégories CNC est comparée aux moyennes historiques. Un écart significatif peut indiquer une erreur de classification ou un budget atypique."
+    },
+    "minimaTable": {
+      "title": "Vérification des minima conventionnels",
+      "appliedScale": "Barème appliqué : {date}",
+      "columns": {
+        "poste": "Poste",
+        "tarifJour": "Tarif/jour",
+        "minimumCc": "Minimum CC",
+        "ecart": "Écart",
+        "statut": "Statut"
+      },
+      "minimumCcTooltip": "CDDU : contrat d'intermittent du spectacle. Cat. B : productions hors fiction et flux. Base 8h : tarif calculé sur une journée de 8 heures de travail.",
+      "ecartTooltip": "Écart entre le tarif journalier et le minimum conventionnel",
+      "horsCc": "Hors CC"
+    },
+    "qualitativeAnalysis": {
+      "title": "Commentaires IA",
+      "rerun": "Relancer",
+      "retry": "Réessayer",
+      "loading": "Analyse en cours…",
+      "defaultError": "Erreur inconnue",
+      "noResponseBody": "Réponse vide du serveur",
+      "howItWorksTrigger": "Comment fonctionne l'analyse ?",
+      "stepsIntro": "L'analyse se déroule en 3 étapes :",
+      "step1": "<strong>Lecture du PDF</strong> — Le document est lu automatiquement pour en extraire les montants, postes et tarifs.",
+      "step2": "<strong>Classification et vérification</strong> — Chaque ligne de dépense est classée dans la grille CNC à 10 catégories. Les tarifs journaliers du personnel sont comparés aux minima des conventions collectives.",
+      "step3": "<strong>Synthèse qualitative</strong> — Une analyse est produite en croisant le devis avec l'historique des productions du même producteur.",
+      "basedOnIntro": "Sur quoi se base l'analyse ?",
+      "source1": "<strong>Grille CNC</strong> — La nomenclature officielle à 10 catégories pour classer les dépenses de production.",
+      "source2": "<strong>Conventions collectives</strong> — Les salaires minimums en vigueur (CDDU, catégorie B, base 8h).",
+      "source3": "<strong>Correspondances de postes</strong> — Une table de traduction des intitulés FR/DE/EN vers la nomenclature CNC.",
+      "source4": "<strong>Historique des productions</strong> — Les moyennes observées par producteur et par métier sur les productions précédentes."
+    }
+  },
+  "comparison": {
+    "peerLabels": {
+      "global": "Moy. globale",
+      "peerSet": "Moy. peer set"
+    },
+    "costPositioning": {
+      "title": "Positionnement coût/minute",
+      "infoTip": "Positionnement du coût/minute de ce devis par rapport à la moyenne du producteur et à la moyenne globale. Un écart supérieur à 30% est signalé comme atypique.",
+      "currentQuote": "Ce devis",
+      "producerAverageChartLabel": "Moy. {producer}",
+      "producerAverage": "Moyenne {producer} ({count} prod.) :",
+      "globalAverageDefault": "Moyenne globale",
+      "globalAveragePeer": "Moyenne des producteurs sélectionnés",
+      "globalCountSuffix": " ({count} prod.)"
+    },
+    "categoryStructure": {
+      "title": "Structure des coûts par catégorie CNC",
+      "infoTip": "Répartition du budget entre les 10 catégories CNC. Les barres encadrées en rouge indiquent un écart significatif par rapport aux seuils structurels attendus.",
+      "currentQuote": "Ce devis",
+      "producerAverage": "Moy. producteur",
+      "shortLabels": {
+        "1_droits_artistiques": "Droits",
+        "2_personnel": "Personnel",
+        "3_interpretation": "Interpr.",
+        "4_charges_sociales": "Charges",
+        "5_decors_costumes": "Décors",
+        "6_transport": "Transport",
+        "7_tournage": "Tournage",
+        "8_post_production": "Post-prod",
+        "9_assurance": "Assurance",
+        "10_imprevus_fg_pd": "Imprévus"
+      }
+    },
+    "comparisonFilters": {
+      "compareWith": "Comparer avec",
+      "allProducers": "Tous les producteurs",
+      "selectedProducers": "{count, plural, one {# producteur} other {# producteurs}}",
+      "noOtherProducers": "Aucun autre producteur disponible.",
+      "deselectAll": "Tout désélectionner",
+      "format": "Format",
+      "allFormats": "Tous",
+      "reset": "Réinitialiser",
+      "removeProducer": "Retirer {producer}"
+    },
+    "roleComparison": {
+      "title": "Tarifs par poste vs historique {producer}",
+      "infoTip": "Compare le tarif journalier de chaque poste du devis actuel avec la moyenne historique de ce producteur pour le même métier. Cliquez sur une ligne pour voir le détail et la comparaison avec les autres producteurs.",
+      "deviationBadge": "{count, plural, one {# écart} other {# écarts}} >10%",
+      "columns": {
+        "poste": "Poste",
+        "currentRate": "Tarif actuel",
+        "producerAverage": "Moy. {producer}",
+        "deviation": "Écart",
+        "minMax": "Min – Max",
+        "otherProducers": "Autres prod."
+      },
+      "historyFor": "Historique {producer}",
+      "otherProducers": "Autres producteurs",
+      "occurrenceCount": "{count, plural, one {# occurrence} other {# occurrences}}",
+      "otherProducerCount": "{count, plural, one {# prod.} other {# prod.}}"
+    },
+    "costTrend": {
+      "title": "Évolution du coût/minute",
+      "empty": "Pas assez de productions pour afficher une tendance",
+      "xAxisLabel": "Production",
+      "avgReferenceLabel": "Moy. {value} €"
+    },
+    "producerRanking": {
+      "title": "Classement inter-producteurs",
+      "empty": "Aucun producteur",
+      "rank": "#",
+      "producer": "Producteur",
+      "avgCostMinute": "Coût/min moyen",
+      "productionCount": "Productions"
+    }
+  },
+  "notes": {
+    "importedBy": "Importé par {userName} le {date}",
+    "placeholder": "Ajouter une note…",
+    "submit": "Ajouter",
+    "submitting": "Envoi…",
+    "empty": "Aucune note pour cette production.",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "timeAgo": {
+      "justNow": "À l'instant",
+      "minutes": "Il y a {count} min",
+      "hours": "Il y a {count}h",
+      "days": "Il y a {count}j"
+    },
+    "errors": {
+      "unauthenticated": "Non authentifié",
+      "emptyContent": "Le contenu ne peut pas être vide.",
+      "addFailed": "Erreur lors de l'ajout de la note.",
+      "editFailed": "Erreur lors de la modification.",
+      "deleteFailed": "Erreur lors de la suppression.",
+      "notFound": "Note introuvable ou non autorisé."
+    }
+  },
+  "analytics": {
+    "title": "Comparatifs",
+    "tabs": {
+      "jobs": "Par métier",
+      "services": "Par poste",
+      "producers": "Par producteur",
+      "compliance": "Conformité CC"
+    },
+    "periodFilter": {
+      "label": "Période :",
+      "from": "Début",
+      "to": "Fin",
+      "thisMonth": "Ce mois",
+      "lastMonth": "Mois dernier",
+      "thisYear": "Cette année",
+      "reset": "Réinitialiser"
+    },
+    "typeFilter": {
+      "label": "Type :",
+      "all": "Tous",
+      "ariaLabel": "Type de production"
+    },
+    "table": {
+      "emptyDefault": "Aucune donnée disponible"
+    },
+    "jobs": {
+      "pageTitle": "Tarifs journaliers par métier",
+      "pageInfoTip": "Vue d'ensemble des tarifs journaliers observés pour chaque métier, tous producteurs confondus. Les tarifs forfaitaires et les prestataires sont exclus de cette analyse.",
+      "back": "Retour",
+      "backToJobs": "Retour aux métiers",
+      "noData": "Aucune donnée pour ce poste.",
+      "horsCC": "Hors CC",
+      "detailByProducer": "Détail par producteur",
+      "detailProducerSummary": "{count} prod. · médiane {rate} €/j",
+      "medianRateChartTitle": "Tarif médian par producteur",
+      "medianRateTooltip": "Tarif médian :",
+      "productionsTooltip": "Productions :",
+      "ccMinReferenceLabel": "Min. CC : {value} €",
+      "productionsSuffix": "{count} prod.",
+      "nonConforme": "Non conforme",
+      "emptySummary": "Aucune donnée de poste disponible.",
+      "poste": "Poste",
+      "occurrences": "Occurrences",
+      "occurrencesTip": "Nombre de productions dans lesquelles ce poste apparaît",
+      "avgRate": "Tarif moyen",
+      "avgRateTip": "Moyenne des tarifs journaliers observés pour ce poste",
+      "minMax": "Min / Max",
+      "minMaxTip": "Fourchette des tarifs journaliers observés",
+      "ccMinimum": "Minimum CC",
+      "ccMinimumTip": "Minimum journalier selon les conventions collectives (CDDU, Cat. B, base 8h)",
+      "alert": "Alerte",
+      "alertTip": "Signale un tarif moyen inférieur ou proche du minimum conventionnel",
+      "production": "Production",
+      "tarifJour": "Tarif/jour",
+      "ecartCC": "Écart CC",
+      "ecartCCTip": "Différence entre le tarif journalier et le minimum conventionnel",
+      "jours": "Jours",
+      "total": "Total",
+      "date": "Date"
+    },
+    "services": {
+      "pageTitle": "Répartition par catégorie CNC",
+      "pageInfoTip": "Répartition des montants entre les 10 catégories CNC. Les seuils structurels définissent la fourchette normale pour chaque catégorie — un écart peut indiquer une erreur de classification ou un budget atypique.",
+      "back": "Retour",
+      "backToServices": "Retour aux catégories",
+      "noData": "Aucune donnée pour cette catégorie.",
+      "productionsCard": "Productions",
+      "detailByProducer": "Détail par producteur",
+      "detailByPoste": "Détail par poste",
+      "detailProducerSummary": "{count} prod. · moy. {amount} €",
+      "chartTitle": "Montant moyen par producteur",
+      "avgAmountTooltip": "Montant moyen :",
+      "productionsTooltip": "Productions :",
+      "avgReferenceLabel": "Moy. : {value} €",
+      "noDataChart": "Aucune donnée disponible",
+      "belowThreshold": "Sous le seuil",
+      "aboveThreshold": "Au-dessus du seuil",
+      "emptySummary": "Aucune donnée de catégorie disponible.",
+      "category": "Catégorie CNC",
+      "avgAmount": "Montant moyen",
+      "avgPct": "Part moyenne",
+      "avgPctTip": "Part moyenne de cette catégorie dans le total du devis",
+      "minMax": "Min / Max",
+      "minMaxTip": "Fourchette des montants observés sur l'ensemble des productions",
+      "threshold": "Seuil structurel",
+      "thresholdTip": "Fourchette normale — un dépassement déclenche une alerte R3 (haut) ou R4 (bas)",
+      "alert": "Alerte",
+      "alertTip": "Signale une part anormalement haute (R3) ou basse (R4) pour cette catégorie",
+      "poste": "Poste",
+      "montant": "Montant",
+      "producteur": "Producteur",
+      "production": "Production",
+      "date": "Date",
+      "pctDevis": "Part du devis"
+    },
+    "producers": {
+      "back": "Retour",
+      "backToProducers": "Retour aux producteurs",
+      "noData": "Aucune donnée pour ce producteur.",
+      "productions": "Productions",
+      "avgCoutMinute": "Coût/minute moyen",
+      "avgCoutMinuteShort": "Coût/min moyen",
+      "period": "Période",
+      "ccAlerts": "Alertes CC",
+      "ccAlertsTip": "Nombre total de postes non conformes au minimum conventionnel (toutes productions confondues)",
+      "ccAlertsSectionTitle": "Alertes conventions collectives",
+      "pageTitle": "Classement des producteurs",
+      "pageInfoTip": "Comparaison des producteurs par coût/minute moyen et conformité aux conventions collectives. Cliquez sur un producteur pour voir son historique et ses tendances.",
+      "producteur": "Producteur",
+      "trend": "Évolution",
+      "trendTip": "Tendance du coût/minute entre les productions les plus anciennes et les plus récentes",
+      "production": "Production",
+      "totalDevis": "Total devis",
+      "coutMinute": "Coût/min",
+      "alerts": "Alertes",
+      "date": "Date",
+      "emptySummary": "Aucune donnée de producteur disponible.",
+      "alertsEmpty": "Aucune alerte CC récurrente",
+      "rule": "Règle",
+      "description": "Description",
+      "frequency": "Fréquence",
+      "frequencyValue": "{count} / {total} productions",
+      "nonConformeSuffix": "non conforme au minimum CC"
+    },
+    "compliance": {
+      "pageTitle": "Matrice de conformité CC",
+      "pageInfoTip": "Matrice croisant les métiers et les producteurs. Chaque cellule montre le tarif journalier moyen. Rouge : non conforme au minimum CC. Vert : conforme. Permet d'identifier rapidement quels producteurs sous-paient quels métiers.",
+      "subtitle": "Tarif journalier moyen par métier et par producteur, comparé aux minima conventionnels.",
+      "legendNonConforme": "Non conforme",
+      "legendConforme": "Conforme",
+      "empty": "Aucune donnée disponible pour la période sélectionnée.",
+      "metier": "Métier",
+      "ccMinimum": "Minimum CC",
+      "horsCC": "Hors CC",
+      "titleNoData": "{producteur} — Pas de données",
+      "titleWithData": "{producteur} — {rate} €/j ({count, plural, one {# occurrence} other {# occurrences}})",
+      "titleCcMinSuffix": " — Min. CC: {min} €"
+    },
+    "accordTransparence": {
+      "cardTitle": "Accord de transparence — {label}",
+      "infoTip": "L'Accord de transparence (section 4.3) définit les taux forfaitaires pour les dépenses indirectes : frais généraux, frais financiers, imprévus et production déléguée. Les taux affichés sont ceux applicables au type « {label} ».",
+      "poste": "Poste",
+      "moyObservee": "Moy. observée",
+      "accord": "Accord",
+      "ecart": "Écart",
+      "fraisGeneraux": "Frais généraux",
+      "fraisFinanciers": "Frais financiers",
+      "imprevus": "Imprévus",
+      "productionDeleguee": "Production déléguée :"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "tabs": {
+      "conventions": "Conventions collectives",
+      "thresholds": "Seuils d'alerte",
+      "types": "Types de production",
+      "producers": "Producteurs",
+      "mappings": "Correspondances CNC"
+    },
+    "conventions": {
+      "updateButton": "Mettre à jour le barème",
+      "currentTitle": "Barème en vigueur",
+      "currentInfo": "Tarifs journaliers minimums fixés par les conventions collectives de la production audiovisuelle. Ces barèmes s'appliquent aux salariés en CDDU (contrat d'intermittent du spectacle), catégorie B (hors fiction et flux). La base 8h correspond à une journée de travail standard.",
+      "historyTitle": "Historique des barèmes",
+      "noHistory": "Aucun historique disponible.",
+      "effectiveSince": "Barème en vigueur depuis le {date}",
+      "historyEntry": "Barème du {date}",
+      "postsCount": "({count} postes)",
+      "table": {
+        "role": "Poste",
+        "filiere": "Filière",
+        "filiereInfo": "Secteur d'activité au sein de la convention collective : A (production), B (décor), C (image), D (son), E (montage), F (administration), G (réalisation).",
+        "niveau": "Niveau",
+        "niveauInfo": "Échelon hiérarchique : I = cadre supérieur, II = cadre, III = technicien confirmé, IV = technicien, V = assistant, VI = débutant. Les suffixes A/B indiquent des sous-niveaux.",
+        "base7h": "Base 7h",
+        "base8h": "Base 8h",
+        "base7hTitle": "Tarif minimum journalier pour un contrat de 7 heures",
+        "base8hTitle": "Tarif minimum journalier pour un contrat CDDU de 8 heures"
+      },
+      "form": {
+        "dialogTitle": "Mettre à jour le barème",
+        "dialogDescription": "Les tarifs du barème actuel sont pré-remplis. Modifiez les tarifs base 8h qui ont changé — le tarif base 7h est calculé automatiquement (× 0,875).",
+        "effectiveFromLabel": "Date d'entrée en vigueur",
+        "cancel": "Annuler",
+        "save": "Enregistrer",
+        "errors": {
+          "dateRequired": "Veuillez saisir la date d'entrée en vigueur du nouveau barème.",
+          "dateTooEarly": "La date doit être postérieure au barème actuel ({date}).",
+          "dateAndRatesRequired": "Date et tarifs requis",
+          "saveFailed": "Erreur lors de l'enregistrement"
+        }
+      }
+    },
+    "thresholds": {
+      "rulesTitle": "Règles de détection de non-conformités (6 règles)",
+      "rulesInfo": "Ces règles sont appliquées automatiquement à chaque devis importé. Les seuils des règles R3 à R7 sont paramétrables ci-dessous.",
+      "rulesDescription": "Chaque devis analysé passe par 6 règles de détection automatique. La règle R1 compare les tarifs journaliers aux minima des conventions collectives — elle n'est pas configurable ici car le seuil est réglementaire. Les règles R3 à R7 utilisent les seuils paramétrables ci-dessous.",
+      "table": {
+        "code": "Code",
+        "rule": "Règle",
+        "condition": "Condition",
+        "severity": "Sévérité"
+      },
+      "rules": {
+        "r1": {
+          "name": "Non-conformité CC",
+          "condition": "Tarif journalier < minimum conventionnel"
+        },
+        "r3": {
+          "name": "Structure atypique (haut)",
+          "condition": "Part d'une catégorie > seuil haut"
+        },
+        "r4": {
+          "name": "Structure atypique (bas)",
+          "condition": "Part d'une catégorie < seuil bas"
+        },
+        "r5": {
+          "name": "Charges sociales nulles",
+          "condition": "Aucune charge sociale déclarée"
+        },
+        "r6": {
+          "name": "Charges sociales basses",
+          "condition": "Taux moyen < seuil minimum"
+        },
+        "r7": {
+          "name": "Coût/minute outlier",
+          "condition": "Écart > seuil vs moyenne du producteur"
+        }
+      },
+      "severity": {
+        "high": "ÉLEVÉE",
+        "warning": "ATTENTION",
+        "info": "INFO"
+      },
+      "structuralTitle": "Seuils structurels (R3/R4)",
+      "structuralInfo": "Pourcentage du budget total normalement alloué à chaque catégorie CNC, basé sur l'historique des productions. Un devis en dehors de ces fourchettes déclenche une alerte.",
+      "structuralDescription": "Pourcentage du total du devis considéré comme normal pour chaque catégorie CNC. Un dépassement déclenche une alerte R3 (haut) ou R4 (bas).",
+      "structuralTable": {
+        "category": "Catégorie",
+        "low": "Seuil bas (%)",
+        "high": "Seuil haut (%)"
+      },
+      "otherTitle": "Autres seuils",
+      "r6Label": "Taux minimum charges sociales — R6 (%)",
+      "r6Help": "Alerte si le taux moyen de charges sociales techniciens est inférieur à ce seuil.",
+      "r7Label": "Écart coût/minute maximum — R7 (%)",
+      "r7Help": "Alerte si le coût/minute dévie de plus de ce pourcentage par rapport à la moyenne du producteur.",
+      "save": "Enregistrer",
+      "saved": "Seuils enregistrés."
+    },
+    "types": {
+      "title": "Types de production",
+      "infoTip": "Types de production reconnus par l'application (ex : Reportage, Documentaire 52min). Utilisés pour filtrer et comparer les devis entre productions similaires.",
+      "description": "Types proposés lors de l'extraction et dans les filtres. Renommer un type met à jour toutes les productions existantes.",
+      "newTypePlaceholder": "Nouveau type…",
+      "add": "Ajouter",
+      "deleteTitle": "Supprimer",
+      "deleteUsedTitle": "Utilisé dans des productions",
+      "renamed": "\"{oldType}\" renommé en \"{newType}\"",
+      "saved": "Types enregistrés.",
+      "errors": {
+        "nameRequired": "Nom requis",
+        "renameFailed": "Erreur lors du renommage",
+        "saveFailed": "Erreur lors de l'enregistrement"
+      }
+    },
+    "producers": {
+      "title": "Producteurs",
+      "infoTip": "Liste des producteurs identifiés dans les devis. Permet de renommer ou fusionner des producteurs dont le nom varie entre les devis (ex : 'Studio Alpha' et 'Studio Alpha Productions').",
+      "mergeButton": "Fusionner",
+      "mergeDialogTitle": "Fusionner deux producteurs",
+      "mergeDialogDescription": "Toutes les productions du producteur source seront rattachées au producteur cible.",
+      "sourceLabel": "Producteur à absorber",
+      "targetLabel": "Producteur cible (nom conservé)",
+      "selectPlaceholder": "Sélectionner…",
+      "cancel": "Annuler",
+      "summary": "{count} producteurs — {total} productions. Cliquez sur le crayon pour renommer. Utilisez la fusion pour regrouper des doublons.",
+      "renamed": "\"{oldName}\" renommé en \"{newName}\" ({count} productions)",
+      "merged": "\"{source}\" fusionné dans \"{target}\" ({count} productions)",
+      "table": {
+        "producer": "Producteur",
+        "productions": "Productions"
+      },
+      "errors": {
+        "nameRequired": "Nom requis",
+        "renameFailed": "Erreur lors du renommage"
+      }
+    },
+    "mappings": {
+      "summary": "{count} correspondances — utilisées par l'IA pour classer les postes multilingues.",
+      "infoTip": "Table de correspondance utilisée par l'IA pour reconnaître les intitulés de postes dans les devis en français, allemand et anglais, et les rattacher à la bonne catégorie CNC. Exemple : 'Kameramann' (DE) → Cadreur → catégorie 2 (Personnel).",
+      "addButton": "Ajouter",
+      "addDialogTitle": "Ajouter une correspondance",
+      "categoryLabel": "Catégorie CNC",
+      "roleKeyLabel": "Clé du rôle",
+      "roleKeyPlaceholder": "ex: chef_monteur",
+      "labelFr": "FR",
+      "labelDe": "DE",
+      "labelEn": "EN",
+      "placeholderFr": "Libellé français",
+      "placeholderDe": "Deutsch",
+      "placeholderEn": "English",
+      "cancel": "Annuler",
+      "saved": "Correspondances enregistrées.",
+      "table": {
+        "key": "Clé",
+        "fr": "FR",
+        "de": "DE",
+        "en": "EN"
+      }
+    }
+  },
+  "guide": {
+    "title": "Guide",
+    "tabs": {
+      "features": "Fonctionnalités",
+      "howItWorks": "Comment ça marche",
+      "faq": "FAQ"
+    },
+    "features": {
+      "title": "Fonctionnalités",
+      "subtitle": "Tour d'horizon de ce que l'application permet de faire.",
+      "items": [
+        {
+          "title": "Import et extraction automatique",
+          "description": "Importez un devis PDF (français, allemand ou anglais) et obtenez en quelques secondes une extraction structurée sur la grille CNC à 10 catégories. L'IA identifie les postes, montants, tarifs journaliers et nombre de jours."
+        },
+        {
+          "title": "Relecture et correction",
+          "description": "Après l'extraction, relisez et corrigez les données avant enregistrement. Modifiez les montants, déplacez une ligne vers une autre catégorie CNC si l'IA s'est trompée, classez les postes non reconnus, et ajustez les métadonnées. Les totaux et indicateurs de conformité se recalculent en temps réel."
+        },
+        {
+          "title": "Vérification des conventions collectives",
+          "description": "Chaque tarif journalier est comparé aux minima de la convention collective (CAT B, CDDU, base 8h). Le verdict est binaire : conforme (vert) si le tarif est supérieur ou égal au minimum, non conforme (rouge) sinon. Des commentaires IA complètent le diagnostic."
+        },
+        {
+          "title": "Comparaison historique",
+          "description": "Positionnez chaque devis par rapport à l'historique du producteur et à la moyenne globale : coût/minute, structure par catégorie CNC, tarifs par poste comparés à l'historique du producteur et aux autres producteurs, tendances dans le temps, classement des producteurs."
+        },
+        {
+          "title": "Analyses croisées",
+          "description": "Explorez les coûts sous quatre angles : par métier (tarifs journaliers moyens et distribution), par poste (répartition des 10 catégories CNC et détail des lignes), par producteur (profil, tendances, alertes), et via la matrice de conformité CC (tous les producteurs × tous les métiers)."
+        },
+        {
+          "title": "Paramétrage des référentiels",
+          "description": "Gérez les barèmes CC (avec historique par date), les seuils de non-conformité pour les 6 règles de détection, les types de production, les producteurs, et les correspondances de postes FR/DE/EN vers la nomenclature CNC."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "subtitle": "De l'upload du PDF au rapport de conformité, voici les étapes du traitement.",
+      "steps": [
+        {
+          "title": "Lecture du PDF (OCR)",
+          "description": "Le fichier PDF est envoyé à un modèle de reconnaissance optique (Mistral OCR) qui en extrait le texte brut tout en préservant la structure des tableaux et la mise en page. Cette étape transforme le PDF en un document lisible par l'IA."
+        },
+        {
+          "title": "Extraction et classification (IA)",
+          "description": "Un grand modèle de langage (configurable : Claude, GPT, Mistral…) analyse le texte extrait. Il identifie chaque ligne budgétaire, la classifie dans la grille CNC à 10 catégories, détecte les tarifs journaliers et le nombre de jours, et repère le type de contrat (salarié, prestataire, étranger, forfait). Le modèle reçoit en contexte la grille CNC, les correspondances de postes FR/DE/EN, les minima conventionnels et les règles de non-conformité."
+        },
+        {
+          "title": "Relecture humaine",
+          "description": "Le résultat de l'extraction s'affiche pour relecture. Vous pouvez corriger les montants, déplacer une ligne vers une autre catégorie CNC via l'icône ↕, classer les postes non reconnus, et modifier les métadonnées. Les totaux et la conformité CC se recalculent en direct. Si le même PDF a déjà été importé, l'application le détecte et vous propose de remplacer la version existante."
+        },
+        {
+          "title": "Détection des non-conformités (6 règles)",
+          "description": "Un moteur déterministe applique 6 règles de vérification : non-conformité CC (R1), structure atypique haute ou basse (R3/R4), charges sociales nulles ou basses (R5/R6), et coût/minute aberrant par rapport à l'historique du producteur (R7). Les seuils des règles R3 à R7 sont paramétrables."
+        },
+        {
+          "title": "Commentaires IA",
+          "description": "Un second appel au modèle de langage produit une analyse transversale : cohérence entre durée et jours de tournage, adéquation entre type de production et structure de coûts, points d'attention et points positifs. Cette analyse complète les règles chiffrées avec du contexte métier."
+        },
+        {
+          "title": "Comparaison historique",
+          "description": "Le devis est positionné par rapport à l'historique du producteur et à la moyenne globale. L'application calcule les écarts par catégorie CNC, compare les tarifs journaliers par poste avec l'historique du producteur et les tarifs des autres producteurs, affiche la tendance coût/minute dans le temps, et classe le producteur parmi ses pairs."
+        }
+      ],
+      "performance": {
+        "title": "Performances et coût",
+        "stats": [
+          {
+            "label": "Temps de traitement",
+            "value": "~2 min",
+            "detail": "contre ~60 min manuellement"
+          },
+          {
+            "label": "Coût par devis",
+            "value": "~0,03 EUR",
+            "detail": "appels OCR + IA combinés"
+          },
+          {
+            "label": "Précision extraction",
+            "value": "90–95 %",
+            "detail": "avec contexte métier"
+          }
+        ]
+      }
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "subtitle": "Réponses aux questions les plus courantes sur l'utilisation de l'application.",
+      "items": [
+        {
+          "question": "Quels formats de devis sont acceptés ?",
+          "answer": "L'application accepte les devis au format PDF, en français, allemand ou anglais. Les formats varient selon les producteurs : tableaux structurés, factures globales, etc. Les devis très structurés obtiennent une confiance \"haute\" (~95% de classification correcte), les formats plus libres une confiance \"moyenne\" (~70%)."
+        },
+        {
+          "question": "L'IA peut-elle se tromper ?",
+          "answer": "Oui. C'est pourquoi l'étape de relecture est obligatoire avant enregistrement. Les erreurs les plus fréquentes concernent la classification des postes atypiques (fixeur, journaliste-réalisateur) et la ventilation des droits artistiques. Les montants eux-mêmes sont extraits avec une précision de ~100%."
+        },
+        {
+          "question": "Que se passe-t-il si j'importe le même devis deux fois ?",
+          "answer": "L'application détecte les doublons via l'empreinte du fichier PDF. Si le même fichier a déjà été importé, vous avez le choix entre consulter la version existante, la remplacer par la nouvelle extraction, ou annuler."
+        },
+        {
+          "question": "D'où viennent les minima conventionnels ?",
+          "answer": "Les barèmes sont issus de la convention collective de la production audiovisuelle, catégorie B (hors fiction & flux), en base CDDU 8h. Ils sont versionnés par date dans les paramètres et peuvent être mis à jour quand un nouveau barème entre en vigueur."
+        },
+        {
+          "question": "Comment sont détectées les non-conformités ?",
+          "answer": "Six règles déterministes sont appliquées : non-conformité CC (R1), structure de coûts atypique haute ou basse (R3/R4), charges sociales nulles ou basses (R5/R6), et coût/minute aberrant par rapport à l'historique (R7). Les seuils des règles R3 à R7 sont paramétrables dans les réglages."
+        },
+        {
+          "question": "Les prestataires et sociétés étrangères sont-ils soumis aux minima CC ?",
+          "answer": "Non. Seuls les postes en contrat salarié (CDDU/CDD) sont vérifiés contre les minima conventionnels. Les prestataires, sociétés étrangères et montants forfaitaires sont exclus de cette vérification. Les forfaits sont également exclus des calculs de tarifs journaliers moyens dans les comparatifs."
+        },
+        {
+          "question": "Peut-on modifier les seuils d'alerte ?",
+          "answer": "Oui, dans Paramètres > Seuils d'alerte. Vous pouvez ajuster les seuils structurels (% min/max par catégorie CNC), le taux minimum de charges sociales (R6) et l'écart maximum de coût/minute (R7)."
+        },
+        {
+          "question": "Les données sont-elles partagées ou envoyées à l'extérieur ?",
+          "answer": "Les devis sont envoyés aux API d'OCR (Mistral) et de modèle de langage (Anthropic) pour le traitement. Aucune donnée n'est conservée par ces services au-delà du traitement de la requête. Les données extraites sont stockées dans la base de données de l'application."
+        },
+        {
+          "question": "Combien coûte le traitement d'un devis ?",
+          "answer": "Environ 0,03 EUR par devis, correspondant aux appels combinés d'OCR et de modèle de langage. Ce coût est négligeable comparé au temps économisé (~58 minutes par devis)."
+        }
+      ]
+    }
+  }
+}

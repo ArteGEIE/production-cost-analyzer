@@ -1,0 +1,76 @@
+{
+  "name": "production-cost-analyzer",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArteGEIE/production-cost-analyzer.git"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "pretest": "tsx fixtures/generate-pdfs.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "node --env-file=.env ./node_modules/.bin/drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "db:seed:xlsm": "node --env-file=.env ./node_modules/.bin/tsx scripts/seed-history.ts",
+    "db:seed:demo": "node --env-file=.env ./node_modules/.bin/tsx scripts/seed-demo.ts",
+    "demo-data:pdfs": "tsx scripts/generate-demo-pdfs.ts",
+    "db:seed:cc": "node --env-file=.env ./node_modules/.bin/tsx scripts/seed-cc-defaults.ts",
+    "db:seed:cc:xlsm": "node --env-file=.env ./node_modules/.bin/tsx scripts/seed-cc-minimums.ts"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.3.0",
+    "@mistralai/mistralai": "2.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "consola": "^3.4.2",
+    "drizzle-orm": "^0.45.2",
+    "lucide-react": "^0.577.0",
+    "next": "^16.3.5",
+    "next-auth": "^5.0.0-beta.32",
+    "next-intl": "4.14.4",
+    "openai": "^6.32.0",
+    "postgres": "^3.4.8",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "recharts": "^3.8.0",
+    "shadcn": "^4.0.8",
+    "tailwind-merge": "^3.5.0",
+    "tw-animate-css": "^1.4.0",
+    "unpdf": "^1.6.2",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.4.2",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^20",
+    "@types/pdfkit": "^0.17.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.0.1",
+    "drizzle-kit": "^0.31.10",
+    "eslint": "^9",
+    "eslint-config-next": "^16.3.5",
+    "jsdom": "^29.0.0",
+    "pdfkit": "^0.18.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.13",
+    "typescript": "^5",
+    "vitest": "^4.1.0"
+  },
+  "overrides": {
+    "@esbuild-kit/core-utils": {
+      "esbuild": "^0.25.0"
+    }
+  }
+}

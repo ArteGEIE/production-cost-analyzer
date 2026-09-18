@@ -1,0 +1,1 @@
+CREATE INDEX "idx_productions_draft_created_at" ON "productions" USING btree ("created_at") WHERE status = 'draft';

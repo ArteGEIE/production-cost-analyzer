@@ -1,0 +1,419 @@
+{
+  "$comment": "Job title mapping FR/DE/EN → CNC category + role_key, injected into the LLM prompt. Editable in the app under Paramètres → Correspondances CNC (DB values take precedence).",
+  "mapping": [
+    {
+      "cnc_category": "1_droits_artistiques",
+      "role_key": "auteur",
+      "labels": {
+        "fr": "Droits d'auteur / Note de droits",
+        "de": "Autorenrechte",
+        "en": "Author's rights"
+      }
+    },
+    {
+      "cnc_category": "1_droits_artistiques",
+      "role_key": "co_auteur",
+      "labels": {
+        "fr": "Co-auteur / Auteur options",
+        "de": "Mitautor",
+        "en": "Co-author"
+      }
+    },
+    {
+      "cnc_category": "1_droits_artistiques",
+      "role_key": "auteur_real",
+      "labels": {
+        "fr": "Réalisation & écriture (droits)",
+        "de": "Regie & Drehbuch",
+        "en": "Direction & writing (rights)"
+      }
+    },
+    {
+      "cnc_category": "1_droits_artistiques",
+      "role_key": "archives",
+      "labels": {
+        "fr": "Archives vidéo",
+        "de": "Archivmaterial",
+        "en": "Archive footage"
+      }
+    },
+    {
+      "cnc_category": "1_droits_artistiques",
+      "role_key": "musique",
+      "labels": {
+        "fr": "Musique / Banque musicale",
+        "de": "Musik",
+        "en": "Music"
+      }
+    },
+    {
+      "cnc_category": "1_droits_artistiques",
+      "role_key": "voix_off",
+      "labels": {
+        "fr": "Voix off",
+        "de": "Sprecherstimme",
+        "en": "Voice-over"
+      }
+    },
+    {
+      "cnc_category": "1_droits_artistiques",
+      "role_key": "traduction",
+      "labels": {
+        "fr": "Traduction",
+        "de": "Übersetzung",
+        "en": "Translation"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "producteur",
+      "labels": {
+        "fr": "Producteur exécutif",
+        "de": "Herstellungsleiter",
+        "en": "Executive producer"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "administrateur_de_production",
+      "labels": {
+        "fr": "Administrateur / RAF",
+        "de": "Verwaltung",
+        "en": "Administrator"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "directeur_de_production",
+      "labels": {
+        "fr": "Directeur de production",
+        "de": "Produktionsleiter",
+        "en": "Production Manager"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "charge_de_production",
+      "labels": {
+        "fr": "Chargé de production",
+        "de": "Aufnahmeleiter",
+        "en": "Production Coordinator"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "charge_de_post_production",
+      "labels": {
+        "fr": "Responsable post-prod",
+        "de": "Postproduktionsleiter",
+        "en": "Post-prod manager"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "assistant_de_production",
+      "labels": {
+        "fr": "Assistant de production",
+        "de": "Produktionsassistent",
+        "en": "Production Assistant"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "realisateur",
+      "labels": {
+        "fr": "Réalisateur / Réalisatrice",
+        "de": "Regisseur",
+        "en": "Director"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "co_realisateur",
+      "labels": {
+        "fr": "Co-réalisateur",
+        "de": "Co-Regisseur",
+        "en": "Co-director"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "journaliste_real",
+      "labels": {
+        "fr": "Journaliste-réalisateur",
+        "de": "Journalist-Regisseur",
+        "en": "Journalist-director"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "assistant_realisateur",
+      "labels": {
+        "fr": "Assistant réalisateur",
+        "de": "Regieassistent",
+        "en": "Assistant Director"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "redacteur_chef",
+      "labels": {
+        "fr": "Rédacteur en chef",
+        "de": "Chefredakteur",
+        "en": "Editor-in-chief"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "stringer_fixeur",
+      "labels": {
+        "fr": "Stringer / Fixeur / Journaliste local",
+        "de": "Stringer / Fixer",
+        "en": "Stringer / Fixer"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "jri",
+      "labels": {
+        "fr": "JRI",
+        "de": "Videojournalist",
+        "en": "Video journalist"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "chef_opv",
+      "labels": {
+        "fr": "Chef opérateur / OPV",
+        "de": "Chefkameramann",
+        "en": "Director of Photography"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "cadreur_opv",
+      "labels": {
+        "fr": "Cadreur",
+        "de": "Kameramann",
+        "en": "Camera Operator"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "assistant_camera",
+      "labels": {
+        "fr": "Assistant caméra",
+        "de": "Kameraassistent",
+        "en": "Camera Assistant"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "chef_ops_ingenieur_du_son",
+      "labels": {
+        "fr": "Ingénieur du son / Mixeur",
+        "de": "Tonmeister",
+        "en": "Sound Engineer"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "chef_electricien",
+      "labels": {
+        "fr": "Chef électricien",
+        "de": "Oberbeleuchter",
+        "en": "Gaffer"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "machiniste",
+      "labels": {
+        "fr": "Machiniste",
+        "de": "Bühnenarbeiter",
+        "en": "Grip"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "scripte",
+      "labels": {
+        "fr": "Scripte",
+        "de": "Script Supervisor",
+        "en": "Script Supervisor"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "chef_monteur",
+      "labels": {
+        "fr": "Monteur / Chef monteur",
+        "de": "Cutter / Chefcutter",
+        "en": "Editor / Lead editor"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "assistant_monteur",
+      "labels": {
+        "fr": "Assistant monteur / post-prod",
+        "de": "Schnittassistent",
+        "en": "Assistant Editor"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "etalonneur",
+      "labels": {
+        "fr": "Étalonneur",
+        "de": "Colorist",
+        "en": "Colorist"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "technicien_video",
+      "labels": {
+        "fr": "Technicien vidéo / Graphiste",
+        "de": "Videotechniker",
+        "en": "Video Technician"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "doublage_speaker",
+      "labels": {
+        "fr": "Doublage / Speaker",
+        "de": "Sprecher",
+        "en": "Voice artist"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "equipe_tournage",
+      "labels": {
+        "fr": "Équipe de tournage",
+        "de": "Drehteam",
+        "en": "Shooting crew"
+      }
+    },
+    {
+      "cnc_category": "2_personnel",
+      "role_key": "equipe_montage",
+      "labels": {
+        "fr": "Équipe de montage",
+        "de": "Schnittteam",
+        "en": "Editing crew"
+      }
+    },
+    {
+      "cnc_category": "6_transport",
+      "role_key": "avion_train",
+      "labels": {
+        "fr": "Avion / Train / Vol",
+        "de": "Flug / Zug",
+        "en": "Flight / Train"
+      }
+    },
+    {
+      "cnc_category": "6_transport",
+      "role_key": "vehicule",
+      "labels": {
+        "fr": "Véhicule / Location voiture / Essence",
+        "de": "Fahrzeug / Mietwagen",
+        "en": "Vehicle / Car rental"
+      }
+    },
+    {
+      "cnc_category": "6_transport",
+      "role_key": "hotel",
+      "labels": {
+        "fr": "Hôtel / Hébergement / Frais de séjour",
+        "de": "Hotel / Unterkunft",
+        "en": "Hotel / Accommodation"
+      }
+    },
+    {
+      "cnc_category": "6_transport",
+      "role_key": "repas",
+      "labels": {
+        "fr": "Repas / Indemnité repas",
+        "de": "Verpflegung",
+        "en": "Meals"
+      }
+    },
+    {
+      "cnc_category": "7_tournage",
+      "role_key": "camera",
+      "labels": {
+        "fr": "Caméra / Kit caméra / Unité de tournage",
+        "de": "Kameraausrüstung",
+        "en": "Camera kit"
+      }
+    },
+    {
+      "cnc_category": "7_tournage",
+      "role_key": "hf_son",
+      "labels": {
+        "fr": "Matériel son / HF",
+        "de": "Tonausrüstung",
+        "en": "Sound equipment"
+      }
+    },
+    {
+      "cnc_category": "7_tournage",
+      "role_key": "eclairage",
+      "labels": {
+        "fr": "Éclairage / Lumière",
+        "de": "Beleuchtung",
+        "en": "Lighting"
+      }
+    },
+    {
+      "cnc_category": "7_tournage",
+      "role_key": "drone",
+      "labels": {
+        "fr": "Drone / Go Pro",
+        "de": "Drohne",
+        "en": "Drone"
+      }
+    },
+    {
+      "cnc_category": "8_post_production",
+      "role_key": "montage_salle",
+      "labels": {
+        "fr": "Salle de montage / Banc de montage",
+        "de": "Schnittplatz",
+        "en": "Editing suite"
+      }
+    },
+    {
+      "cnc_category": "8_post_production",
+      "role_key": "mixage_salle",
+      "labels": {
+        "fr": "Salle de mixage / Auditorium",
+        "de": "Mischstudio",
+        "en": "Mixing studio"
+      }
+    },
+    {
+      "cnc_category": "8_post_production",
+      "role_key": "etalonnage_salle",
+      "labels": {
+        "fr": "Étalonnage (salle)",
+        "de": "Farbkorrektur",
+        "en": "Color grading (facility)"
+      }
+    },
+    {
+      "cnc_category": "8_post_production",
+      "role_key": "pad",
+      "labels": {
+        "fr": "PAD / Master / Livraison fichier",
+        "de": "Sendemaster",
+        "en": "Broadcast master"
+      }
+    }
+  ]
+}

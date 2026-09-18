@@ -1,0 +1,11 @@
+production-cost-analyzer
+Copyright 2026 ARTE G.E.I.E.
+
+This product includes software developed at ARTE G.E.I.E. (https://www.arte.tv/).
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+The collective-agreement daily minimums shipped in config/cc-minimums.json are a
+public reference (Convention collective de la production audiovisuelle, CDDU,
+catégorie B, hors fiction & flux, base 8h) and are provided for convenience only;
+verify against the current official barème before relying on them.

@@ -1,0 +1,37 @@
+{
+  "$comment": "Anomaly detection thresholds. structural: normal share range per CNC category (fractions of total) for rules R3/R4. r6MinRate: minimum social charges / technician wages ratio (R6). r7MaxDeviation: cost-per-minute deviation vs producer average (R7). Editable under Paramètres → Seuils d'alerte.",
+  "structural": {
+    "1_droits_artistiques": {
+      "low": 0.02,
+      "high": 0.15,
+      "label": "Droits artistiques"
+    },
+    "2_personnel": {
+      "low": 0.15,
+      "high": 0.55,
+      "label": "Personnel"
+    },
+    "4_charges_sociales": {
+      "low": 0.05,
+      "high": 0.25,
+      "label": "Charges sociales"
+    },
+    "6_transport": {
+      "low": 0.02,
+      "high": 0.25,
+      "label": "Transport"
+    },
+    "7_tournage": {
+      "low": 0.05,
+      "high": 0.25,
+      "label": "Moyens techniques"
+    },
+    "10_imprevus_fg_pd": {
+      "low": 0.05,
+      "high": 0.35,
+      "label": "Imprévus/FG/PD"
+    }
+  },
+  "r6MinRate": 0.5,
+  "r7MaxDeviation": 0.3
+}
