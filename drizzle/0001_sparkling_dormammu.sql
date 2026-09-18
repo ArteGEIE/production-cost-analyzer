@@ -1,0 +1,1 @@
+ALTER TABLE "productions" DROP COLUMN "realisateurs";

@@ -1,0 +1,1005 @@
+{
+  "common": {
+    "loading": "Wird geladen…",
+    "language": "Sprache",
+    "metadata": {
+      "title": "Analyse der Produktionskosten",
+      "description": "Normalisierte Extraktion von PDF-Kostenvoranschlägen, Prüfung der Tarifverträge, Vergleich mit der Historie."
+    }
+  },
+  "productionLayout": {
+    "backToList": "Zurück zur Liste"
+  },
+  "nav": {
+    "title": "Produktionskosten",
+    "productions": "Produktionen",
+    "analytics": "Vergleiche",
+    "settings": "Einstellungen",
+    "guide": "Anleitung",
+    "import": "Importieren",
+    "importButton": "Kostenvoranschlag importieren",
+    "searchPlaceholder": "Produktion suchen…"
+  },
+  "config": {
+    "cncGrid": {
+      "1_droits_artistiques": "Künstlerische Rechte",
+      "2_personnel": "Personal",
+      "3_interpretation": "Interpretation",
+      "4_charges_sociales": "Sozialabgaben",
+      "5_decors_costumes": "Dekor und Kostüme",
+      "6_transport": "Transport, Spesen, Regie",
+      "7_tournage": "Technische Dreharbeiten",
+      "8_post_production": "Postproduktion",
+      "9_assurance": "Versicherung",
+      "10_imprevus_fg_pd": "Unvorhergesehenes, Gemeinkosten, delegierte Produktion"
+    },
+    "cncGridOrg": {
+      "1_droits_artistiques": "Künstlerische Rechte",
+      "2_personnel": "Personalausgaben",
+      "3_interpretation": "Interpretation",
+      "4_charges_sociales": "Sozialabgaben",
+      "5_decors_costumes": "Dekor und Kostüme",
+      "6_transport": "Transport, Spesen, Regie",
+      "7_tournage": "Technische Dreharbeiten",
+      "8_post_production": "Postproduktion",
+      "9_assurance": "Versicherung",
+      "10_imprevus_fg_pd": "Unvorhergesehenes, Gemeinkosten, delegierte Produktion"
+    },
+    "statut": {
+      "conforme": {
+        "label": "Konform",
+        "tooltip": "Tagessatz entspricht oder übersteigt das tarifliche Minimum"
+      },
+      "non_conforme": {
+        "label": "Nicht konform",
+        "tooltip": "Tagessatz unter dem tariflichen Minimum"
+      },
+      "non_verifiable_forfait": {
+        "label": "Pauschale",
+        "tooltip": "Pauschalbetrag — Tarifprüfung nicht anwendbar"
+      },
+      "hors_nomenclature": {
+        "label": "Nicht gelistet",
+        "tooltip": "Diese Position ist nicht in der Tariftabelle erfasst"
+      },
+      "non_verifiable_prestataire": {
+        "label": "Dienstleister",
+        "tooltip": "Externe Leistung — Tarifprüfung nicht anwendbar"
+      },
+      "non_verifiable_etranger": {
+        "label": "Ausl. Gesellschaft",
+        "tooltip": "Ausländische Gesellschaft — französischer Tarifvertrag nicht anwendbar"
+      }
+    },
+    "accordTransparence": {
+      "fiction_70pct": "Fiction zu mehr als 70% finanziert",
+      "fiction_autre": "Fiction (ohne internationale Koproduktionen)",
+      "animation": "Animation",
+      "documentaire": "Dokumentarfilm",
+      "adaptation_spectacle": "Audiovisuelle Adaption einer Bühnenaufführung"
+    },
+    "anomalies": {
+      "R1": "Tarifverstoß: {poste} bei {tarif} €/Tag (Minimum {minimum} €/Tag)",
+      "R1Details": "Abweichung von {ecart}% gegenüber dem tariflichen Minimum",
+      "R3": "Untypische Struktur: {label} macht {ratio}% des Gesamtbetrags aus (oberer Schwellenwert: {threshold}%)",
+      "R4": "Untypische Struktur: {label} macht nur {ratio}% des Gesamtbetrags aus (unterer Schwellenwert: {threshold}%)",
+      "R3R4Details": "Betrag: {amount} € von {total} €",
+      "R5": "Keine Sozialabgaben angegeben",
+      "R5Details": "Der Kostenvoranschlag enthält keine Sozialabgaben",
+      "R6": "Niedriger Sozialabgabensatz: {rate}% (Schwellenwert: 50%)",
+      "R6Details": "Der durchschnittliche Sozialabgabensatz für Techniker liegt unter 50%",
+      "R7": "Kosten/Minute {direction, select, up {über} down {unter} other {abweichend von}} dem Produzentendurchschnitt: {coutMinute} €/min vs. {avg} €/min (Abweichung {deviation}%)",
+      "R7Details": "Durchschnitt berechnet über {count} Produktionen desselben Produzenten"
+    }
+  },
+  "dashboard": {
+    "title": "Übersicht",
+    "subtitle": "Überblick über die Produktionskosten",
+    "kpis": {
+      "total": {
+        "label": "Analysierte Produktionen",
+        "tip": "Anzahl der importierten und analysierten Kostenvoranschläge in der Anwendung."
+      },
+      "alerts": {
+        "label": "Tarifverstöße",
+        "tip": "Gesamtzahl der Positionen, deren Tagessatz unter oder nahe dem tariflichen Minimum liegt."
+      },
+      "avg": {
+        "label": "Durchschn. Kosten/Minute",
+        "tip": "Gesamtbetrag geteilt durch die Programmdauer in Minuten. Ermöglicht den Vergleich von Produktionen unterschiedlicher Länge."
+      },
+      "producers": {
+        "label": "Produzenten",
+        "tip": "Anzahl unterschiedlicher Produktionsgesellschaften in der Datenbank."
+      }
+    },
+    "chart": {
+      "title": "Durchschnittliche Kosten/Minute nach Produzenten",
+      "tooltip": "Durchschnittliche Kosten/Minute für jeden Produzenten über alle seine Kostenvoranschläge. Die gepunktete Linie zeigt den Gesamtdurchschnitt aller Produzenten. Klicken Sie auf einen Balken, um die Produzentenbewertung zu sehen.",
+      "tooltipLabel": "Durchschnitt",
+      "refLineLabel": "Ø",
+      "viewAll": "Alle Vergleiche anzeigen →"
+    },
+    "recentTable": {
+      "title": "Kürzlich analysierte Kostenvoranschläge",
+      "columns": {
+        "producer": "Produzent",
+        "title": "Titel",
+        "type": "Typ",
+        "costPerMin": "Kosten/Min",
+        "date": "Datum",
+        "alerts": "Tarifverstöße"
+      },
+      "alertsTitle": "Anzahl der Positionen, deren Tagessatz unter oder nahe dem tariflichen Minimum liegt",
+      "viewAll": "Alle Produktionen anzeigen →"
+    }
+  },
+  "appHeader": {
+    "noResults": "Keine Ergebnisse"
+  },
+  "authShell": {
+    "redirecting": "Wird weitergeleitet…"
+  },
+  "userMenu": {
+    "user": "Benutzer",
+    "logout": "Abmelden"
+  },
+  "cncGridTable": {
+    "category": "CNC-Kategorie",
+    "label": "Organisationsbezeichnung",
+    "amount": "Betrag",
+    "percent": "%",
+    "total": "Kategoriengesamt"
+  },
+  "confidenceBadge": {
+    "haute": "Hohe Zuverlässigkeit",
+    "moyenne": "Mittlere Zuverlässigkeit",
+    "basse": "Niedrige Zuverlässigkeit",
+    "inconnue": "Unbekannte Zuverlässigkeit"
+  },
+  "pdfViewerPanel": {
+    "title": "Kostenvoranschlag-PDF"
+  },
+  "productionList": {
+    "title": "Produktionen",
+    "compliance": {
+      "ccDetected": "Tarifverstoß erkannt",
+      "issuesDetected": "Verstöße erkannt",
+      "noIssues": "Keine Tarifverstöße erkannt"
+    },
+    "anomalyTooltip": "{count, plural, one {# Tarifverstoß} other {# Tarifverstöße}} — {statusTooltip}",
+    "filters": {
+      "all": "Alle",
+      "allTypes": "Alle Typen",
+      "cncFunding": "CNC-Förderung",
+      "withCnc": "Mit CNC-Förderung",
+      "noCnc": "Ohne CNC-Förderung",
+      "cncTooltip": "Gibt an, ob die Produktion CNC-Förderung (Centre National du Cinéma) erhält.\nProduktionen mit CNC-Förderung müssen die CNC-Klassifizierungstabelle einhalten.",
+      "typeFilterLabel": "Nach Typ filtern",
+      "cncFilterLabel": "Nach CNC-Förderung filtern",
+      "search": "Suchen…"
+    },
+    "legend": {
+      "compliant": "Konform",
+      "warning": "Warnung",
+      "noncompliant": "Tarifverstoß"
+    },
+    "empty": {
+      "title": "Keine Produktionen",
+      "description": "Importieren Sie Ihren ersten Kostenvoranschlag, um mit der Analyse zu beginnen.",
+      "import": "Kostenvoranschlag importieren"
+    },
+    "noResults": {
+      "title": "Keine Ergebnisse",
+      "description": "Versuchen Sie, Ihre Suchkriterien zu ändern."
+    },
+    "table": {
+      "title": "Titel",
+      "producer": "Produzent",
+      "type": "Typ",
+      "total": "Insgesamt",
+      "costPerMin": "Kosten/Min",
+      "date": "Datum"
+    },
+    "counts": {
+      "production": "Produktion",
+      "productionPlural": "Produktionen",
+      "recorded": "aufgezeichnet",
+      "recordedPlural": "aufgezeichnet",
+      "result": "Ergebnis",
+      "resultPlural": "Ergebnisse"
+    }
+  },
+  "productionTabs": {
+    "devis": "Kostenvoranschlag",
+    "compliance": "Konformität",
+    "comparison": "Vergleich",
+    "notes": "Notizen"
+  },
+  "monthPicker": {
+    "placeholder": "Auswählen",
+    "previousYear": "Vorheriges Jahr",
+    "nextYear": "Nächstes Jahr",
+    "months": [
+      "Jan.",
+      "Feb.",
+      "März",
+      "Apr.",
+      "Mai",
+      "Juni",
+      "Juli",
+      "Aug.",
+      "Sep.",
+      "Okt.",
+      "Nov.",
+      "Dez."
+    ]
+  },
+  "signIn": {
+    "title": "Produktionskosten",
+    "heading": "Anmeldung",
+    "description": "Greifen Sie auf die Produktionskostenanalyse zu",
+    "oidcButton": "Anmelden mit {provider}",
+    "demoButton": "Demo ausprobieren"
+  },
+  "upload": {
+    "status": {
+      "reading": "PDF wird gelesen…",
+      "classifying": "Extraktion und CNC-Klassifizierung…",
+      "saving": "Entwurf wird gespeichert…",
+      "complete": "Extraktion abgeschlossen",
+      "error": "Fehler bei der Extraktion"
+    },
+    "page": {
+      "title": "Kostenvoranschlag importieren",
+      "subtitle": "Laden Sie einen Kostenvoranschlag als PDF hoch, um eine normalisierte Extraktion nach dem CNC-Raster zu erhalten.",
+      "subtitleTip": "Die Anwendung nutzt künstliche Intelligenz, um das PDF des Kostenvoranschlags zu lesen und automatisch Beträge, Positionen und Tagessätze zu extrahieren. Diese Daten werden anschließend den 10 Kategorien des CNC-Rasters (Centre National du Cinéma) zugeordnet, dem Standardreferenzsystem für audiovisuelle Produktionsbudgets.",
+      "cancel": "Abbrechen",
+      "newQuote": "Neuer Kostenvoranschlag",
+      "extractionErrorTitle": "Fehler bei der Extraktion"
+    },
+    "zone": {
+      "dropInstructions": "Ziehen Sie einen Kostenvoranschlag als PDF hierher oder klicken Sie zur Auswahl",
+      "maxSize": "PDF, max. 20 MB",
+      "analyzing": "Kostenvoranschlag wird analysiert…",
+      "errors": {
+        "invalidType": "Nur PDF-Dateien werden akzeptiert.",
+        "tooLarge": "Die Datei überschreitet die Grenze von 20 MB."
+      }
+    },
+    "errors": {
+      "draftNotCreated": "Der Server hat keinen Entwurf erstellt."
+    },
+    "results": {
+      "extracting": "Extraktion läuft…",
+      "producteur": "Produzent",
+      "duree": "Dauer",
+      "type": "Typ",
+      "diffuseur": "Sender",
+      "lieuTournage": "Drehort",
+      "grilleCnc": "CNC-Raster",
+      "totalDevis": "Gesamtbetrag",
+      "coutMinute": "Kosten / Minute",
+      "postesNonClasses": "Nicht klassifizierte Positionen",
+      "suggestion": "Vorschlag: {category}"
+    }
+  },
+  "review": {
+    "back": "Zurück",
+    "showPdf": "PDF anzeigen",
+    "hidePdf": "PDF ausblenden",
+    "saving": "Wird gespeichert…",
+    "validate": "Bestätigen und speichern",
+    "title": "Extraktion überprüfen und korrigieren",
+    "titleTip": "Die automatische Extraktion kann Fehler enthalten, insbesondere bei wenig strukturierten oder mehrsprachigen Kostenvoranschlägen. In diesem Schritt können Sie die Daten vor dem Speichern überprüfen und korrigieren.",
+    "subtitle": "Überprüfen Sie die extrahierten Daten, korrigieren Sie sie bei Bedarf und bestätigen Sie dann zum Speichern.",
+    "deltaAlert": {
+      "title": "Abweichung zwischen berechnetem Gesamtbetrag und PDF",
+      "body": "Der aus dem CNC-Raster neu berechnete Gesamtbetrag ( <calculated></calculated> ) beträgt <delta></delta> im Vergleich zum aus dem PDF extrahierten Gesamtbetrag ( <extracted></extracted> ). Überprüfen Sie die Positionen vor dem Bestätigen."
+    },
+    "metadata": {
+      "title": "Metadaten",
+      "confidenceTip": "Vertrauensniveau der automatischen Extraktion. Hoch: strukturierter Kostenvoranschlag, lesbare Daten. Mittel: einige Unklarheiten. Niedrig: untypisches Format, Überprüfung empfohlen.",
+      "form": {
+        "producteur": "Produzent",
+        "titre": "Titel",
+        "duree": "Dauer (Minuten)",
+        "diffuseur": "Sender",
+        "lieuTournage": "Drehort",
+        "dateDevis": "Datum des Kostenvoranschlags",
+        "cncFunding": "CNC-Förderung",
+        "typeProduction": "Produktionstyp",
+        "selectPlaceholder": "Auswählen…",
+        "customTypePlaceholder": "Benutzerdefinierter Typ"
+      }
+    },
+    "grid": {
+      "title": "CNC-Raster",
+      "titleTip": "Jede Zeile kann bearbeitet werden. Um eine Zeile in eine andere Kategorie zu verschieben, klicken Sie auf das Symbol ↕ am Zeilenende.",
+      "noLines": "Keine Zeile in dieser Kategorie.",
+      "columns": {
+        "poste": "Position (PDF-Bezeichnung)",
+        "posteSimple": "Position",
+        "amount": "Betrag",
+        "confidence": "Zuverlässigkeit",
+        "days": "Tage",
+        "dailyRate": "Tagessatz",
+        "total": "Gesamt",
+        "cc": "Tarif"
+      },
+      "subtotal": "Zwischensumme",
+      "subtotalPersonnel": "Zwischensumme Personal",
+      "moveTo": "In eine andere Kategorie verschieben",
+      "moveToPlaceholder": "Verschieben nach…",
+      "deleteLine": "Diese Zeile löschen",
+      "ccMinimum": "Min. {minimum} €/Tag",
+      "manuallyClassified": "Manuell klassifizierte Positionen",
+      "remove": "Entfernen",
+      "addLine": "Zeile hinzufügen",
+      "calculatedTotal": "Berechneter Gesamtbetrag",
+      "extractedTotal": "Extrahierter Gesamtbetrag (PDF-Referenz)",
+      "delta": "Abweichung",
+      "avgRate": "Durchschnittssatz: {value}"
+    },
+    "unclassified": {
+      "title": "Nicht klassifizierte Positionen",
+      "titleTip": "Positionen des Kostenvoranschlags, die die KI nicht automatisch einer CNC-Kategorie zuordnen konnte. Sie können sie manuell klassifizieren.",
+      "summary": "{count, plural, one {# nicht klassifizierte Position} other {# nicht klassifizierte Positionen}}. Wählen Sie eine CNC-Kategorie aus und passen Sie dann den Betrag im Detail der Kategorie an.",
+      "suggestion": "Vorschlag: {category}",
+      "categoryPlaceholder": "CNC-Kategorie…",
+      "classify": "Klassifizieren"
+    },
+    "errors": {
+      "notAuthenticated": "Nicht authentifiziert.",
+      "invalidData": "Ungültige Daten.",
+      "productionNotFound": "Produktion nicht gefunden.",
+      "saveFailed": "Fehler beim Speichern.",
+      "clientSaveFailed": "Beim Speichern ist ein Fehler aufgetreten."
+    }
+  },
+  "devis": {
+    "table": {
+      "poste": "Position",
+      "montant": "Betrag",
+      "confiance": "Zuverlässigkeit",
+      "jours": "Tage",
+      "tarifJour": "Tagessatz",
+      "total": "Gesamt",
+      "cc": "Tarif"
+    },
+    "confidenceTip": "Grad der Sicherheit der automatischen Extraktion für diese Position. Hoch = eindeutige Klassifizierung. Mittel = mögliche Mehrdeutigkeit. Niedrig = Überprüfung empfohlen.",
+    "noLines": "Keine Zeile in dieser Kategorie.",
+    "subtotal": "Zwischensumme",
+    "subtotalPersonnel": "Zwischensumme Personal",
+    "ccMinimum": "Min. {minimum} €/Tag",
+    "imprevusTip": "Unvorhergesehenes, Gemeinkosten (FG) und Kosten der beauftragten Produktion (PD). Budgetposten für Eventualitäten und die Marge des Produzenten.",
+    "avgRate": "Durchschnittssatz: {value}",
+    "chargesSocialesTip": "Durchschnittlicher Sozialabgabensatz, berechnet über alle technischen Personalpositionen. Der Standardsatz für Aushilfskräfte (CDDU) liegt zwischen 64 % und 67 %.",
+    "metadata": {
+      "producteur": "Produzent",
+      "type": "Typ",
+      "duree": "Dauer",
+      "dureeValue": "{minutes} min",
+      "diffuseur": "Sender",
+      "lieuTournage": "Drehort"
+    },
+    "grid": {
+      "title": "CNC-Raster",
+      "titleTip": "Der Kostenvoranschlag wird nach den 10 Kategorien des Centre National du Cinéma (CNC) klassifiziert, dem französischen Standardreferenzsystem für audiovisuelle Produktionsbudgets."
+    },
+    "shareOfTotal": "Anteil am Gesamtbetrag",
+    "totalDevisLabel": "Gesamtbetrag",
+    "coutMinuteLabel": "Kosten/Minute",
+    "footer": {
+      "cancel": "Abbrechen",
+      "delete": "Löschen",
+      "deleting": "Wird gelöscht…",
+      "save": "Speichern",
+      "saving": "Wird gespeichert…",
+      "edit": "Bearbeiten"
+    },
+    "confirmDelete": "Diese Produktion löschen? Diese Aktion ist unwiderruflich.",
+    "errors": {
+      "unexpectedError": "Beim Speichern ist ein unerwarteter Fehler aufgetreten.",
+      "invalidData": "Ungültige Daten.",
+      "updateFailed": "Fehler beim Aktualisieren.",
+      "deleteFailed": "Fehler beim Löschen."
+    }
+  },
+  "compliance": {
+    "summary": {
+      "title": "Konformitätsübersicht",
+      "titleTip": "Konformitätsbericht zu den Tarifverträgen (CC). Diese legen die Mindest-Tagessätze für jeden Beruf der audiovisuellen Produktion fest (CDDU — befristeter Nutzungsvertrag, Kategorie B, außerhalb Fiction & Flux, Basis 8 Stunden).",
+      "critical": "{count, plural, one {# kritisch} other {# kritisch}}",
+      "attention": "{count} Warnung(en)",
+      "info": "{count} Info(s)",
+      "none": "Keine Verstöße",
+      "detected": "{count, plural, one {# Verstoß festgestellt} other {# Verstöße festgestellt}}",
+      "noneDetected": "Keine kritischen Verstöße"
+    },
+    "ccSection": {
+      "title": "Tarifverstöße ({count})",
+      "tooltip": "R1 (Tarifverstoß): Der Tagessatz liegt unter dem tariflichen Minimum — rechtliches Risiko."
+    },
+    "structuralSection": {
+      "title": "Strukturelle Auffälligkeiten",
+      "tooltip": "Strukturelle Auffälligkeiten: Die Budgetverteilung auf die CNC-Kategorien wird mit historischen Durchschnittswerten verglichen. Eine deutliche Abweichung kann auf einen Klassifizierungsfehler oder ein untypisches Budget hinweisen."
+    },
+    "minimaTable": {
+      "title": "Prüfung der Tarifminima",
+      "appliedScale": "Angewandter Tarif: {date}",
+      "columns": {
+        "poste": "Position",
+        "tarifJour": "Tagessatz",
+        "minimumCc": "CC-Minimum",
+        "ecart": "Abweichung",
+        "statut": "Status"
+      },
+      "minimumCcTooltip": "CDDU: befristeter Vertrag für Aushilfskräfte im Kulturbereich. Kat. B: Produktionen außerhalb Fiction & Flux. Basis 8h: Tagessatz berechnet auf Basis eines 8-Stunden-Arbeitstags.",
+      "ecartTooltip": "Abweichung zwischen Tagessatz und tariflichem Minimum",
+      "horsCc": "Nicht tarifiert"
+    },
+    "qualitativeAnalysis": {
+      "title": "KI-Kommentare",
+      "rerun": "Neu starten",
+      "retry": "Erneut versuchen",
+      "loading": "Analyse läuft…",
+      "defaultError": "Unbekannter Fehler",
+      "noResponseBody": "Leere Antwort vom Server",
+      "howItWorksTrigger": "Wie funktioniert die Analyse?",
+      "stepsIntro": "Die Analyse erfolgt in 3 Schritten:",
+      "step1": "<strong>PDF-Lesevorgang</strong> — Das Dokument wird automatisch gelesen, um Beträge, Positionen und Tagessätze zu extrahieren.",
+      "step2": "<strong>Klassifizierung und Prüfung</strong> — Jede Ausgabenzeile wird in das 10-Kategorien-CNC-Raster eingeordnet. Die Tagessätze des Personals werden mit den Tarifminima verglichen.",
+      "step3": "<strong>Qualitative Synthese</strong> — Es wird eine Analyse erstellt, die den Kostenvoranschlag mit der Historie der Produktionen desselben Produzenten abgleicht.",
+      "basedOnIntro": "Worauf basiert die Analyse?",
+      "source1": "<strong>CNC-Raster</strong> — Die offizielle 10-Kategorien-Nomenklatur zur Klassifizierung von Produktionsausgaben.",
+      "source2": "<strong>Tarifverträge</strong> — Die geltenden Mindestlöhne (CDDU, Kategorie B, Basis 8h).",
+      "source3": "<strong>Positionszuordnungen</strong> — Eine Übersetzungstabelle der FR/DE/EN-Berufsbezeichnungen in die CNC-Nomenklatur.",
+      "source4": "<strong>Produktionshistorie</strong> — Die beobachteten Durchschnittswerte nach Produzent und Beruf aus früheren Produktionen."
+    }
+  },
+  "comparison": {
+    "peerLabels": {
+      "global": "Ø gesamt",
+      "peerSet": "Ø Vergleichsgruppe"
+    },
+    "costPositioning": {
+      "title": "Kosten/Minute-Positionierung",
+      "infoTip": "Positionierung der Kosten pro Minute dieses Kostenvoranschlags im Vergleich zum Durchschnitt des Produzenten und zum globalen Durchschnitt. Eine Abweichung von mehr als 30 % wird als auffällig markiert.",
+      "currentQuote": "Dieser Kostenvoranschlag",
+      "producerAverageChartLabel": "Ø {producer}",
+      "producerAverage": "Ø {producer} ({count} Prod.) :",
+      "globalAverageDefault": "Globaler Durchschnitt",
+      "globalAveragePeer": "Durchschnitt der ausgewählten Produzenten",
+      "globalCountSuffix": " ({count} Prod.)"
+    },
+    "categoryStructure": {
+      "title": "Kostenstruktur nach CNC-Kategorie",
+      "infoTip": "Verteilung des Budgets auf die 10 CNC-Kategorien. Rot umrandete Balken zeigen eine deutliche Abweichung von den erwarteten Strukturschwellen an.",
+      "currentQuote": "Dieser Kostenvoranschlag",
+      "producerAverage": "Ø Produzent",
+      "shortLabels": {
+        "1_droits_artistiques": "Rechte",
+        "2_personnel": "Personal",
+        "3_interpretation": "Interpr.",
+        "4_charges_sociales": "Abgaben",
+        "5_decors_costumes": "Kulissen",
+        "6_transport": "Transport",
+        "7_tournage": "Dreh",
+        "8_post_production": "Postprod.",
+        "9_assurance": "Versich.",
+        "10_imprevus_fg_pd": "Unvorh."
+      }
+    },
+    "comparisonFilters": {
+      "compareWith": "Vergleichen mit",
+      "allProducers": "Alle Produzenten",
+      "selectedProducers": "{count, plural, one {# Produzent} other {# Produzenten}}",
+      "noOtherProducers": "Kein weiterer Produzent verfügbar.",
+      "deselectAll": "Alle abwählen",
+      "format": "Format",
+      "allFormats": "Alle",
+      "reset": "Zurücksetzen",
+      "removeProducer": "{producer} entfernen"
+    },
+    "roleComparison": {
+      "title": "Tarife nach Position vs. Verlauf {producer}",
+      "infoTip": "Vergleicht den Tagessatz jeder Position des aktuellen Kostenvoranschlags mit dem historischen Durchschnitt dieses Produzenten für denselben Beruf. Klicken Sie auf eine Zeile, um Details und den Vergleich mit anderen Produzenten zu sehen.",
+      "deviationBadge": "{count, plural, one {# Abweichung} other {# Abweichungen}} >10%",
+      "columns": {
+        "poste": "Position",
+        "currentRate": "Aktueller Tarif",
+        "producerAverage": "Ø {producer}",
+        "deviation": "Abweichung",
+        "minMax": "Min – Max",
+        "otherProducers": "Andere Prod."
+      },
+      "historyFor": "Verlauf {producer}",
+      "otherProducers": "Andere Produzenten",
+      "occurrenceCount": "{count, plural, one {# Vorkommen} other {# Vorkommen}}",
+      "otherProducerCount": "{count, plural, one {# Prod.} other {# Prod.}}"
+    },
+    "costTrend": {
+      "title": "Entwicklung der Kosten pro Minute",
+      "empty": "Nicht genügend Produktionen, um einen Trend anzuzeigen",
+      "xAxisLabel": "Produktion",
+      "avgReferenceLabel": "Ø {value} €"
+    },
+    "producerRanking": {
+      "title": "Produzenten-Ranking",
+      "empty": "Kein Produzent",
+      "rank": "#",
+      "producer": "Produzent",
+      "avgCostMinute": "Ø Kosten/Min",
+      "productionCount": "Produktionen"
+    }
+  },
+  "notes": {
+    "importedBy": "Importiert von {userName} am {date}",
+    "placeholder": "Notiz hinzufügen…",
+    "submit": "Hinzufügen",
+    "submitting": "Wird gesendet…",
+    "empty": "Keine Notizen für diese Produktion.",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "timeAgo": {
+      "justNow": "Gerade eben",
+      "minutes": "Vor {count} Min.",
+      "hours": "Vor {count} Std.",
+      "days": "Vor {count} Tag(en)"
+    },
+    "errors": {
+      "unauthenticated": "Nicht authentifiziert",
+      "emptyContent": "Der Inhalt darf nicht leer sein.",
+      "addFailed": "Fehler beim Hinzufügen der Notiz.",
+      "editFailed": "Fehler bei der Bearbeitung.",
+      "deleteFailed": "Fehler beim Löschen.",
+      "notFound": "Notiz nicht gefunden oder nicht autorisiert."
+    }
+  },
+  "analytics": {
+    "title": "Vergleiche",
+    "tabs": {
+      "jobs": "Nach Beruf",
+      "services": "Nach Position",
+      "producers": "Nach Produzent",
+      "compliance": "TV-Konformität"
+    },
+    "periodFilter": {
+      "label": "Zeitraum:",
+      "from": "Start",
+      "to": "Ende",
+      "thisMonth": "Dieser Monat",
+      "lastMonth": "Letzter Monat",
+      "thisYear": "Dieses Jahr",
+      "reset": "Zurücksetzen"
+    },
+    "typeFilter": {
+      "label": "Typ:",
+      "all": "Alle",
+      "ariaLabel": "Produktionstyp"
+    },
+    "table": {
+      "emptyDefault": "Keine Daten verfügbar"
+    },
+    "jobs": {
+      "pageTitle": "Tagessätze nach Beruf",
+      "pageInfoTip": "Überblick über die beobachteten Tagessätze für jeden Beruf, über alle Produzenten hinweg. Pauschalbeträge und Dienstleister sind von dieser Analyse ausgeschlossen.",
+      "back": "Zurück",
+      "backToJobs": "Zurück zu den Berufen",
+      "noData": "Keine Daten für diese Position.",
+      "horsCC": "Kein TV",
+      "detailByProducer": "Details nach Produzent",
+      "detailProducerSummary": "{count} Prod. · Median {rate} €/T",
+      "medianRateChartTitle": "Median-Tagessatz nach Produzent",
+      "medianRateTooltip": "Median-Tagessatz:",
+      "productionsTooltip": "Produktionen:",
+      "ccMinReferenceLabel": "Min. TV: {value} €",
+      "productionsSuffix": "{count} Prod.",
+      "nonConforme": "Nicht konform",
+      "emptySummary": "Keine Daten zu Positionen verfügbar.",
+      "poste": "Position",
+      "occurrences": "Vorkommen",
+      "occurrencesTip": "Anzahl der Produktionen, in denen diese Position vorkommt",
+      "avgRate": "Ø Tagessatz",
+      "avgRateTip": "Durchschnitt der beobachteten Tagessätze für diese Position",
+      "minMax": "Min / Max",
+      "minMaxTip": "Spanne der beobachteten Tagessätze",
+      "ccMinimum": "Minimum TV",
+      "ccMinimumTip": "Tagesminimum gemäß Tarifvertrag (CDDU, Kat. B, Basis 8 Std.)",
+      "alert": "Warnung",
+      "alertTip": "Zeigt einen Durchschnittssatz an, der unter oder nahe dem Tarifminimum liegt",
+      "production": "Produktion",
+      "tarifJour": "Tagessatz",
+      "ecartCC": "TV-Abweichung",
+      "ecartCCTip": "Differenz zwischen dem Tagessatz und dem Tarifminimum",
+      "jours": "Tage",
+      "total": "Gesamt",
+      "date": "Datum"
+    },
+    "services": {
+      "pageTitle": "Verteilung nach CNC-Kategorie",
+      "pageInfoTip": "Verteilung der Beträge auf die 10 CNC-Kategorien. Die Strukturschwellen definieren die normale Spanne für jede Kategorie — eine Abweichung kann auf einen Klassifizierungsfehler oder ein untypisches Budget hinweisen.",
+      "back": "Zurück",
+      "backToServices": "Zurück zu den Kategorien",
+      "noData": "Keine Daten für diese Kategorie.",
+      "productionsCard": "Produktionen",
+      "detailByProducer": "Details nach Produzent",
+      "detailByPoste": "Details nach Position",
+      "detailProducerSummary": "{count} Prod. · Ø {amount} €",
+      "chartTitle": "Ø Betrag nach Produzent",
+      "avgAmountTooltip": "Ø Betrag:",
+      "productionsTooltip": "Produktionen:",
+      "avgReferenceLabel": "Ø: {value} €",
+      "noDataChart": "Keine Daten verfügbar",
+      "belowThreshold": "Unter dem Schwellenwert",
+      "aboveThreshold": "Über dem Schwellenwert",
+      "emptySummary": "Keine Daten zu Kategorien verfügbar.",
+      "category": "CNC-Kategorie",
+      "avgAmount": "Ø Betrag",
+      "avgPct": "Ø Anteil",
+      "avgPctTip": "Durchschnittlicher Anteil dieser Kategorie am Gesamtbetrag des Kostenvoranschlags",
+      "minMax": "Min / Max",
+      "minMaxTip": "Spanne der beobachteten Beträge über alle Produktionen",
+      "threshold": "Strukturschwelle",
+      "thresholdTip": "Normale Spanne — eine Abweichung löst eine Warnung R3 (hoch) oder R4 (niedrig) aus",
+      "alert": "Warnung",
+      "alertTip": "Zeigt einen ungewöhnlich hohen (R3) oder niedrigen (R4) Anteil für diese Kategorie an",
+      "poste": "Position",
+      "montant": "Betrag",
+      "producteur": "Produzent",
+      "production": "Produktion",
+      "date": "Datum",
+      "pctDevis": "Anteil am Kostenvoranschlag"
+    },
+    "producers": {
+      "back": "Zurück",
+      "backToProducers": "Zurück zu den Produzenten",
+      "noData": "Keine Daten für diesen Produzenten.",
+      "productions": "Produktionen",
+      "avgCoutMinute": "Ø Kosten/Minute",
+      "avgCoutMinuteShort": "Ø Kosten/Min.",
+      "period": "Zeitraum",
+      "ccAlerts": "CC-Warnungen",
+      "ccAlertsTip": "Gesamtzahl der Positionen unter dem Tarifminimum (alle Produktionen zusammen)",
+      "ccAlertsSectionTitle": "Warnungen zu Tarifverträgen",
+      "pageTitle": "Rangliste der Produzenten",
+      "pageInfoTip": "Vergleich der Produzenten nach durchschnittlichen Kosten/Minute und Konformität mit den Tarifverträgen. Auf einen Produzenten klicken, um Verlauf und Trends zu sehen.",
+      "producteur": "Produzent",
+      "trend": "Entwicklung",
+      "trendTip": "Trend der Kosten/Minute zwischen den ältesten und den jüngsten Produktionen",
+      "production": "Produktion",
+      "totalDevis": "Kostenvoranschlag gesamt",
+      "coutMinute": "Kosten/Min.",
+      "alerts": "Warnungen",
+      "date": "Datum",
+      "emptySummary": "Keine Daten zu Produzenten verfügbar.",
+      "alertsEmpty": "Keine wiederkehrenden CC-Warnungen",
+      "rule": "Regel",
+      "description": "Beschreibung",
+      "frequency": "Häufigkeit",
+      "frequencyValue": "{count} / {total} Produktionen",
+      "nonConformeSuffix": "nicht konform mit dem CC-Minimum"
+    },
+    "compliance": {
+      "pageTitle": "CC-Konformitätsmatrix",
+      "pageInfoTip": "Matrix aus Berufen und Produzenten. Jede Zelle zeigt den durchschnittlichen Tagessatz. Rot: nicht konform mit dem CC-Minimum. Grün: konform. Zeigt schnell, welche Produzenten welche Berufe unterbezahlen.",
+      "subtitle": "Durchschnittlicher Tagessatz nach Beruf und Produzent, verglichen mit den Tarifminima.",
+      "legendNonConforme": "Nicht konform",
+      "legendConforme": "Konform",
+      "empty": "Keine Daten für den ausgewählten Zeitraum verfügbar.",
+      "metier": "Beruf",
+      "ccMinimum": "CC-Minimum",
+      "horsCC": "Kein CC",
+      "titleNoData": "{producteur} — Keine Daten",
+      "titleWithData": "{producteur} — {rate} €/T ({count, plural, one {# Vorkommen} other {# Vorkommen}})",
+      "titleCcMinSuffix": " — CC-Minimum: {min} €"
+    },
+    "accordTransparence": {
+      "cardTitle": "Accord de transparence — {label}",
+      "infoTip": "Der Accord de transparence (Abschnitt 4.3) legt die Pauschalsätze für indirekte Kosten fest: Gemeinkosten, Finanzkosten, Unvorhergesehenes und delegierte Produktion. Die angezeigten Sätze gelten für den Typ „{label}“.",
+      "poste": "Position",
+      "moyObservee": "Ø beobachtet",
+      "accord": "Accord",
+      "ecart": "Abweichung",
+      "fraisGeneraux": "Gemeinkosten",
+      "fraisFinanciers": "Finanzkosten",
+      "imprevus": "Unvorhergesehenes",
+      "productionDeleguee": "Delegierte Produktion:"
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "tabs": {
+      "conventions": "Tarifverträge",
+      "thresholds": "Warnschwellen",
+      "types": "Produktionsarten",
+      "producers": "Produzenten",
+      "mappings": "CNC-Zuordnungen"
+    },
+    "conventions": {
+      "updateButton": "Tarifschema aktualisieren",
+      "currentTitle": "Geltendes Tarifschema",
+      "currentInfo": "Tägliche Mindestsätze gemäß den Tarifverträgen der audiovisuellen Produktion. Diese Sätze gelten für Beschäftigte mit CDDU-Vertrag (befristeter Vertrag für Kulturschaffende), Kategorie B (außer Fiktion und Live-Programm). Die Basis von 8 Stunden entspricht einem Standardarbeitstag.",
+      "historyTitle": "Tarifhistorie",
+      "noHistory": "Keine Historie verfügbar.",
+      "effectiveSince": "Gültig seit {date}",
+      "historyEntry": "Tarifschema vom {date}",
+      "postsCount": "({count} Positionen)",
+      "table": {
+        "role": "Position",
+        "filiere": "Bereich",
+        "filiereInfo": "Tätigkeitsbereich innerhalb des Tarifvertrags: A (Produktion), B (Ausstattung), C (Bild), D (Ton), E (Schnitt), F (Verwaltung), G (Regie).",
+        "niveau": "Niveau",
+        "niveauInfo": "Hierarchiestufe: I = leitende Führungskraft, II = Führungskraft, III = erfahrener Techniker, IV = Techniker, V = Assistent, VI = Anfänger. Die Zusätze A/B kennzeichnen Unterstufen.",
+        "base7h": "Basis 7 Std.",
+        "base8h": "Basis 8 Std.",
+        "base7hTitle": "Täglicher Mindestsatz für einen 7-Stunden-Vertrag",
+        "base8hTitle": "Täglicher Mindestsatz für einen 8-Stunden-CDDU-Vertrag"
+      },
+      "form": {
+        "dialogTitle": "Tarifschema aktualisieren",
+        "dialogDescription": "Die Sätze des aktuellen Tarifschemas sind vorausgefüllt. Ändern Sie die geänderten 8-Stunden-Sätze — der 7-Stunden-Satz wird automatisch berechnet (× 0,875).",
+        "effectiveFromLabel": "Gültig ab",
+        "cancel": "Abbrechen",
+        "save": "Speichern",
+        "errors": {
+          "dateRequired": "Bitte geben Sie das Datum an, ab dem das neue Tarifschema gilt.",
+          "dateTooEarly": "Das Datum muss nach dem aktuellen Tarifschema liegen ({date}).",
+          "dateAndRatesRequired": "Datum und Sätze sind erforderlich",
+          "saveFailed": "Fehler beim Speichern"
+        }
+      }
+    },
+    "thresholds": {
+      "rulesTitle": "Regeln zur Erkennung von Nichtkonformitäten (6 Regeln)",
+      "rulesInfo": "Diese Regeln werden bei jedem importierten Kostenvoranschlag automatisch angewendet. Die Schwellenwerte der Regeln R3 bis R7 sind unten konfigurierbar.",
+      "rulesDescription": "Jeder analysierte Kostenvoranschlag durchläuft 6 automatische Erkennungsregeln. Regel R1 vergleicht die Tagessätze mit den Mindestsätzen der Tarifverträge — sie ist hier nicht konfigurierbar, da der Schwellenwert gesetzlich vorgeschrieben ist. Die Regeln R3 bis R7 verwenden die unten konfigurierbaren Schwellenwerte.",
+      "table": {
+        "code": "Code",
+        "rule": "Regel",
+        "condition": "Bedingung",
+        "severity": "Schweregrad"
+      },
+      "rules": {
+        "r1": {
+          "name": "Nichtkonformität CC",
+          "condition": "Tagessatz < Tarifmindestsatz"
+        },
+        "r3": {
+          "name": "Untypische Struktur (hoch)",
+          "condition": "Anteil einer Kategorie > oberer Schwellenwert"
+        },
+        "r4": {
+          "name": "Untypische Struktur (niedrig)",
+          "condition": "Anteil einer Kategorie < unterer Schwellenwert"
+        },
+        "r5": {
+          "name": "Keine Sozialabgaben",
+          "condition": "Keine Sozialabgabe angegeben"
+        },
+        "r6": {
+          "name": "Niedrige Sozialabgaben",
+          "condition": "Durchschnittssatz < Mindestschwelle"
+        },
+        "r7": {
+          "name": "Ausreißer Kosten/Minute",
+          "condition": "Abweichung > Schwellenwert ggü. Produzentendurchschnitt"
+        }
+      },
+      "severity": {
+        "high": "HOCH",
+        "warning": "ACHTUNG",
+        "info": "INFO"
+      },
+      "structuralTitle": "Strukturelle Schwellenwerte (R3/R4)",
+      "structuralInfo": "Prozentualer Anteil des Gesamtbudgets, der auf Basis der Produktionshistorie normalerweise für jede CNC-Kategorie vorgesehen ist. Ein Kostenvoranschlag außerhalb dieser Bandbreiten löst eine Warnung aus.",
+      "structuralDescription": "Prozentanteil des Gesamtbetrags des Kostenvoranschlags, der für jede CNC-Kategorie als normal gilt. Eine Überschreitung löst eine Warnung R3 (hoch) oder R4 (niedrig) aus.",
+      "structuralTable": {
+        "category": "Kategorie",
+        "low": "Unterer Schwellenwert (%)",
+        "high": "Oberer Schwellenwert (%)"
+      },
+      "otherTitle": "Weitere Schwellenwerte",
+      "r6Label": "Mindestsatz Sozialabgaben — R6 (%)",
+      "r6Help": "Warnung, wenn der durchschnittliche Sozialabgabensatz der Techniker unter diesem Schwellenwert liegt.",
+      "r7Label": "Maximale Abweichung Kosten/Minute — R7 (%)",
+      "r7Help": "Warnung, wenn die Kosten pro Minute um mehr als diesen Prozentsatz vom Produzentendurchschnitt abweichen.",
+      "save": "Speichern",
+      "saved": "Schwellenwerte gespeichert."
+    },
+    "types": {
+      "title": "Produktionsarten",
+      "infoTip": "Von der Anwendung erkannte Produktionsarten (z. B. Reportage, Documentaire 52min). Werden verwendet, um Kostenvoranschläge ähnlicher Produktionen zu filtern und zu vergleichen.",
+      "description": "Arten, die bei der Extraktion und in den Filtern vorgeschlagen werden. Das Umbenennen einer Art aktualisiert alle bestehenden Produktionen.",
+      "newTypePlaceholder": "Neue Art…",
+      "add": "Hinzufügen",
+      "deleteTitle": "Löschen",
+      "deleteUsedTitle": "Wird in Produktionen verwendet",
+      "renamed": "\"{oldType}\" in \"{newType}\" umbenannt",
+      "saved": "Arten gespeichert.",
+      "errors": {
+        "nameRequired": "Name erforderlich",
+        "renameFailed": "Fehler beim Umbenennen",
+        "saveFailed": "Fehler beim Speichern"
+      }
+    },
+    "producers": {
+      "title": "Produzenten",
+      "infoTip": "Liste der in den Kostenvoranschlägen erkannten Produzenten. Ermöglicht das Umbenennen oder Zusammenführen von Produzenten, deren Name in den Kostenvoranschlägen variiert (z. B. 'Studio Alpha' und 'Studio Alpha Productions').",
+      "mergeButton": "Zusammenführen",
+      "mergeDialogTitle": "Zwei Produzenten zusammenführen",
+      "mergeDialogDescription": "Alle Produktionen des Quellproduzenten werden dem Zielproduzenten zugeordnet.",
+      "sourceLabel": "Zu übernehmender Produzent",
+      "targetLabel": "Zielproduzent (Name bleibt erhalten)",
+      "selectPlaceholder": "Auswählen…",
+      "cancel": "Abbrechen",
+      "summary": "{count} Produzenten — {total} Produktionen. Klicken Sie auf den Stift, um umzubenennen. Verwenden Sie die Zusammenführung, um Duplikate zu gruppieren.",
+      "renamed": "\"{oldName}\" in \"{newName}\" umbenannt ({count} Produktionen)",
+      "merged": "\"{source}\" in \"{target}\" zusammengeführt ({count} Produktionen)",
+      "table": {
+        "producer": "Produzent",
+        "productions": "Produktionen"
+      },
+      "errors": {
+        "nameRequired": "Name erforderlich",
+        "renameFailed": "Fehler beim Umbenennen"
+      }
+    },
+    "mappings": {
+      "summary": "{count} Zuordnungen — von der KI verwendet, um mehrsprachige Positionen zu klassifizieren.",
+      "infoTip": "Zuordnungstabelle, die von der KI verwendet wird, um Positionsbezeichnungen in Kostenvoranschlägen auf Französisch, Deutsch und Englisch zu erkennen und der richtigen CNC-Kategorie zuzuordnen. Beispiel: 'Kameramann' (DE) → Cadreur → Kategorie 2 (Personal).",
+      "addButton": "Hinzufügen",
+      "addDialogTitle": "Zuordnung hinzufügen",
+      "categoryLabel": "CNC-Kategorie",
+      "roleKeyLabel": "Rollenschlüssel",
+      "roleKeyPlaceholder": "z. B. chef_monteur",
+      "labelFr": "FR",
+      "labelDe": "DE",
+      "labelEn": "EN",
+      "placeholderFr": "Französische Bezeichnung",
+      "placeholderDe": "Deutsch",
+      "placeholderEn": "English",
+      "cancel": "Abbrechen",
+      "saved": "Zuordnungen gespeichert.",
+      "table": {
+        "key": "Schlüssel",
+        "fr": "FR",
+        "de": "DE",
+        "en": "EN"
+      }
+    }
+  },
+  "guide": {
+    "title": "Anleitung",
+    "tabs": {
+      "features": "Funktionen",
+      "howItWorks": "So funktioniert es",
+      "faq": "FAQ"
+    },
+    "features": {
+      "title": "Funktionen",
+      "subtitle": "Ein Überblick über die Möglichkeiten der Anwendung.",
+      "items": [
+        {
+          "title": "Import und automatische Extraktion",
+          "description": "Importieren Sie einen Kostenvoranschlag als PDF (Französisch, Deutsch oder Englisch) und erhalten Sie in wenigen Sekunden eine strukturierte Extraktion nach dem 10-Kategorien-CNC-Raster. Die KI identifiziert Positionen, Beträge, Tagessätze und Anzahl der Tage."
+        },
+        {
+          "title": "Überprüfung und Korrektur",
+          "description": "Überprüfen und korrigieren Sie die Daten nach der Extraktion, bevor Sie sie speichern. Ändern Sie Beträge, verschieben Sie eine Zeile in eine andere CNC-Kategorie, falls sich die KI geirrt hat, klassifizieren Sie nicht erkannte Positionen und passen Sie die Metadaten an. Summen und Konformitätsindikatoren werden in Echtzeit neu berechnet."
+        },
+        {
+          "title": "Prüfung der Tarifverträge",
+          "description": "Jeder Tagessatz wird mit den Mindestsätzen des Tarifvertrags verglichen (Kat. B, CDDU, Basis 8h). Das Ergebnis ist eindeutig: konform (grün), wenn der Satz mindestens dem Minimum entspricht, sonst nicht konform (rot). KI-Kommentare ergänzen die Einschätzung."
+        },
+        {
+          "title": "Historischer Vergleich",
+          "description": "Positionieren Sie jeden Kostenvoranschlag im Verhältnis zur Historie des Produzenten und zum Gesamtdurchschnitt: Kosten/Minute, Struktur nach CNC-Kategorie, Tagessätze je Beruf im Vergleich zur Historie des Produzenten und zu anderen Produzenten, Entwicklung im Zeitverlauf, Produzenten-Ranking."
+        },
+        {
+          "title": "Mehrdimensionale Analysen",
+          "description": "Erkunden Sie die Kosten aus vier Blickwinkeln: nach Beruf (durchschnittliche Tagessätze und Verteilung), nach Position (Aufteilung der 10 CNC-Kategorien und Zeilendetails), nach Produzent (Profil, Trends, Warnungen) und über die Konformitätsmatrix (alle Produzenten × alle Berufe)."
+        },
+        {
+          "title": "Verwaltung der Referenzdaten",
+          "description": "Verwalten Sie die Tarifschemata (mit Verlauf nach Datum), die Schwellenwerte der 6 Erkennungsregeln, die Produktionsarten, die Produzenten sowie die FR/DE/EN-Positionszuordnungen zur CNC-Nomenklatur."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "So funktioniert es",
+      "subtitle": "Vom PDF-Upload bis zum Konformitätsbericht — hier sind die Schritte der Verarbeitung.",
+      "steps": [
+        {
+          "title": "PDF-Lesevorgang (OCR)",
+          "description": "Die PDF-Datei wird an ein Modell zur optischen Zeichenerkennung (Mistral OCR) gesendet, das den reinen Text extrahiert und dabei die Struktur der Tabellen sowie das Layout beibehält. Dieser Schritt macht das PDF für die KI lesbar."
+        },
+        {
+          "title": "Extraktion und Klassifizierung (KI)",
+          "description": "Ein großes Sprachmodell (konfigurierbar: Claude, GPT, Mistral …) analysiert den extrahierten Text. Es identifiziert jede Budgetzeile, klassifiziert sie nach dem 10-Kategorien-CNC-Raster, erkennt Tagessätze und Anzahl der Tage und bestimmt die Vertragsart (Angestelltenvertrag, Dienstleister, ausländische Gesellschaft, Pauschale). Das Modell erhält als Kontext das CNC-Raster, die FR/DE/EN-Positionszuordnungen, die tariflichen Mindestsätze und die Regeln zur Erkennung von Verstößen."
+        },
+        {
+          "title": "Manuelle Überprüfung",
+          "description": "Das Ergebnis der Extraktion wird zur Überprüfung angezeigt. Sie können Beträge korrigieren, eine Zeile über das Symbol ↕ in eine andere CNC-Kategorie verschieben, nicht erkannte Positionen klassifizieren und die Metadaten anpassen. Summen und CC-Konformität werden live neu berechnet. Wurde dasselbe PDF bereits importiert, erkennt die Anwendung dies und bietet an, die bestehende Version zu ersetzen."
+        },
+        {
+          "title": "Erkennung von Verstößen (6 Regeln)",
+          "description": "Eine deterministische Engine wendet 6 Prüfregeln an: Tarifverstoß (R1), untypisch hohe oder niedrige Kostenstruktur (R3/R4), keine oder niedrige Sozialabgaben (R5/R6) sowie im Vergleich zur Historie des Produzenten unplausible Kosten/Minute (R7). Die Schwellenwerte der Regeln R3 bis R7 sind konfigurierbar."
+        },
+        {
+          "title": "KI-Kommentare",
+          "description": "Ein zweiter Aufruf des Sprachmodells erstellt eine übergreifende Analyse: Stimmigkeit zwischen Sendedauer und Drehtagen, Passung zwischen Produktionstyp und Kostenstruktur sowie Auffälligkeiten und positive Punkte. Diese Analyse ergänzt die numerischen Regeln um fachlichen Kontext."
+        },
+        {
+          "title": "Historischer Vergleich",
+          "description": "Der Kostenvoranschlag wird im Verhältnis zur Historie des Produzenten und zum Gesamtdurchschnitt eingeordnet. Die Anwendung berechnet die Abweichungen je CNC-Kategorie, vergleicht die Tagessätze je Beruf mit der Historie des Produzenten und den Tarifen anderer Produzenten, zeigt die Entwicklung der Kosten/Minute im Zeitverlauf und ordnet den Produzenten im Vergleich zu seinen Mitbewerbern ein."
+        }
+      ],
+      "performance": {
+        "title": "Leistung und Kosten",
+        "stats": [
+          {
+            "label": "Verarbeitungszeit",
+            "value": "~2 Min.",
+            "detail": "gegenüber ~60 Min. manuell"
+          },
+          {
+            "label": "Kosten pro Kostenvoranschlag",
+            "value": "~0,03 EUR",
+            "detail": "kombinierte OCR- und KI-Aufrufe"
+          },
+          {
+            "label": "Extraktionsgenauigkeit",
+            "value": "90–95 %",
+            "detail": "mit fachlichem Kontext"
+          }
+        ]
+      }
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "subtitle": "Antworten auf die häufigsten Fragen zur Nutzung der Anwendung.",
+      "items": [
+        {
+          "question": "Welche Kostenvoranschlags-Formate werden akzeptiert?",
+          "answer": "Die Anwendung akzeptiert Kostenvoranschläge im PDF-Format, auf Französisch, Deutsch oder Englisch. Die Formate variieren je nach Produzent: strukturierte Tabellen, Sammelrechnungen usw. Sehr strukturierte Kostenvoranschläge erhalten eine \"hohe\" Konfidenz (~95% korrekte Klassifizierung), freiere Formate eine \"mittlere\" (~70%)."
+        },
+        {
+          "question": "Kann sich die KI irren?",
+          "answer": "Ja. Deshalb ist der Korrekturschritt vor dem Speichern obligatorisch. Die häufigsten Fehler betreffen die Klassifizierung untypischer Positionen (Fixer, Journalist-Regisseur) und die Aufteilung der künstlerischen Rechte. Die Beträge selbst werden mit ~100% Genauigkeit extrahiert."
+        },
+        {
+          "question": "Was passiert, wenn ich denselben Kostenvoranschlag zweimal importiere?",
+          "answer": "Die Anwendung erkennt Duplikate anhand des PDF-Datei-Fingerabdrucks. Wurde dieselbe Datei bereits importiert, können Sie die bestehende Version ansehen, sie durch die neue Extraktion ersetzen oder abbrechen."
+        },
+        {
+          "question": "Woher stammen die tariflichen Mindestsätze?",
+          "answer": "Die Tabellen stammen aus dem Tarifvertrag der audiovisuellen Produktion, Kategorie B (außerhalb Fiction & Flux), auf CDDU-Basis 8h. Sie sind in den Einstellungen nach Datum versioniert und können bei Inkrafttreten einer neuen Tabelle aktualisiert werden."
+        },
+        {
+          "question": "Wie werden Verstöße erkannt?",
+          "answer": "Sechs deterministische Regeln werden angewendet: Tarifverstoß (R1), untypisch hohe oder niedrige Kostenstruktur (R3/R4), keine oder niedrige Sozialabgaben (R5/R6) und im Vergleich zur Historie unplausible Kosten/Minute (R7). Die Schwellenwerte der Regeln R3 bis R7 sind in den Einstellungen konfigurierbar."
+        },
+        {
+          "question": "Unterliegen Dienstleister und ausländische Gesellschaften den CC-Mindestsätzen?",
+          "answer": "Nein. Nur Positionen mit Angestelltenvertrag (CDDU/CDD) werden gegen die tariflichen Mindestsätze geprüft. Dienstleister, ausländische Gesellschaften und Pauschalbeträge sind von dieser Prüfung ausgenommen. Pauschalen werden zudem von der Berechnung der durchschnittlichen Tagessätze in den Vergleichen ausgeschlossen."
+        },
+        {
+          "question": "Können die Warnschwellen angepasst werden?",
+          "answer": "Ja, unter Einstellungen > Warnschwellen. Sie können die strukturellen Schwellenwerte (% Min/Max je CNC-Kategorie), den Mindestsatz für Sozialabgaben (R6) und die maximale Abweichung bei Kosten/Minute (R7) anpassen."
+        },
+        {
+          "question": "Werden die Daten geteilt oder nach außen gesendet?",
+          "answer": "Die Kostenvoranschläge werden zur Verarbeitung an die OCR-API (Mistral) und das Sprachmodell (Anthropic) gesendet. Keine Daten werden von diesen Diensten über die Verarbeitung der Anfrage hinaus gespeichert. Die extrahierten Daten werden in der Datenbank der Anwendung gespeichert."
+        },
+        {
+          "question": "Was kostet die Verarbeitung eines Kostenvoranschlags?",
+          "answer": "Etwa 0,03 EUR pro Kostenvoranschlag, entsprechend den kombinierten OCR- und Sprachmodell-Aufrufen. Diese Kosten sind im Vergleich zur eingesparten Zeit (~58 Minuten pro Kostenvoranschlag) vernachlässigbar."
+        }
+      ]
+    }
+  }
+}

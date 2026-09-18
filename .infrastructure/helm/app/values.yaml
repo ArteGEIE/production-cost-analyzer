@@ -1,0 +1,88 @@
+replicaCount: 1
+
+image:
+  # Set both from your overlay or with --set. Empty values fail loudly at render time.
+  repository: ""
+  tag: ""
+  pullPolicy: IfNotPresent
+
+# Name of a kubernetes.io/dockerconfigjson Secret in the release namespace.
+# Leave empty for a public registry (e.g. ghcr.io public images).
+imagePullSecrets: []
+#  - name: registry-credentials
+
+nameOverride: ""
+fullnameOverride: ""
+
+app:
+  # Non-secret env vars, rendered as plain values. Secrets go via externalSecret
+  # or secretEnv (below), never here.
+  env: {}
+
+# Option A — External Secrets Operator: sync secrets from your secret manager
+# (any ESO provider: AWS, GCP, Vault, Scaleway, 1Password, ...) into an Opaque
+# Secret named <release>-secrets. Each entry becomes an env var in the pod.
+externalSecret:
+  enabled: false
+  refreshInterval: 1h
+  # Name of a ClusterSecretStore in your cluster.
+  secretStoreRef: secret-manager
+  # How ESO decodes the remote value. Use "None" when values are stored raw,
+  # "Base64" when your convention is to store every value base64-encoded.
+  decodingStrategy: None
+  # - key: DATABASE_URL          (env var name inside the pod)
+  #   remoteKey: PCOST_DATABASE_URL
+  # Some providers require a selector prefix on remoteKey (e.g. Scaleway: "name:<SECRET>").
+  secrets: []
+
+# Option B — a Secret you manage yourself (kubectl create secret generic ...).
+# Every key listed here is injected as an env var of the same name.
+secretEnv:
+  existingSecret: ""
+  keys: []
+  # keys: [DATABASE_URL, AUTH_SECRET, LLM_API_KEY, MISTRAL_API_KEY]
+
+# Runs `node scripts/migrate.mjs` as a Helm post-install / pre-upgrade hook.
+# Requires DATABASE_URL to be provided by one of the two secret options above.
+migrate:
+  enabled: false
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: false
+  className: nginx
+  # /api/extract streams SSE for minutes — raise proxy read/send timeouts on
+  # your ingress controller accordingly, e.g. for ingress-nginx:
+  #   nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+  #   nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+  annotations: {}
+  hosts: []
+  #  - host: production-cost.example.com
+  # Optional TLS block. Leave empty when TLS is terminated upstream.
+  tls: []
+  #  - secretName: production-cost-tls
+  #    hosts: [production-cost.example.com]
+
+podDisruptionBudget:
+  enabled: false
+  minAvailable: 1
+
+topologySpread:
+  enabled: false
+
+# terminationGracePeriodSeconds is generous because /api/extract streams SSE for
+# minutes; a deploy must not kill an in-flight extraction.
+terminationGracePeriodSeconds: 120
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    # The extract route holds the uploaded PDF in memory twice plus the pdfjs
+    # document graph; size for two concurrent large extractions.
+    memory: 512Mi

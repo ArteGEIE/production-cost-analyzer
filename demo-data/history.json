@@ -1,0 +1,6826 @@
+[
+  {
+    "producteur": "Studio Alpha",
+    "titre": "Les sentinelles de la mer",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 49887.14,
+    "coutMinute": 2078.63,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 2000,
+            "sous_categorie": "dts_auteur"
+          }
+        ],
+        "total": 2000
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 3,
+            "tarif_journalier": 230,
+            "total": 690,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 170,
+            "total": 680,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 20,
+            "tarif_journalier": 250,
+            "total": 5000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 3,
+            "tarif_journalier": 300,
+            "total": 900,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "STRINGER/FIXEUR",
+            "role_key": "stringer_fixeur",
+            "nombre_jours": 10,
+            "tarif_journalier": 180,
+            "total": 1800,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 10,
+            "tarif_journalier": 300,
+            "total": 3000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 260,
+            "total": 2600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 14670
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 62,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 8236.8,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.56,
+        "total": 8298.8
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 6080
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 1600,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 1000,
+            "sous_categorie": "hf_son"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 560,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 3160
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1400,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 900,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 900,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 200,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 3400
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 752.1800000000001,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 752.1800000000001
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 2500,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 5641.349999999999,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 752.1800000000001,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 2632.63,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 11526.16
+      }
+    },
+    "meta": {
+      "producteur": "Studio Alpha",
+      "titre": "Les sentinelles de la mer",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2022-01-01"
+    },
+    "dateDevis": "2022-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 230,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -40,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 170,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -29.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 250,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 300,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "STRINGER/FIXEUR",
+        "tarif_journalier": 180,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 300,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 6.6,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 260,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -7.8,
+        "statut": "non_conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Studio Alpha",
+    "titre": "Au-delà des dunes",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 69780.38,
+    "coutMinute": 2907.52,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 1000,
+            "sous_categorie": "dts_auteur"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 500,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 800,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 2300
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 250,
+            "total": 1000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 6,
+            "tarif_journalier": 180,
+            "total": 1080,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 25,
+            "tarif_journalier": 240,
+            "total": 6000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 4,
+            "tarif_journalier": 350,
+            "total": 1400,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "STRINGER/FIXEUR",
+            "role_key": "stringer_fixeur",
+            "nombre_jours": 15,
+            "tarif_journalier": 275,
+            "total": 4125,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 11,
+            "tarif_journalier": 320,
+            "total": 3520,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 280,
+            "total": 2800,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 19925
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 31,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 10112,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.51,
+        "total": 10143
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 9210
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 4125,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 1160,
+            "sous_categorie": "autre"
+          },
+          {
+            "poste": "DRONE/GO PRO/CC",
+            "montant": 1250,
+            "sous_categorie": "drone"
+          }
+        ],
+        "total": 6535
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1400,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 800,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 900,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 200,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 3300
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 1028.26,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 1028.26
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 5000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 7711.95,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 1028.26,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 3598.9100000000003,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 17339.120000000003
+      }
+    },
+    "meta": {
+      "producteur": "Studio Alpha",
+      "titre": "Au-delà des dunes",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2025-01-01"
+    },
+    "dateDevis": "2025-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 250,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -34.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 180,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -25.3,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 240,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 350,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "STRINGER/FIXEUR",
+        "tarif_journalier": 275,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 320,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 13.7,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 280,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -0.8,
+        "statut": "non_conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Studio Alpha",
+    "titre": "Chroniques d'un fleuve",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 60571.92,
+    "coutMinute": 2523.83,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 2800,
+            "sous_categorie": "auteur_real"
+          }
+        ],
+        "total": 2800
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 250,
+            "total": 1000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 6,
+            "tarif_journalier": 180,
+            "total": 1080,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 20,
+            "tarif_journalier": 210,
+            "total": 4200,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 4,
+            "tarif_journalier": 350,
+            "total": 1400,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "STRINGER/FIXEUR",
+            "role_key": "stringer_fixeur",
+            "nombre_jours": 15,
+            "tarif_journalier": 275,
+            "total": 4125,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 11,
+            "tarif_journalier": 320,
+            "total": 3520,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 280,
+            "total": 2800,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 18125
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 87,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 8960,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.49,
+        "total": 9047
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 5590
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 3750,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 950,
+            "sous_categorie": "autre"
+          },
+          {
+            "poste": "DRONE/GO PRO/CC",
+            "montant": 1250,
+            "sous_categorie": "drone"
+          }
+        ],
+        "total": 5950
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1400,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 800,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 900,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 360,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 3460
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 913.84,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 913.84
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 3000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 6853.8,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 913.84,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 3198.4400000000005,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 13966.08
+      }
+    },
+    "meta": {
+      "producteur": "Studio Alpha",
+      "titre": "Chroniques d'un fleuve",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2025-01-01"
+    },
+    "dateDevis": "2025-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 250,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -34.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 180,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -25.3,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 210,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 350,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "STRINGER/FIXEUR",
+        "tarif_journalier": 275,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 320,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 13.7,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 280,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -0.8,
+        "statut": "non_conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Studio Alpha",
+    "titre": "Les artisans du silence",
+    "dureeMinutes": 12,
+    "typeProduction": "Documentaire",
+    "totalDevis": 24576.29,
+    "coutMinute": 2048.02,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 1000,
+            "sous_categorie": "auteur_real"
+          }
+        ],
+        "total": 1000
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 230,
+            "total": 460,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 170,
+            "total": 340,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 11,
+            "tarif_journalier": 250,
+            "total": 2750,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 4,
+            "tarif_journalier": 350,
+            "total": 1400,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 4,
+            "tarif_journalier": 280,
+            "total": 1120,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 5,
+            "tarif_journalier": 260,
+            "total": 1300,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 8170
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 11,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 4000,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.49,
+        "total": 4011
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 1040
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 640,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 300,
+            "sous_categorie": "hf_son"
+          }
+        ],
+        "total": 940
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 700,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 600,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 600,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 440,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 2340
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 350.02,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 350.02
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 2000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 2625.15,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 350.02,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 1750.1000000000001,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 6725.27
+      }
+    },
+    "meta": {
+      "producteur": "Studio Alpha",
+      "titre": "Les artisans du silence",
+      "duree_minutes": 12,
+      "type_production": "Documentaire",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 230,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -40,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 170,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -29.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 250,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 350,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 280,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": -0.5,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 260,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -7.8,
+        "statut": "non_conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Studio Alpha",
+    "titre": "Mémoires de la steppe",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 47275.880000000005,
+    "coutMinute": 1969.83,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [],
+        "total": 0
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 230,
+            "total": 920,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 170,
+            "total": 680,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 20,
+            "tarif_journalier": 350,
+            "total": 7000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 5,
+            "tarif_journalier": 300,
+            "total": 1500,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 260,
+            "total": 2600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 15700
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 8128,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.52,
+        "total": 8128
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 5100
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 3100,
+            "sous_categorie": "camera"
+          }
+        ],
+        "total": 3100
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1400,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 900,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 900,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 360,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 3560
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 706.76,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 706.76
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 2500,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 5300.7,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 706.76,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 2473.6600000000003,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 10981.119999999999
+      }
+    },
+    "meta": {
+      "producteur": "Studio Alpha",
+      "titre": "Mémoires de la steppe",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 230,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -40,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 170,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -29.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 350,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 300,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 260,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -7.8,
+        "statut": "non_conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Studio Alpha",
+    "titre": "Au pays des oiseaux blancs",
+    "dureeMinutes": 12,
+    "typeProduction": "Magazine",
+    "totalDevis": 23673.29,
+    "coutMinute": 1972.77,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 1000,
+            "sous_categorie": "dts_auteur"
+          }
+        ],
+        "total": 1000
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 230,
+            "total": 460,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 170,
+            "total": 340,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 11,
+            "tarif_journalier": 250,
+            "total": 2750,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 4,
+            "tarif_journalier": 350,
+            "total": 1400,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 4,
+            "tarif_journalier": 280,
+            "total": 1120,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 5,
+            "tarif_journalier": 260,
+            "total": 1300,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 7370
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 11,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 4000,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.54,
+        "total": 4011
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 940
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 640,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 300,
+            "sous_categorie": "hf_son"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 440,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 1380
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 700,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 600,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 600,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 200,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 2100
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 336.02,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 336.02
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 2000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 2520.15,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 336.02,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 1680.1000000000001,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 6536.27
+      }
+    },
+    "meta": {
+      "producteur": "Studio Alpha",
+      "titre": "Au pays des oiseaux blancs",
+      "duree_minutes": 12,
+      "type_production": "Magazine",
+      "date_devis": "2022-01-01"
+    },
+    "dateDevis": "2022-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 230,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -40,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 170,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -29.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 250,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 350,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 280,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": -0.5,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 260,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -7.8,
+        "statut": "non_conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Carrousel Productions",
+    "titre": "Le chant des forêts",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 81602.68000000001,
+    "coutMinute": 3400.11,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 1000,
+            "sous_categorie": "dts_auteur"
+          },
+          {
+            "poste": "SUJET/ŒUVRE ORIGINALE",
+            "montant": 1000,
+            "sous_categorie": "sujet_oeuvre"
+          },
+          {
+            "poste": "ARCHIVES",
+            "montant": 1000,
+            "sous_categorie": "archives"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 300,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 500,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 3800
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "PRODUCTEUR",
+            "role_key": "producteur",
+            "nombre_jours": 1,
+            "tarif_journalier": 4000,
+            "total": 4000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "ADMINISTRATEUR",
+            "role_key": "administrateur_de_production",
+            "nombre_jours": 6,
+            "tarif_journalier": 290,
+            "total": 1740,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSISTANT PROD",
+            "role_key": "assistant_de_production",
+            "nombre_jours": 1,
+            "tarif_journalier": 2000,
+            "total": 2000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 30,
+            "tarif_journalier": 350,
+            "total": 10500,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 1,
+            "tarif_journalier": 2500,
+            "total": 2500,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 12,
+            "tarif_journalier": 300,
+            "total": 3600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "TECHNICIEN VIDEO",
+            "role_key": "technicien_video",
+            "nombre_jours": 6,
+            "tarif_journalier": 180,
+            "total": 1080,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1,
+            "tarif_journalier": 340,
+            "total": 340,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 320,
+            "total": 320,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 26080
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 86.8,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "REALISATEUR",
+            "montant": 5984.999999999999,
+            "sous_categorie": "cs_realisateur"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 9815.4,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 720,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.63,
+        "total": 16607.199999999997
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 11800
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 2100,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 500,
+            "sous_categorie": "hf_son"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 2290,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 4890
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1560,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 380,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 150,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 350,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 2440
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 1013.96,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 1013.96
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 1000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 6759.72,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 1351.94,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "DIVERS",
+            "montant": 1700,
+            "sous_categorie": "divers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 3379.86,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 14191.52
+      }
+    },
+    "meta": {
+      "producteur": "Carrousel Productions",
+      "titre": "Le chant des forêts",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2025-01-01"
+    },
+    "dateDevis": "2025-01-01",
+    "verificationMinima": [
+      {
+        "poste": "PRODUCTEUR",
+        "tarif_journalier": 4000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "ADMINISTRATEUR",
+        "tarif_journalier": 290,
+        "minimum_cc": 219.58,
+        "ecart_pourcent": 32.1,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ASSISTANT PROD",
+        "tarif_journalier": 2000,
+        "minimum_cc": 178.76,
+        "ecart_pourcent": 1018.8,
+        "statut": "conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 350,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 2500,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 300,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": 6.3,
+        "statut": "conforme"
+      },
+      {
+        "poste": "TECHNICIEN VIDEO",
+        "tarif_journalier": 180,
+        "minimum_cc": 205.85,
+        "ecart_pourcent": -12.6,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 340,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": 12,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 320,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": 32.5,
+        "statut": "conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Carrousel Productions",
+    "titre": "L'or des hauteurs",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 84339.51,
+    "coutMinute": 3514.15,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 2000,
+            "sous_categorie": "dts_auteur"
+          },
+          {
+            "poste": "ARCHIVES",
+            "montant": 1000,
+            "sous_categorie": "archives"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 1470,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 1000,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 5470
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "PRODUCTEUR",
+            "role_key": "producteur",
+            "nombre_jours": 1,
+            "tarif_journalier": 4000,
+            "total": 4000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 7,
+            "tarif_journalier": 260,
+            "total": 1820,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSISTANT PROD",
+            "role_key": "assistant_de_production",
+            "nombre_jours": 5,
+            "tarif_journalier": 290,
+            "total": 1450,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 25,
+            "tarif_journalier": 400,
+            "total": 10000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JRI",
+            "role_key": "jri",
+            "nombre_jours": 1,
+            "tarif_journalier": 2000,
+            "total": 2000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 10,
+            "tarif_journalier": 320,
+            "total": 3200,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 12,
+            "tarif_journalier": 300,
+            "total": 3600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "TECHNICIEN VIDEO",
+            "role_key": "technicien_video",
+            "nombre_jours": 5,
+            "tarif_journalier": 180,
+            "total": 900,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1,
+            "tarif_journalier": 325,
+            "total": 325,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 320,
+            "total": 320,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 27615
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 102.3,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "REALISATEUR",
+            "montant": 5699.999999999999,
+            "sous_categorie": "cs_realisateur"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 11097.45,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 702,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.63,
+        "total": 17601.75
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 10150
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 2850,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 500,
+            "sous_categorie": "hf_son"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 2390,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 5740
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1800,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 380,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 150,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 350,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 2680
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 1048.6,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 1048.6
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 1000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 6990.68,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 1398.14,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "DIVERS",
+            "montant": 500,
+            "sous_categorie": "divers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 3495.34,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 13384.16
+      }
+    },
+    "meta": {
+      "producteur": "Carrousel Productions",
+      "titre": "L'or des hauteurs",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2025-01-01"
+    },
+    "dateDevis": "2025-01-01",
+    "verificationMinima": [
+      {
+        "poste": "PRODUCTEUR",
+        "tarif_journalier": 4000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 260,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": 7.9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ASSISTANT PROD",
+        "tarif_journalier": 290,
+        "minimum_cc": 178.76,
+        "ecart_pourcent": 62.2,
+        "statut": "conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 400,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "JRI",
+        "tarif_journalier": 2000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 320,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 13.7,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 300,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": 6.3,
+        "statut": "conforme"
+      },
+      {
+        "poste": "TECHNICIEN VIDEO",
+        "tarif_journalier": 180,
+        "minimum_cc": 205.85,
+        "ecart_pourcent": -12.6,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 325,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": 7.1,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 320,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": 32.5,
+        "statut": "conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Carrousel Productions",
+    "titre": "Pénombres et clairs-obscurs",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 61842.45,
+    "coutMinute": 2576.77,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 1500,
+            "sous_categorie": "auteur_real"
+          },
+          {
+            "poste": "SUJET/ŒUVRE ORIGINALE",
+            "montant": 1500,
+            "sous_categorie": "sujet_oeuvre"
+          },
+          {
+            "poste": "ARCHIVES",
+            "montant": 1000,
+            "sous_categorie": "archives"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 300,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 1500,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 5800
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "ADMINISTRATEUR",
+            "role_key": "administrateur_de_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 250,
+            "total": 500,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 8,
+            "tarif_journalier": 230,
+            "total": 1840,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 25,
+            "tarif_journalier": 250,
+            "total": 6250,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 12,
+            "tarif_journalier": 305,
+            "total": 3660,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 13,
+            "tarif_journalier": 280,
+            "total": 3640,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "TECHNICIEN VIDEO",
+            "role_key": "technicien_video",
+            "nombre_jours": 5,
+            "tarif_journalier": 160,
+            "total": 800,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1,
+            "tarif_journalier": 325,
+            "total": 325,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 300,
+            "total": 300,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 17315
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 48,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 10908.45,
+            "sous_categorie": "cs_techniciens"
+          }
+        ],
+        "taux_moyen": 0.63,
+        "total": 10956.45
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 11640
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 2910,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 580,
+            "sous_categorie": "hf_son"
+          }
+        ],
+        "total": 3490
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1235,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 360,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 290,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 1885
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 516,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 516
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 5156,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 1031,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "DIVERS",
+            "montant": 1000,
+            "sous_categorie": "divers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 2578,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 9765
+      }
+    },
+    "meta": {
+      "producteur": "Carrousel Productions",
+      "titre": "Pénombres et clairs-obscurs",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "ADMINISTRATEUR",
+        "tarif_journalier": 250,
+        "minimum_cc": 219.58,
+        "ecart_pourcent": 13.9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 230,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -4.5,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 250,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 305,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 8.3,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 280,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -0.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "TECHNICIEN VIDEO",
+        "tarif_journalier": 160,
+        "minimum_cc": 205.85,
+        "ecart_pourcent": -22.3,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 325,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": 7.1,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 300,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": 24.2,
+        "statut": "conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Carrousel Productions",
+    "titre": "Une autre Méditerranée",
+    "dureeMinutes": 24,
+    "typeProduction": "Documentaire",
+    "totalDevis": 75579.7,
+    "coutMinute": 3149.15,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 1750,
+            "sous_categorie": "auteur_real"
+          },
+          {
+            "poste": "SUJET/ŒUVRE ORIGINALE",
+            "montant": 1750,
+            "sous_categorie": "sujet_oeuvre"
+          },
+          {
+            "poste": "ARCHIVES",
+            "montant": 1000,
+            "sous_categorie": "archives"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 300,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 1000,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 5800
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "PRODUCTEUR",
+            "role_key": "producteur",
+            "nombre_jours": 1,
+            "tarif_journalier": 4000,
+            "total": 4000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "ADMINISTRATEUR",
+            "role_key": "administrateur_de_production",
+            "nombre_jours": 5,
+            "tarif_journalier": 285,
+            "total": 1425,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 7,
+            "tarif_journalier": 260,
+            "total": 1820,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 25,
+            "tarif_journalier": 160,
+            "total": 4000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 1,
+            "tarif_journalier": 2000,
+            "total": 2000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 12,
+            "tarif_journalier": 320,
+            "total": 3840,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 13,
+            "tarif_journalier": 300,
+            "total": 3900,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "TECHNICIEN VIDEO",
+            "role_key": "technicien_video",
+            "nombre_jours": 5,
+            "tarif_journalier": 180,
+            "total": 900,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1,
+            "tarif_journalier": 325,
+            "total": 325,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 320,
+            "total": 320,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DOUBLAGE/SPEAKER",
+            "role_key": "doublage_speaker",
+            "nombre_jours": 5,
+            "tarif_journalier": 282,
+            "total": 1410,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 23940
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 148.8,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "REALISATEUR",
+            "montant": 1320,
+            "sous_categorie": "cs_realisateur"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 11673.9,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 846,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.58,
+        "total": 13988.699999999999
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 9875
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 5960,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 700,
+            "sous_categorie": "hf_son"
+          }
+        ],
+        "total": 6660
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1950,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 380,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 150,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 350,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 2830
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 956,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 956
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 5418,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 1275,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "DIVERS",
+            "montant": 1000,
+            "sous_categorie": "divers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 3187,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 10880
+      }
+    },
+    "meta": {
+      "producteur": "Carrousel Productions",
+      "titre": "Une autre Méditerranée",
+      "duree_minutes": 24,
+      "type_production": "Documentaire",
+      "date_devis": "2024-01-01"
+    },
+    "dateDevis": "2024-01-01",
+    "verificationMinima": [
+      {
+        "poste": "PRODUCTEUR",
+        "tarif_journalier": 4000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "ADMINISTRATEUR",
+        "tarif_journalier": 285,
+        "minimum_cc": 219.58,
+        "ecart_pourcent": 29.8,
+        "statut": "conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 260,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": 7.9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 160,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 2000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 320,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 13.7,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 300,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": 6.3,
+        "statut": "conforme"
+      },
+      {
+        "poste": "TECHNICIEN VIDEO",
+        "tarif_journalier": 180,
+        "minimum_cc": 205.85,
+        "ecart_pourcent": -12.6,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 325,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": 7.1,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 320,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": 32.5,
+        "statut": "conforme"
+      },
+      {
+        "poste": "DOUBLAGE/SPEAKER",
+        "tarif_journalier": 282,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Lumière Pictures",
+    "titre": "Au seuil des nuages",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 60334.826400000005,
+    "coutMinute": 2513.95,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 3200,
+            "sous_categorie": "auteur_real"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 330,
+            "sous_categorie": "musique"
+          }
+        ],
+        "total": 3530
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 220,
+            "total": 880,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSISTANT PROD",
+            "role_key": "assistant_de_production",
+            "nombre_jours": 3,
+            "tarif_journalier": 170,
+            "total": 510,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 1,
+            "tarif_journalier": 4800,
+            "total": 4800,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 10,
+            "tarif_journalier": 307,
+            "total": 3070,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 270,
+            "total": 2970,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "TECHNICIEN VIDEO",
+            "role_key": "technicien_video",
+            "nombre_jours": 1,
+            "tarif_journalier": 190,
+            "total": 190,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1,
+            "tarif_journalier": 290,
+            "total": 290,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 220,
+            "total": 220,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DOUBLAGE/SPEAKER",
+            "role_key": "doublage_speaker",
+            "nombre_jours": 1,
+            "tarif_journalier": 150,
+            "total": 150,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 3,
+            "tarif_journalier": 180,
+            "total": 540,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE MONTAGE",
+            "role_key": "equipe_montage",
+            "nombre_jours": 5,
+            "tarif_journalier": 250,
+            "total": 1250,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 14870
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 35.300000000000004,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "REALISATEUR",
+            "montant": 2784,
+            "sous_categorie": "cs_realisateur"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 6745.6,
+            "sous_categorie": "cs_personnel"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 67.5,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.65,
+        "total": 9632.400000000001
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 10660
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 3150,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 1150,
+            "sous_categorie": "hf_son"
+          }
+        ],
+        "total": 4300
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 2200,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 400,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 300,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 400,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 3300
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 463.874,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 463.874
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 3000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 6211.272860000001,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 927.748,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 3344.531540000001,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 13483.5524
+      }
+    },
+    "meta": {
+      "producteur": "Lumière Pictures",
+      "titre": "Au seuil des nuages",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2025-01-01"
+    },
+    "dateDevis": "2025-01-01",
+    "verificationMinima": [
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 220,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -8.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSISTANT PROD",
+        "tarif_journalier": 170,
+        "minimum_cc": 178.76,
+        "ecart_pourcent": -4.9,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 4800,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 307,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 270,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -4.3,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "TECHNICIEN VIDEO",
+        "tarif_journalier": 190,
+        "minimum_cc": 205.85,
+        "ecart_pourcent": -7.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 290,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": -4.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 220,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": -8.9,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "DOUBLAGE/SPEAKER",
+        "tarif_journalier": 150,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 180,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "EQUIPE MONTAGE",
+        "tarif_journalier": 250,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Lumière Pictures",
+    "titre": "Les voix de la lagune",
+    "dureeMinutes": 24,
+    "typeProduction": "Magazine",
+    "totalDevis": 64880.543514000005,
+    "coutMinute": 2703.36,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 2800,
+            "sous_categorie": "auteur_real"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 1500,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 2000,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 6300
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 220,
+            "total": 880,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSISTANT PROD",
+            "role_key": "assistant_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 165,
+            "total": 660,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 1,
+            "tarif_journalier": 4200,
+            "total": 4200,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 12,
+            "tarif_journalier": 307,
+            "total": 3684,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 270,
+            "total": 3240,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1,
+            "tarif_journalier": 290,
+            "total": 290,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 220,
+            "total": 220,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DOUBLAGE/SPEAKER",
+            "role_key": "doublage_speaker",
+            "nombre_jours": 1,
+            "tarif_journalier": 150,
+            "total": 150,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 3,
+            "tarif_journalier": 180,
+            "total": 540,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 13864
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 63,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "REALISATEUR",
+            "montant": 2436,
+            "sous_categorie": "cs_realisateur"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 6469.52,
+            "sous_categorie": "cs_personnel"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 67.5,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.65,
+        "total": 9036.02
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 12280
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 3500,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 1200,
+            "sous_categorie": "hf_son"
+          }
+        ],
+        "total": 4700
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 2400,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 400,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 300,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 200,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 3300
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 496.70020000000005,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 496.70020000000005
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 4000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 6139.214472,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 993.4004000000001,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 3581.2084420000006,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 14713.823314000001
+      }
+    },
+    "meta": {
+      "producteur": "Lumière Pictures",
+      "titre": "Les voix de la lagune",
+      "duree_minutes": 24,
+      "type_production": "Magazine",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 220,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -8.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSISTANT PROD",
+        "tarif_journalier": 165,
+        "minimum_cc": 178.76,
+        "ecart_pourcent": -7.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 4200,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 307,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 270,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -4.3,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 290,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": -4.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 220,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": -8.9,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "DOUBLAGE/SPEAKER",
+        "tarif_journalier": 150,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 180,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Lumière Pictures",
+    "titre": "Le dernier ferry",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 46332.04059999999,
+    "coutMinute": 1930.5,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 2400,
+            "sous_categorie": "dts_auteur"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 330,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 1000,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 3730
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 3,
+            "tarif_journalier": 220,
+            "total": 660,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSISTANT PROD",
+            "role_key": "assistant_de_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 165,
+            "total": 330,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 1,
+            "tarif_journalier": 5600,
+            "total": 5600,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 4,
+            "tarif_journalier": 180,
+            "total": 720,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 9,
+            "tarif_journalier": 280,
+            "total": 2520,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "TECHNICIEN VIDEO",
+            "role_key": "technicien_video",
+            "nombre_jours": 1,
+            "tarif_journalier": 190,
+            "total": 190,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1,
+            "tarif_journalier": 290,
+            "total": 290,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 220,
+            "total": 220,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 10530
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 37.300000000000004,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "REALISATEUR",
+            "montant": 3248,
+            "sous_categorie": "cs_realisateur"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 3352.4,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.63,
+        "total": 6637.700000000001
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 7540
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 1200,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 450,
+            "sous_categorie": "hf_son"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 900,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 2550
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1800,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 400,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 300,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 400,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 2900
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 340.777,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 340.777
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 3510.003,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 5265.0045,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 681.554,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 2457.0021,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 11913.5636
+      }
+    },
+    "meta": {
+      "producteur": "Lumière Pictures",
+      "titre": "Le dernier ferry",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2022-01-01"
+    },
+    "dateDevis": "2022-01-01",
+    "verificationMinima": [
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 220,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -8.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSISTANT PROD",
+        "tarif_journalier": 165,
+        "minimum_cc": 178.76,
+        "ecart_pourcent": -7.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 5600,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 180,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 280,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -0.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "TECHNICIEN VIDEO",
+        "tarif_journalier": 190,
+        "minimum_cc": 205.85,
+        "ecart_pourcent": -7.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 290,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": -4.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 220,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": -8.9,
+        "statut": "non_conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Lumière Pictures",
+    "titre": "Au bout du rail",
+    "dureeMinutes": 12,
+    "typeProduction": "Reportage",
+    "totalDevis": 26998.95593,
+    "coutMinute": 2249.91,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 1400,
+            "sous_categorie": "auteur_real"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 500,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 1900
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 1,
+            "tarif_journalier": 110,
+            "total": 110,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSISTANT PROD",
+            "role_key": "assistant_de_production",
+            "nombre_jours": 1,
+            "tarif_journalier": 55,
+            "total": 55,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 1,
+            "tarif_journalier": 2100,
+            "total": 2100,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 5,
+            "tarif_journalier": 307,
+            "total": 1535,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 4,
+            "tarif_journalier": 270,
+            "total": 1350,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 0.5,
+            "tarif_journalier": 290,
+            "total": 145,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 0.5,
+            "tarif_journalier": 220,
+            "total": 110,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DOUBLAGE/SPEAKER",
+            "role_key": "doublage_speaker",
+            "nombre_jours": 1,
+            "tarif_journalier": 150,
+            "total": 150,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 1,
+            "tarif_journalier": 180,
+            "total": 180,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 5735
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 19,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "REALISATEUR",
+            "montant": 1218,
+            "sous_categorie": "cs_realisateur"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 2369.8,
+            "sous_categorie": "cs_personnel"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 67.5,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.64,
+        "total": 3674.3
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 5640
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 1650,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 500,
+            "sous_categorie": "hf_son"
+          }
+        ],
+        "total": 2150
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1000,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 200,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 150,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 200,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 1550
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 207.44299999999998,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 207.44299999999998
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 2000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 2563.9954799999996,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 414.88599999999997,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 1068.33145,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 6047.21293
+      }
+    },
+    "meta": {
+      "producteur": "Lumière Pictures",
+      "titre": "Au bout du rail",
+      "duree_minutes": 12,
+      "type_production": "Reportage",
+      "date_devis": "2024-01-01"
+    },
+    "dateDevis": "2024-01-01",
+    "verificationMinima": [
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 110,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -54.3,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSISTANT PROD",
+        "tarif_journalier": 55,
+        "minimum_cc": 178.76,
+        "ecart_pourcent": -69.2,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 2100,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 307,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 270,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -4.3,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 290,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": -4.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 220,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": -8.9,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "DOUBLAGE/SPEAKER",
+        "tarif_journalier": 150,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 180,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Atelier Boréal",
+    "titre": "Les enfants du nord",
+    "dureeMinutes": 36,
+    "typeProduction": "Reportage",
+    "totalDevis": 82003.5,
+    "coutMinute": 2277.88,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 2000,
+            "sous_categorie": "dts_auteur"
+          },
+          {
+            "poste": "ARCHIVES",
+            "montant": 100,
+            "sous_categorie": "archives"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 100,
+            "sous_categorie": "musique"
+          }
+        ],
+        "total": 2200
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "PRODUCTEUR",
+            "role_key": "producteur",
+            "nombre_jours": 1,
+            "tarif_journalier": 4635,
+            "total": 4635,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 5,
+            "tarif_journalier": 330,
+            "total": 1650,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 1,
+            "tarif_journalier": 16000,
+            "total": 16000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 15,
+            "tarif_journalier": 500,
+            "total": 7500,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 13,
+            "tarif_journalier": 280,
+            "total": 3640,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSITANT POSTPROD",
+            "role_key": "assistant_de_post_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 180,
+            "total": 360,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 2,
+            "tarif_journalier": 300,
+            "total": 600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 2,
+            "tarif_journalier": 280,
+            "total": 560,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 34945
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 62,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 7439.25,
+            "sous_categorie": "cs_techniciens"
+          }
+        ],
+        "taux_moyen": 0.21,
+        "total": 7501.25
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 10040
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 3300,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 450,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 3750
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1650,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 900,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 1100,
+            "sous_categorie": "etalonnage"
+          }
+        ],
+        "total": 3650
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 620.8625000000001,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 620.8625000000001
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 7500,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 9312.9375,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 620.8625000000001,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 1862.5874999999999,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 19296.3875
+      }
+    },
+    "meta": {
+      "producteur": "Atelier Boréal",
+      "titre": "Les enfants du nord",
+      "duree_minutes": 36,
+      "type_production": "Reportage",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "PRODUCTEUR",
+        "tarif_journalier": 4635,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 330,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -13.9,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 16000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 500,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 77.6,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 280,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -0.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSITANT POSTPROD",
+        "tarif_journalier": 180,
+        "minimum_cc": 156.67,
+        "ecart_pourcent": 14.9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 300,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": -1.1,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 280,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": 16,
+        "statut": "conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Atelier Boréal",
+    "titre": "Cartographies intimes",
+    "dureeMinutes": 36,
+    "typeProduction": "Documentaire",
+    "totalDevis": 77796.759,
+    "coutMinute": 2161.02,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 2000,
+            "sous_categorie": "dts_auteur"
+          },
+          {
+            "poste": "ARCHIVES",
+            "montant": 100,
+            "sous_categorie": "archives"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 100,
+            "sous_categorie": "musique"
+          }
+        ],
+        "total": 2200
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "PRODUCTEUR",
+            "role_key": "producteur",
+            "nombre_jours": 1,
+            "tarif_journalier": 4635,
+            "total": 4635,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 5,
+            "tarif_journalier": 323,
+            "total": 1615,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 1,
+            "tarif_journalier": 16000,
+            "total": 16000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 13,
+            "tarif_journalier": 305,
+            "total": 3965,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 13,
+            "tarif_journalier": 265,
+            "total": 3445,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSITANT POSTPROD",
+            "role_key": "assistant_de_post_production",
+            "nombre_jours": 1,
+            "tarif_journalier": 168,
+            "total": 168,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 2,
+            "tarif_journalier": 300,
+            "total": 600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1.5,
+            "tarif_journalier": 300,
+            "total": 450,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 30878
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 62,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 9670.7,
+            "sous_categorie": "cs_techniciens"
+          }
+        ],
+        "taux_moyen": 0.31,
+        "total": 9732.7
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 10757
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 2910,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 450,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 3360
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1430,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 900,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 825,
+            "sous_categorie": "etalonnage"
+          }
+        ],
+        "total": 3155
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 600.827,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 600.827
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 7500,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 9012.404999999999,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 600.827,
+            "sous_categorie": "frais_financiers"
+          }
+        ],
+        "total": 17113.232
+      }
+    },
+    "meta": {
+      "producteur": "Atelier Boréal",
+      "titre": "Cartographies intimes",
+      "duree_minutes": 36,
+      "type_production": "Documentaire",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "PRODUCTEUR",
+        "tarif_journalier": 4635,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 323,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -15.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 16000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 305,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 8.3,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 265,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -6.1,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSITANT POSTPROD",
+        "tarif_journalier": 168,
+        "minimum_cc": 156.67,
+        "ecart_pourcent": 7.2,
+        "statut": "conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 300,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": -1.1,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 300,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": 24.2,
+        "statut": "conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Atelier Boréal",
+    "titre": "Le souffle des plaines",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 60369.71923999999,
+    "coutMinute": 2515.4,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 1000,
+            "sous_categorie": "auteur_real"
+          }
+        ],
+        "total": 1000
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "PRODUCTEUR",
+            "role_key": "producteur",
+            "nombre_jours": 7,
+            "tarif_journalier": 450,
+            "total": 3150,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 336,
+            "total": 1344,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 0.3,
+            "tarif_journalier": 2900,
+            "total": 870,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 1,
+            "tarif_journalier": 9000,
+            "total": 9000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "CADREUR",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 1,
+            "tarif_journalier": 5000,
+            "total": 5000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 280,
+            "total": 2800,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSITANT POSTPROD",
+            "role_key": "assistant_de_post_production",
+            "nombre_jours": 0.15,
+            "tarif_journalier": 2660,
+            "total": 399,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 2,
+            "tarif_journalier": 300,
+            "total": 600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 330,
+            "total": 330,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DOUBLAGE/SPEAKER",
+            "role_key": "doublage_speaker",
+            "nombre_jours": 5,
+            "tarif_journalier": 180,
+            "total": 900,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 1,
+            "tarif_journalier": 1500,
+            "total": 1500,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          }
+        ],
+        "total": 27093
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 31,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 5345.6,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 507.6,
+            "sous_categorie": "cs_personnel"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 504.00000000000006,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.23,
+        "total": 6388.200000000001
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 6950
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 2350,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 780,
+            "sous_categorie": "hf_son"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 100,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 3230
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1300,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 720,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 310,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 300,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 2630
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 236.456,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 236.456
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 5000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 7129.148399999999,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 237.63827999999998,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 475.27655999999996,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 12842.063239999998
+      }
+    },
+    "meta": {
+      "producteur": "Atelier Boréal",
+      "titre": "Le souffle des plaines",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2025-01-01"
+    },
+    "dateDevis": "2025-01-01",
+    "verificationMinima": [
+      {
+        "poste": "PRODUCTEUR",
+        "tarif_journalier": 450,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 336,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -12.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 2900,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": 1104,
+        "statut": "conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 9000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CADREUR",
+        "tarif_journalier": 5000,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 1675.9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 280,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -0.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSITANT POSTPROD",
+        "tarif_journalier": 2660,
+        "minimum_cc": 156.67,
+        "ecart_pourcent": 1597.8,
+        "statut": "conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 300,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": -1.1,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 330,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": 36.7,
+        "statut": "conforme"
+      },
+      {
+        "poste": "DOUBLAGE/SPEAKER",
+        "tarif_journalier": 180,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 1500,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Atelier Boréal",
+    "titre": "Vies parallèles",
+    "dureeMinutes": 24,
+    "typeProduction": "Magazine",
+    "totalDevis": 78000.40836,
+    "coutMinute": 3250.02,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 4000,
+            "sous_categorie": "auteur_real"
+          },
+          {
+            "poste": "ARCHIVES",
+            "montant": 500,
+            "sous_categorie": "archives"
+          }
+        ],
+        "total": 4500
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "PRODUCTEUR",
+            "role_key": "producteur",
+            "nombre_jours": 7,
+            "tarif_journalier": 450,
+            "total": 3150,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 7,
+            "tarif_journalier": 336,
+            "total": 2352,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 0.3,
+            "tarif_journalier": 2850,
+            "total": 855,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 25,
+            "tarif_journalier": 320,
+            "total": 8000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 280,
+            "total": 2800,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSITANT POSTPROD",
+            "role_key": "assistant_de_post_production",
+            "nombre_jours": 0.2,
+            "tarif_journalier": 2260,
+            "total": 452,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1.5,
+            "tarif_journalier": 340,
+            "total": 510,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DOUBLAGE/SPEAKER",
+            "role_key": "doublage_speaker",
+            "nombre_jours": 4,
+            "tarif_journalier": 205,
+            "total": 1120,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 18,
+            "tarif_journalier": 200,
+            "total": 3600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 23639
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 124,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "REALISATEUR",
+            "montant": 4560,
+            "sous_categorie": "cs_realisateur"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 5727.8,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 522.8000000000001,
+            "sous_categorie": "cs_personnel"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 627.2,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.48,
+        "total": 11561.8
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 11570
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 2650,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "HF/SON",
+            "montant": 900,
+            "sous_categorie": "hf_son"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 150,
+            "sous_categorie": "autre"
+          }
+        ],
+        "total": 3700
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1500,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 720,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 900,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 300,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 3420
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 583.908,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 583.908
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 9000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 8846.2062,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 589.7470800000001,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 589.7470800000001,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 19025.700360000003
+      }
+    },
+    "meta": {
+      "producteur": "Atelier Boréal",
+      "titre": "Vies parallèles",
+      "duree_minutes": 24,
+      "type_production": "Magazine",
+      "date_devis": "2024-01-01"
+    },
+    "dateDevis": "2024-01-01",
+    "verificationMinima": [
+      {
+        "poste": "PRODUCTEUR",
+        "tarif_journalier": 450,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 336,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -12.4,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 2850,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": 1083.2,
+        "statut": "conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 320,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 280,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -0.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSITANT POSTPROD",
+        "tarif_journalier": 2260,
+        "minimum_cc": 156.67,
+        "ecart_pourcent": 1342.5,
+        "statut": "conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 340,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": 12,
+        "statut": "conforme"
+      },
+      {
+        "poste": "DOUBLAGE/SPEAKER",
+        "tarif_journalier": 205,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 200,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Atelier Boréal",
+    "titre": "L'écho des montagnes",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 51041.183300000004,
+    "coutMinute": 2126.72,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 1000,
+            "sous_categorie": "dts_auteur"
+          },
+          {
+            "poste": "DTS CO-AUTEUR",
+            "montant": 500,
+            "sous_categorie": "dts_coauteur"
+          },
+          {
+            "poste": "AUTEUR-REAL",
+            "montant": 500,
+            "sous_categorie": "auteur_real"
+          },
+          {
+            "poste": "ARCHIVES",
+            "montant": 100,
+            "sous_categorie": "archives"
+          },
+          {
+            "poste": "MUSIQUE",
+            "montant": 100,
+            "sous_categorie": "musique"
+          }
+        ],
+        "total": 2200
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "PRODUCTEUR",
+            "role_key": "producteur",
+            "nombre_jours": 1,
+            "tarif_journalier": 3090,
+            "total": 3090,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 330,
+            "total": 1320,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 1,
+            "tarif_journalier": 5600,
+            "total": 5600,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 240,
+            "total": 2400,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSITANT POSTPROD",
+            "role_key": "assistant_de_post_production",
+            "nombre_jours": 1,
+            "tarif_journalier": 180,
+            "total": 180,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "INGE SON",
+            "role_key": "chef_ops_ingenieur_du_son",
+            "nombre_jours": 1,
+            "tarif_journalier": 320,
+            "total": 320,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ETALONNEUR",
+            "role_key": "etalonneur",
+            "nombre_jours": 1,
+            "tarif_journalier": 300,
+            "total": 300,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "DOUBLAGE/SPEAKER",
+            "role_key": "doublage_speaker",
+            "nombre_jours": 1,
+            "tarif_journalier": 300,
+            "total": 300,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 1,
+            "tarif_journalier": 2800,
+            "total": 2800,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          }
+        ],
+        "total": 16310
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 31,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 4946.5,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 3760,
+            "sous_categorie": "cs_personnel"
+          },
+          {
+            "poste": "COMEDIENS",
+            "montant": 168.00000000000003,
+            "sous_categorie": "cs_comediens"
+          }
+        ],
+        "taux_moyen": 0.54,
+        "total": 8905.5
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 8120
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 1450,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 880,
+            "sous_categorie": "autre"
+          },
+          {
+            "poste": "DRONE/GO PRO/CC",
+            "montant": 150,
+            "sous_categorie": "drone"
+          }
+        ],
+        "total": 2480
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1100,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 380,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 450,
+            "sous_categorie": "etalonnage"
+          }
+        ],
+        "total": 1930
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 399.455,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 399.455
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 5000,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 4074.4410000000007,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "FRAIS FINANCIERS",
+            "montant": 399.455,
+            "sous_categorie": "frais_financiers"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 1222.3323,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 10696.2283
+      }
+    },
+    "meta": {
+      "producteur": "Atelier Boréal",
+      "titre": "L'écho des montagnes",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "PRODUCTEUR",
+        "tarif_journalier": 3090,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 330,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -13.9,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 5600,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 240,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -14.9,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSITANT POSTPROD",
+        "tarif_journalier": 180,
+        "minimum_cc": 156.67,
+        "ecart_pourcent": 14.9,
+        "statut": "conforme"
+      },
+      {
+        "poste": "INGE SON",
+        "tarif_journalier": 320,
+        "minimum_cc": 303.46,
+        "ecart_pourcent": 5.5,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ETALONNEUR",
+        "tarif_journalier": 300,
+        "minimum_cc": 241.48,
+        "ecart_pourcent": 24.2,
+        "statut": "conforme"
+      },
+      {
+        "poste": "DOUBLAGE/SPEAKER",
+        "tarif_journalier": 300,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 2800,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Méandre Films",
+    "titre": "Marchés flottants",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 45595,
+    "coutMinute": 1899.79,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [],
+        "total": 0
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 3,
+            "tarif_journalier": 150,
+            "total": 450,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 24,
+            "tarif_journalier": 400,
+            "total": 9600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 12,
+            "tarif_journalier": 500,
+            "total": 6000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 400,
+            "total": 4000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 15,
+            "tarif_journalier": 200,
+            "total": 3000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 23050
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [],
+        "taux_moyen": null,
+        "total": 0
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 7500
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 4800,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 1100,
+            "sous_categorie": "autre"
+          },
+          {
+            "poste": "DRONE/GO PRO/CC",
+            "montant": 1000,
+            "sous_categorie": "drone"
+          }
+        ],
+        "total": 6900
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1500,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 500,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 1300,
+            "sous_categorie": "etalonnage"
+          }
+        ],
+        "total": 3300
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 200,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 200
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 4145,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 500,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 4645
+      }
+    },
+    "meta": {
+      "producteur": "Méandre Films",
+      "titre": "Marchés flottants",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2024-01-01"
+    },
+    "dateDevis": "2024-01-01",
+    "verificationMinima": [
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 150,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -37.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 400,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 500,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 77.6,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 400,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": 41.8,
+        "statut": "conforme"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 200,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Méandre Films",
+    "titre": "Saisons interrompues",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 45265,
+    "coutMinute": 1886.04,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [],
+        "total": 0
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "CHARGE DE PROD",
+            "role_key": "charge_de_production",
+            "nombre_jours": 3,
+            "tarif_journalier": 150,
+            "total": 450,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 22,
+            "tarif_journalier": 400,
+            "total": 8800,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "CHEF OP",
+            "role_key": "cadreur_opv",
+            "nombre_jours": 10,
+            "tarif_journalier": 500,
+            "total": 5000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 10,
+            "tarif_journalier": 400,
+            "total": 4000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 12,
+            "tarif_journalier": 250,
+            "total": 3000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 21250
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [],
+        "taux_moyen": null,
+        "total": 0
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 9000
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 4000,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 1100,
+            "sous_categorie": "autre"
+          },
+          {
+            "poste": "DRONE/GO PRO/CC",
+            "montant": 1000,
+            "sous_categorie": "drone"
+          }
+        ],
+        "total": 6100
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1500,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 1000,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 1600,
+            "sous_categorie": "etalonnage"
+          }
+        ],
+        "total": 4100
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 200,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 200
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 4115,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 500,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 4615
+      }
+    },
+    "meta": {
+      "producteur": "Méandre Films",
+      "titre": "Saisons interrompues",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2024-01-01"
+    },
+    "dateDevis": "2024-01-01",
+    "verificationMinima": [
+      {
+        "poste": "CHARGE DE PROD",
+        "tarif_journalier": 150,
+        "minimum_cc": 240.87,
+        "ecart_pourcent": -37.7,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 400,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "CHEF OP",
+        "tarif_journalier": 500,
+        "minimum_cc": 281.54,
+        "ecart_pourcent": 77.6,
+        "statut": "conforme"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 400,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": 41.8,
+        "statut": "conforme"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 250,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Méandre Films",
+    "titre": "Les heures bleues",
+    "dureeMinutes": 12,
+    "typeProduction": "Documentaire",
+    "totalDevis": 26829,
+    "coutMinute": 2235.75,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [],
+        "total": 0
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "REALISATEUR",
+            "role_key": "realisateur",
+            "nombre_jours": 13,
+            "tarif_journalier": 400,
+            "total": 5200,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JRI",
+            "role_key": "jri",
+            "nombre_jours": 6,
+            "tarif_journalier": 500,
+            "total": 3000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 5,
+            "tarif_journalier": 400,
+            "total": 2000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 9,
+            "tarif_journalier": 400,
+            "total": 3600,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 13800
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [],
+        "taux_moyen": null,
+        "total": 0
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 3740
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 2100,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "AUTRE",
+            "montant": 1100,
+            "sous_categorie": "autre"
+          },
+          {
+            "poste": "DRONE/GO PRO/CC",
+            "montant": 300,
+            "sous_categorie": "drone"
+          }
+        ],
+        "total": 3500
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 750,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 1000,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 800,
+            "sous_categorie": "etalonnage"
+          }
+        ],
+        "total": 2550
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 300,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 300
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "PRODUCTION DELEGUEE",
+            "montant": 2439,
+            "sous_categorie": "prod_deleguee"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 500,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 2939
+      }
+    },
+    "meta": {
+      "producteur": "Méandre Films",
+      "titre": "Les heures bleues",
+      "duree_minutes": 12,
+      "type_production": "Documentaire",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "REALISATEUR",
+        "tarif_journalier": 400,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "JRI",
+        "tarif_journalier": 500,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 400,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": 41.8,
+        "statut": "conforme"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 400,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Cap Horizon",
+    "titre": "Routes oubliées",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 54307.62324,
+    "coutMinute": 2262.82,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "MUSIQUE",
+            "montant": 500,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 500,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 1000
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 5,
+            "tarif_journalier": 200,
+            "total": 1000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 1,
+            "tarif_journalier": 8500,
+            "total": 8500,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 1,
+            "tarif_journalier": 4000,
+            "total": 4000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "JRI",
+            "role_key": "jri",
+            "nombre_jours": 1,
+            "tarif_journalier": 3500,
+            "total": 3500,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 1,
+            "tarif_journalier": 3500,
+            "total": 3500,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "ASSITANT POSTPROD",
+            "role_key": "assistant_de_post_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 170,
+            "total": 340,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 13,
+            "tarif_journalier": 250,
+            "total": 3250,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 24090
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 10,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 1267.2,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 5940,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.3,
+        "total": 7217.2
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 6250
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 1950,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "DRONE/GO PRO/CC",
+            "montant": 1000,
+            "sous_categorie": "drone"
+          }
+        ],
+        "total": 2950
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1250,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 1200,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 1600,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 400,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 4450
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 459.572,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 459.572
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 5570.012639999999,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 2320.8386,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 7890.851239999999
+      }
+    },
+    "meta": {
+      "producteur": "Cap Horizon",
+      "titre": "Routes oubliées",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2025-01-01"
+    },
+    "dateDevis": "2025-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 200,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -47.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 8500,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 4000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "JRI",
+        "tarif_journalier": 3500,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 3500,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": 1140.6,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ASSITANT POSTPROD",
+        "tarif_journalier": 170,
+        "minimum_cc": 156.67,
+        "ecart_pourcent": 8.5,
+        "statut": "conforme"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 250,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Cap Horizon",
+    "titre": "Sous le vent de l'est",
+    "dureeMinutes": 12,
+    "typeProduction": "Magazine",
+    "totalDevis": 27842.241760000004,
+    "coutMinute": 2320.19,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR",
+            "montant": 500,
+            "sous_categorie": "dts_auteur"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 500,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 1000
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 1,
+            "tarif_journalier": 200,
+            "total": 200,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 1,
+            "tarif_journalier": 6000,
+            "total": 6000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 1,
+            "tarif_journalier": 1000,
+            "total": 1000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "STRINGER/FIXEUR",
+            "role_key": "stringer_fixeur",
+            "nombre_jours": 1,
+            "tarif_journalier": 2500,
+            "total": 2500,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 6,
+            "tarif_journalier": 280,
+            "total": 1680,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "ASSITANT POSTPROD",
+            "role_key": "assistant_de_post_production",
+            "nombre_jours": 1,
+            "tarif_journalier": 150,
+            "total": 150,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 11530
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 10,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 1075.2,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 2880,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.34,
+        "total": 3965.2
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 3830
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 1250,
+            "sous_categorie": "camera"
+          }
+        ],
+        "total": 1250
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1000,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 720,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 600,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 500,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 2820
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 243.952,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 243.952
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 1971.13216,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 1231.9576000000002,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 3203.0897600000003
+      }
+    },
+    "meta": {
+      "producteur": "Cap Horizon",
+      "titre": "Sous le vent de l'est",
+      "duree_minutes": 12,
+      "type_production": "Magazine",
+      "date_devis": "2023-01-01"
+    },
+    "dateDevis": "2023-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 200,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -47.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 6000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 1000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "STRINGER/FIXEUR",
+        "tarif_journalier": 2500,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 280,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": -0.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "ASSITANT POSTPROD",
+        "tarif_journalier": 150,
+        "minimum_cc": 156.67,
+        "ecart_pourcent": -4.3,
+        "statut": "non_conforme"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  },
+  {
+    "producteur": "Cap Horizon",
+    "titre": "Le rivage des absents",
+    "dureeMinutes": 24,
+    "typeProduction": "Reportage",
+    "totalDevis": 50137.90821,
+    "coutMinute": 2089.08,
+    "confiance": "haute",
+    "grilleCnc": {
+      "1_droits_artistiques": {
+        "lignes": [
+          {
+            "poste": "MUSIQUE",
+            "montant": 500,
+            "sous_categorie": "musique"
+          },
+          {
+            "poste": "TRADUCTION",
+            "montant": 500,
+            "sous_categorie": "traduction"
+          }
+        ],
+        "total": 1000
+      },
+      "2_personnel": {
+        "postes": [
+          {
+            "poste": "DIR. PROD",
+            "role_key": "directeur_de_production",
+            "nombre_jours": 4,
+            "tarif_journalier": 200,
+            "total": 800,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "JOURNALISTE-REAL",
+            "role_key": "journaliste_real",
+            "nombre_jours": 2,
+            "tarif_journalier": 6000,
+            "total": 12000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "REDACTEUR EN CHEF",
+            "role_key": "redacteur_chef",
+            "nombre_jours": 1,
+            "tarif_journalier": 4000,
+            "total": 4000,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "MONTEUR / MONTEUR TRUQUISTE",
+            "role_key": "chef_monteur",
+            "nombre_jours": 1,
+            "tarif_journalier": 3500,
+            "total": 3500,
+            "confiance": "haute",
+            "type_contrat": "forfait"
+          },
+          {
+            "poste": "ASSITANT POSTPROD",
+            "role_key": "assistant_de_post_production",
+            "nombre_jours": 2,
+            "tarif_journalier": 170,
+            "total": 340,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          },
+          {
+            "poste": "EQUIPE TOURNAGE",
+            "role_key": "equipe_tournage",
+            "nombre_jours": 12,
+            "tarif_journalier": 250,
+            "total": 3000,
+            "confiance": "haute",
+            "type_contrat": "salarie"
+          }
+        ],
+        "total": 23640
+      },
+      "3_interpretation": {
+        "lignes": [],
+        "total": 0
+      },
+      "4_charges_sociales": {
+        "lignes": [
+          {
+            "poste": "DTS D'AUTEUR/AGESSA/ARTISTES",
+            "montant": 10,
+            "sous_categorie": "agessa"
+          },
+          {
+            "poste": "TECHNICIENS",
+            "montant": 1267.2,
+            "sous_categorie": "cs_techniciens"
+          },
+          {
+            "poste": "PERSONNEL/EQUIPE",
+            "montant": 3960,
+            "sous_categorie": "cs_personnel"
+          }
+        ],
+        "taux_moyen": 0.22,
+        "total": 5237.2
+      },
+      "5_decors_costumes": {
+        "lignes": [],
+        "total": 0
+      },
+      "6_transport": {
+        "lignes": [],
+        "total": 5952
+      },
+      "7_tournage": {
+        "lignes": [
+          {
+            "poste": "CAMERA/UNITE DE TOURNAGE/AP. PHOTO",
+            "montant": 1950,
+            "sous_categorie": "camera"
+          },
+          {
+            "poste": "DRONE/GO PRO/CC",
+            "montant": 200,
+            "sous_categorie": "drone"
+          }
+        ],
+        "total": 2150
+      },
+      "8_post_production": {
+        "lignes": [
+          {
+            "poste": "MONTAGE",
+            "montant": 1250,
+            "sous_categorie": "montage"
+          },
+          {
+            "poste": "MIXAGE",
+            "montant": 1200,
+            "sous_categorie": "mixage"
+          },
+          {
+            "poste": "ETALONNAGE",
+            "montant": 1600,
+            "sous_categorie": "etalonnage"
+          },
+          {
+            "poste": "PAD/MASTER",
+            "montant": 400,
+            "sous_categorie": "pad"
+          }
+        ],
+        "total": 4450
+      },
+      "9_assurance": {
+        "lignes": [
+          {
+            "poste": "ASSURANCES",
+            "montant": 423.713,
+            "sous_categorie": "assurances"
+          }
+        ],
+        "total": 423.713
+      },
+      "10_imprevus_fg_pd": {
+        "lignes": [
+          {
+            "poste": "FRAIS GENERAUX",
+            "montant": 5142.34956,
+            "sous_categorie": "frais_generaux"
+          },
+          {
+            "poste": "IMPREVUS",
+            "montant": 2142.64565,
+            "sous_categorie": "imprevus"
+          }
+        ],
+        "total": 7284.995209999999
+      }
+    },
+    "meta": {
+      "producteur": "Cap Horizon",
+      "titre": "Le rivage des absents",
+      "duree_minutes": 24,
+      "type_production": "Reportage",
+      "date_devis": "2024-01-01"
+    },
+    "dateDevis": "2024-01-01",
+    "verificationMinima": [
+      {
+        "poste": "DIR. PROD",
+        "tarif_journalier": 200,
+        "minimum_cc": 383.39,
+        "ecart_pourcent": -47.8,
+        "statut": "non_conforme"
+      },
+      {
+        "poste": "JOURNALISTE-REAL",
+        "tarif_journalier": 6000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "REDACTEUR EN CHEF",
+        "tarif_journalier": 4000,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      },
+      {
+        "poste": "MONTEUR / MONTEUR TRUQUISTE",
+        "tarif_journalier": 3500,
+        "minimum_cc": 282.12,
+        "ecart_pourcent": 1140.6,
+        "statut": "conforme"
+      },
+      {
+        "poste": "ASSITANT POSTPROD",
+        "tarif_journalier": 170,
+        "minimum_cc": 156.67,
+        "ecart_pourcent": 8.5,
+        "statut": "conforme"
+      },
+      {
+        "poste": "EQUIPE TOURNAGE",
+        "tarif_journalier": 250,
+        "minimum_cc": null,
+        "ecart_pourcent": null,
+        "statut": "hors_nomenclature"
+      }
+    ],
+    "anomalies": [],
+    "postesNonClasses": [],
+    "formatSource": "seed-demo",
+    "cncFunding": false
+  }
+]

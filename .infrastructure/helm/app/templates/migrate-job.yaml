@@ -1,0 +1,78 @@
+{{- if .Values.migrate.enabled -}}
+# Applies Drizzle migrations once per release.
+#
+# `post-install,pre-upgrade`, deliberately asymmetric — and NOT `pre-install`:
+#   * upgrade (the normal case): pre-upgrade runs the migration BEFORE the new
+#     pods roll out, which is the ordering we actually want.
+#   * install (first deploy only): pre-install would DEADLOCK. Helm runs hooks
+#     before the release's normal resources, so the ExternalSecret that produces
+#     `<release>-secrets` does not exist yet and the Job's DATABASE_URL
+#     secretKeyRef can never resolve — it fails with `secret "<release>-secrets"
+#     not found` followed by DeadlineExceeded.
+#     post-install runs after the ExternalSecret exists and ESO has synced.
+#     Consequence accepted knowingly: on a first install the app pods start
+#     before migrations apply. Harmless here (the app already runs against this
+#     schema), and no traffic reaches the pods until the proxy is cut over.
+#
+# The alternative — annotating the ExternalSecret as a pre-install hook — was
+# rejected: a resource carrying helm.sh/hook is excluded from the release
+# manifest, so the ExternalSecret would stop being managed by Helm entirely.
+#
+# With `--wait --rollback-on-failure`, a failure here fails the release and rolls
+# it back.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "app.fullname" . }}-migrate
+  labels:
+    {{- include "app.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": post-install,pre-upgrade
+    "helm.sh/hook-weight": "-5"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+spec:
+  backoffLimit: 1
+  # 300s, not 120: on a first install this must absorb an image pull plus ESO's
+  # sync of the secret. The 120s value turned a clear "secret not found" into a
+  # silent two-minute hang ending in DeadlineExceeded.
+  activeDeadlineSeconds: 300
+  template:
+    metadata:
+      # Deliberately NOT app.selectorLabels. Those are byte-identical to the
+      # Service selector, the PDB selector and the topologySpread labelSelector,
+      # so this hook pod would match all three. It is harmless today only by
+      # accident: the Service uses `targetPort: http` and this pod declares no
+      # port by that name, so the EndpointSlice controller cannot resolve it.
+      # Change targetPort to a number and every pre-upgrade hook would inject a
+      # pod listening on nothing into the Service endpoints — intermittent 502s
+      # on each deploy. Dropping `instance` breaks the selector match by design.
+      # Do NOT instead edit app.selectorLabels: Deployment.spec.selector is
+      # immutable, so that would make `helm upgrade` fail on both live releases.
+      labels:
+        app.kubernetes.io/name: {{ include "app.name" . }}
+        app.kubernetes.io/component: migrate
+    spec:
+      restartPolicy: Never
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      securityContext:
+        runAsNonRoot: true
+        fsGroup: 1001
+      containers:
+        - name: migrate
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          securityContext:
+            runAsUser: 1001
+            runAsGroup: 1001
+            allowPrivilegeEscalation: false
+          command: ["node", "scripts/migrate.mjs"]
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ required "migrate.enabled needs externalSecret.enabled or secretEnv.existingSecret" (include "app.secretName" .) }}
+                  key: DATABASE_URL
+{{- end }}

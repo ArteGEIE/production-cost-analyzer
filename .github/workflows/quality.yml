@@ -1,0 +1,68 @@
+name: Quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Lint
+        run: npm run lint
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Tests
+        run: npm test
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Build image (no push)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  helm-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Pinned: the chart docs assume Helm 4 (--rollback-on-failure). Bump deliberately.
+      - uses: azure/setup-helm@v4
+        with:
+          version: v4.0.4
+      - name: Lint and render the example overlays
+        run: |
+          cd .infrastructure/helm/app
+          for f in values/*.yaml; do
+            helm lint . -f "$f" --set image.tag=cilint
+            # `helm install --dry-run=client` rather than `helm template`: on
+            # helm v4.0.4 `helm template` never evaluates NOTES.txt, so a NOTES
+            # regression would sail through CI. --dry-run=client renders NOTES
+            # and needs no cluster access.
+            helm install cilint . --dry-run=client -f "$f" --set image.tag=cilint > /dev/null
+          done
+          # ESO variant renders too
+          helm install cilint . --dry-run=client -f values/values.example.yaml \
+            --set image.tag=cilint --set externalSecret.enabled=true \
+            --set 'externalSecret.secrets[0].key=DATABASE_URL' \
+            --set 'externalSecret.secrets[0].remoteKey=PCOST_DATABASE_URL' > /dev/null
+      - name: Fail if LOG_LEVEL=debug leaked into an overlay
+        run: |
+          if grep -rn "LOG_LEVEL: *debug" .infrastructure/helm/app/values/; then
+            echo "::error::LOG_LEVEL=debug logs devis text to the log pipeline. Use info."
+            exit 1
+          fi

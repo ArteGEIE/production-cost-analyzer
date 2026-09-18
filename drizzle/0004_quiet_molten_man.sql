@@ -1,0 +1,1 @@
+ALTER TABLE "production_files" ADD CONSTRAINT "production_files_production_id_productions_id_fk" FOREIGN KEY ("production_id") REFERENCES "public"."productions"("id") ON DELETE cascade ON UPDATE no action;

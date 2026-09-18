@@ -1,0 +1,38 @@
+# Example overlay for a public demo instance: passwordless demo login, one replica.
+# Never point a DEMO_MODE instance at a database holding real data.
+replicaCount: 1
+
+image:
+  repository: ghcr.io/artegeie/production-cost-analyzer
+
+app:
+  env:
+    NODE_ENV: production
+    LOG_LEVEL: info
+    LLM_BASE_URL: https://litellm.example.com/v1/
+    LLM_MODEL: claude-sonnet-4-6
+    AUTH_TRUST_HOST: "true"
+    AUTH_URL: https://production-cost-demo.example.com
+    DEMO_MODE: "true"
+    APP_NAME: Production cost (demo)
+
+secretEnv:
+  # Use a distinct AUTH_SECRET from any real instance: a public passwordless
+  # demo must never share a JWT signing key with a deployment holding real data.
+  existingSecret: production-cost-demo-secrets
+  keys:
+    - DATABASE_URL
+    - AUTH_SECRET
+    - LLM_API_KEY
+    - MISTRAL_API_KEY
+
+migrate:
+  enabled: true
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+  hosts:
+    - host: production-cost-demo.example.com

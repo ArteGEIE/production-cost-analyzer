@@ -1,0 +1,28 @@
+# Single-host production deployment with the published image and an external
+# PostgreSQL (DATABASE_URL in .env). Put a TLS-terminating reverse proxy (Caddy,
+# nginx, Traefik) in front, with long read timeouts for the /api/extract stream.
+#
+#   docker compose -f docker-compose.prod.yml up -d
+services:
+  migrate:
+    image: ghcr.io/artegeie/production-cost-analyzer:${APP_VERSION:-latest}
+    env_file:
+      - .env
+    command: ["node", "scripts/migrate.mjs"]
+    restart: "no"
+
+  app:
+    image: ghcr.io/artegeie/production-cost-analyzer:${APP_VERSION:-latest}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

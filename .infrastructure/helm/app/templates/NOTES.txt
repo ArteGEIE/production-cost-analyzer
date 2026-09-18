@@ -1,0 +1,16 @@
+{{ .Release.Name }} deployed to namespace {{ .Release.Namespace }}.
+
+Image:    {{ .Values.image.repository }}:{{ .Values.image.tag }}
+Replicas: {{ .Values.replicaCount }}
+{{- range .Values.ingress.hosts }}
+Host:     https://{{ .host }}
+{{- end }}
+
+{{- if .Values.ingress.hosts }}
+Verify:
+  curl -sS -o /dev/null -w '%{http_code}\n' https://{{ (first .Values.ingress.hosts).host }}/
+  # expect 307 (redirect to /sign-in)
+{{- end }}
+
+Probe status:
+  kubectl -n {{ .Release.Namespace }} get pods -l app.kubernetes.io/instance={{ .Release.Name }}

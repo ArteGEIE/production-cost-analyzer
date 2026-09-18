@@ -1,0 +1,13 @@
+{
+  "$comment": "Production types offered in the review form and suggested to the LLM. Editable under Paramètres → Types (DB values take precedence).",
+  "types": [
+    "Reportage",
+    "Documentaire",
+    "Documentaire 52min",
+    "Documentaire 90min",
+    "Magazine",
+    "Série",
+    "Court-métrage",
+    "Autre"
+  ]
+}

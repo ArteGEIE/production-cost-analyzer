@@ -1,0 +1,35 @@
+{
+  "description": "Expected extraction for English sample budget — Thames Productions Ltd, documentary 30 min",
+  "meta": {
+    "producteur": "Thames Productions Ltd",
+    "titre": "London Bridges: A River Story",
+    "duree_minutes": 30,
+    "diffuseur": "BBC",
+    "lieu_tournage": "London",
+    "type_production": "documentaire"
+  },
+  "total_devis": 57759,
+  "cout_minute": 1925.30,
+  "grille_cnc_summary": {
+    "1_droits_artistiques": 4000,
+    "2_personnel": 21780,
+    "3_interpretation": 0,
+    "4_charges_sociales": 11979,
+    "5_decors_costumes": 0,
+    "6_transport": 4000,
+    "7_tournage": 5500,
+    "8_post_production": 5500,
+    "9_assurance": 1000,
+    "10_imprevus_fg_pd": 4000
+  },
+  "personnel_lines": [
+    { "poste_en": "Director", "poste_fr": "Réalisateur", "jours": 18, "tarif": 350, "total": 6300 },
+    { "poste_en": "Production Manager", "poste_fr": "Directeur de production", "jours": 12, "tarif": 250, "total": 3000 },
+    { "poste_en": "Production Coordinator", "poste_fr": "Chargé de production", "jours": 10, "tarif": 190, "total": 1900 },
+    { "poste_en": "Director of Photography", "poste_fr": "Chef opérateur", "jours": 8, "tarif": 320, "total": 2560 },
+    { "poste_en": "Camera Assistant", "poste_fr": "Assistant caméra", "jours": 8, "tarif": 175, "total": 1400 },
+    { "poste_en": "Sound Engineer", "poste_fr": "Ingénieur du son", "jours": 8, "tarif": 340, "total": 2720 },
+    { "poste_en": "Editor", "poste_fr": "Chef monteur", "jours": 10, "tarif": 300, "total": 3000 },
+    { "poste_en": "Colorist", "poste_fr": "Étalonneur", "jours": 3, "tarif": 300, "total": 900 }
+  ]
+}

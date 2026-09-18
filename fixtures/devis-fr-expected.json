@@ -1,0 +1,35 @@
+{
+  "description": "Expected extraction for French sample budget — Les Films du Rhin, documentary 52 min",
+  "meta": {
+    "producteur": "Les Films du Rhin",
+    "titre": "Strasbourg, carrefour de l'Europe",
+    "duree_minutes": 52,
+    "diffuseur": "ARTE",
+    "lieu_tournage": "Strasbourg et environs",
+    "type_production": "documentaire"
+  },
+  "total_devis": 86437,
+  "cout_minute": 1662.25,
+  "grille_cnc_summary": {
+    "1_droits_artistiques": 6500,
+    "2_personnel": 30540,
+    "3_interpretation": 0,
+    "4_charges_sociales": 16797,
+    "5_decors_costumes": 0,
+    "6_transport": 5200,
+    "7_tournage": 8500,
+    "8_post_production": 9400,
+    "9_assurance": 1500,
+    "10_imprevus_fg_pd": 8000
+  },
+  "personnel_lines": [
+    { "poste": "Réalisateur", "jours": 25, "tarif": 350, "total": 8750 },
+    { "poste": "Directeur de production", "jours": 15, "tarif": 250, "total": 3750 },
+    { "poste": "Chargé de production", "jours": 12, "tarif": 195, "total": 2340 },
+    { "poste": "Chef opérateur", "jours": 10, "tarif": 300, "total": 3000 },
+    { "poste": "Assistant caméra", "jours": 10, "tarif": 180, "total": 1800 },
+    { "poste": "Ingénieur du son", "jours": 10, "tarif": 350, "total": 3500 },
+    { "poste": "Chef monteur", "jours": 12, "tarif": 300, "total": 3600 },
+    { "poste": "Assistant de production", "jours": 20, "tarif": 190, "total": 3800 }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "$comment": "Collective-agreement daily minimums (CDDU, Cat. B hors fiction & flux, base 8h). Seed with `npm run db:seed:cc`; the app falls back to these when the cc_minimums table is empty. Public barème — replace with your own agreement if needed.",
+  "effectiveFrom": "2025-01-01",
+  "rates": {
+    "1er_assistant_decorateur": {
+      "label": "1er assistant décorateur",
+      "minimum": 240.87
+    },
+    "1er_assistant_opv_pointeur": {
+      "label": "1er assistant OPV / pointeur",
+      "minimum": 242.32
+    },
+    "1er_assistant_realisateur": {
+      "label": "1er assistant réalisateur",
+      "minimum": 240.87
+    },
+    "2eme_assistant_decorateur": {
+      "label": "2ème assistant décorateur",
+      "minimum": 209.97
+    },
+    "2eme_assistant_opv": {
+      "label": "2ème assistant OPV",
+      "minimum": 178.76
+    },
+    "2eme_assistant_realisateur": {
+      "label": "2ème assistant réalisateur",
+      "minimum": 201.43
+    },
+    "accessoiriste": {
+      "label": "Accessoiriste",
+      "minimum": 202.91
+    },
+    "administrateur_de_production": {
+      "label": "Administrateur de production",
+      "minimum": 219.58
+    },
+    "aide_de_plateau": {
+      "label": "Aide de plateau",
+      "minimum": 120.74
+    },
+    "assistant_d_emission": {
+      "label": "Assistant d'émission (17)",
+      "minimum": 115.94
+    },
+    "assistant_de_post_production": {
+      "label": "Assistant de post-production",
+      "minimum": 156.67
+    },
+    "assistant_de_production": {
+      "label": "Assistant de production",
+      "minimum": 178.76
+    },
+    "assistant_de_production_adjoint": {
+      "label": "Assistant de production adjoint (15)",
+      "minimum": 115.94
+    },
+    "assistant_decorateur_adjoint": {
+      "label": "Assistant décorateur adjoint (4)",
+      "minimum": 115.94
+    },
+    "assistant_lumiere": {
+      "label": "Assistant lumière",
+      "minimum": 191.42
+    },
+    "assistant_monteur_adjoint": {
+      "label": "Assistant monteur adjoint (13)",
+      "minimum": 115.94
+    },
+    "assistant_monteur": {
+      "label": "Assistant monteur",
+      "minimum": 178.76
+    },
+    "assistant_opv_adjoint": {
+      "label": "Assistant OPV adjoint (11)",
+      "minimum": 115.94
+    },
+    "assistant_realisateur": {
+      "label": "Assistant réalisateur (18)",
+      "minimum": 223.82
+    },
+    "assistant_regisseur_adjoint": {
+      "label": "Assistant régisseur adjoint (16)",
+      "minimum": 115.94
+    },
+    "assistant_son": {
+      "label": "Assistant son",
+      "minimum": 178.76
+    },
+    "assistant_son_adjoint": {
+      "label": "Assistant son adjoint (23)",
+      "minimum": 115.94
+    },
+    "assistant_technique_web": {
+      "label": "Assistant technique web",
+      "minimum": 115.94
+    },
+    "blocker_rigger": {
+      "label": "Blocker / Rigger (12)",
+      "minimum": 218.68
+    },
+    "bruiteur": {
+      "label": "Bruiteur",
+      "minimum": 263.03
+    },
+    "cadreur_opv": {
+      "label": "Cadreur / OPV (10)",
+      "minimum": 281.54
+    },
+    "charge_d_enquete_de_recherche": {
+      "label": "Chargé d'enquête / de recherche",
+      "minimum": 200.97
+    },
+    "charge_de_post_production": {
+      "label": "Chargé de post-production",
+      "minimum": 263.03
+    },
+    "charge_de_production": {
+      "label": "Chargé de production (14)",
+      "minimum": 240.87
+    },
+    "charge_de_selection": {
+      "label": "Chargé de sélection",
+      "minimum": 205.87
+    },
+    "chauffeur": {
+      "label": "Chauffeur",
+      "minimum": 120.74
+    },
+    "chauffeur_de_salle": {
+      "label": "Chauffeur de salle",
+      "minimum": 223.52
+    },
+    "chef_constructeur": {
+      "label": "Chef constructeur",
+      "minimum": 305.7
+    },
+    "chef_costumier": {
+      "label": "Chef costumier",
+      "minimum": 223.82
+    },
+    "chef_decorateur": {
+      "label": "Chef décorateur",
+      "minimum": 416.48
+    },
+    "chef_electricien": {
+      "label": "Chef électricien",
+      "minimum": 247.67
+    },
+    "chef_machiniste": {
+      "label": "Chef machiniste",
+      "minimum": 247.67
+    },
+    "chef_maquilleur": {
+      "label": "Chef maquilleur",
+      "minimum": 221.33
+    },
+    "chef_monteur": {
+      "label": "Chef monteur",
+      "minimum": 282.12
+    },
+    "chef_ops_ingenieur_du_son": {
+      "label": "Chef OPS / Ingénieur du son",
+      "minimum": 303.46
+    },
+    "chef_opv": {
+      "label": "Chef OPV (9)",
+      "minimum": 316.35
+    },
+    "coiffeur": {
+      "label": "Coiffeur",
+      "minimum": 178.76
+    },
+    "coiffeur_perruquier": {
+      "label": "Coiffeur perruquier",
+      "minimum": 223.52
+    },
+    "collaborateur_artistique": {
+      "label": "Collaborateur artistique",
+      "minimum": 133.7
+    },
+    "collaborateur_de_selection": {
+      "label": "Collaborateur de sélection",
+      "minimum": 161.09
+    },
+    "concepteur_de_programme_web": {
+      "label": "Concepteur de programme web",
+      "minimum": 196.64
+    },
+    "conseiller_artistique_d_emission": {
+      "label": "Conseiller artistique d'émission (2)",
+      "minimum": 202.11
+    },
+    "conseiller_technique_a_la_realisation": {
+      "label": "Conseiller technique à la réalisation",
+      "minimum": 263.03
+    },
+    "constructeur_de_decor": {
+      "label": "Constructeur de décor",
+      "minimum": 233.26
+    },
+    "coordinateur_d_ecriture_ex_script_editeur": {
+      "label": "Coordinateur d'écriture (ex script éditeur)",
+      "minimum": 219.58
+    },
+    "coordinateur_d_emission": {
+      "label": "Coordinateur d'émission",
+      "minimum": 186.71
+    },
+    "coordinateur_de_diffusion_web": {
+      "label": "Coordinateur de diffusion web",
+      "minimum": 130.11
+    },
+    "coordinateur_de_production_web": {
+      "label": "Coordinateur de production web",
+      "minimum": 147.85
+    },
+    "costumier": {
+      "label": "Costumier",
+      "minimum": 178.76
+    },
+    "createur_de_costume": {
+      "label": "Créateur de costume",
+      "minimum": 410.59
+    },
+    "decorateur": {
+      "label": "Décorateur (3)",
+      "minimum": 267.69
+    },
+    "designer_web": {
+      "label": "Designer web",
+      "minimum": 136.03
+    },
+    "directeur_de_programmation": {
+      "label": "Directeur de programmation",
+      "minimum": 282.12
+    },
+    "directeur_artistique": {
+      "label": "Directeur artistique",
+      "minimum": 282.12
+    },
+    "directeur_de_jeux": {
+      "label": "Directeur de jeux",
+      "minimum": 282.12
+    },
+    "directeur_de_post_production": {
+      "label": "Directeur de post-production",
+      "minimum": 316.35
+    },
+    "directeur_de_production": {
+      "label": "Directeur de production",
+      "minimum": 383.39
+    },
+    "directeur_de_selection": {
+      "label": "Directeur de sélection",
+      "minimum": 282.12
+    },
+    "directeur_photo": {
+      "label": "Directeur photo",
+      "minimum": 440.88
+    },
+    "documentaliste": {
+      "label": "Documentaliste",
+      "minimum": 209.96
+    },
+    "editeur_artistique_web": {
+      "label": "Editeur artistique web",
+      "minimum": 125.67
+    },
+    "electricien_eclairagiste": {
+      "label": "Électricien / Éclairagiste",
+      "minimum": 203.2
+    },
+    "electricien_deco_machiniste_deco": {
+      "label": "Électricien déco / Machiniste déco",
+      "minimum": 230.3
+    },
+    "enqueteur_recherchiste": {
+      "label": "Enquêteur / Recherchiste",
+      "minimum": 192.31
+    },
+    "ensemblier_decorateur": {
+      "label": "Ensemblier - décorateur",
+      "minimum": 240.87
+    },
+    "etalonneur": {
+      "label": "Étalonneur",
+      "minimum": 241.48
+    },
+    "gestionnaire_de_diffusion_internet_traffic_manager": {
+      "label": "Gestionnaire de diffusion internet (traffic manager)",
+      "minimum": 115.94
+    },
+    "habilleur": {
+      "label": "Habilleur",
+      "minimum": 161.09
+    },
+    "illustrateur_sonore": {
+      "label": "Illustrateur sonore",
+      "minimum": 197.42
+    },
+    "infographiste": {
+      "label": "Infographiste",
+      "minimum": 263.03
+    },
+    "ingenieur_de_la_vision": {
+      "label": "Ingénieur de la vision",
+      "minimum": 316.35
+    },
+    "ingenieur_de_la_vision_adjoint": {
+      "label": "Ingénieur de la vision adjoint",
+      "minimum": 223.82
+    },
+    "machiniste": {
+      "label": "Machiniste",
+      "minimum": 203.2
+    },
+    "maquilleur_et_coiffeur_effets_speciaux": {
+      "label": "Maquilleur et coiffeur effets spéciaux",
+      "minimum": 268.28
+    },
+    "maquilleur": {
+      "label": "Maquilleur",
+      "minimum": 178.76
+    },
+    "menuisier_traceur_toupilleur_de_decor": {
+      "label": "Menuisier-traceur-toupilleur de décor",
+      "minimum": 237.66
+    },
+    "metallier_serrurier_mecanicien_de_decor": {
+      "label": "Métallier / Serrurier / Mécanicien de décor",
+      "minimum": 230.3
+    },
+    "mixeur": {
+      "label": "Mixeur",
+      "minimum": 337.39
+    },
+    "mixeur_direct_ou_conditions_du_direct": {
+      "label": "Mixeur (direct ou conditions du direct)",
+      "minimum": 263.03
+    },
+    "monteur": {
+      "label": "Monteur (5)",
+      "minimum": 235.6
+    },
+    "operateur_de_transfert_et_de_traitement_numerique": {
+      "label": "Opérateur de transfert et de traitement numérique",
+      "minimum": 178.76
+    },
+    "operateur_magneto_operateur_magneto_ralenti": {
+      "label": "Opérateur magnéto / Opérateur magnéto ralenti (7)",
+      "minimum": 169.92
+    },
+    "operateur_regie_video": {
+      "label": "Opérateur régie-vidéo (6)",
+      "minimum": 169.92
+    },
+    "operateur_special_steadicamer": {
+      "label": "Opérateur spécial (steadicamer)",
+      "minimum": 295.32
+    },
+    "operateur_synthetiseur": {
+      "label": "Opérateur synthétiseur (8)",
+      "minimum": 169.92
+    },
+    "operateur_web_operateur_multicam_web": {
+      "label": "Opérateur web / Opérateur multicam web",
+      "minimum": 141.94
+    },
+    "ops": {
+      "label": "OPS (22)",
+      "minimum": 223.82
+    },
+    "peintre_en_lettres_en_faux_bois_de_decor": {
+      "label": "Peintre en lettres / en faux bois de décor",
+      "minimum": 230.3
+    },
+    "perchiste_1er_assistant_son": {
+      "label": "Perchiste / 1er assistant son",
+      "minimum": 220.75
+    },
+    "photographe_de_plateau": {
+      "label": "Photographe de plateau",
+      "minimum": 202.91
+    },
+    "preparateur_de_questions": {
+      "label": "Préparateur de questions",
+      "minimum": 161.09
+    },
+    "producteur_artistique": {
+      "label": "Producteur artistique (1)",
+      "minimum": 282.12
+    },
+    "programmateur_artistique_d_emission": {
+      "label": "Programmateur artistique d'émission",
+      "minimum": 186.71
+    },
+    "pupitreur_lumiere": {
+      "label": "Pupitreur lumière",
+      "minimum": 233.26
+    },
+    "regisseur_responsable_des_reperages": {
+      "label": "Régisseur / Responsable des repérages",
+      "minimum": 207.91
+    },
+    "regisseur_adjoint": {
+      "label": "Régisseur adjoint",
+      "minimum": 178.76
+    },
+    "regisseur_d_exterieurs": {
+      "label": "Régisseur d'extérieurs",
+      "minimum": 209.97
+    },
+    "regisseur_de_plateau_chef_de_plateau": {
+      "label": "Régisseur de plateau / Chef de plateau",
+      "minimum": 178.76
+    },
+    "regisseur_general": {
+      "label": "Régisseur général",
+      "minimum": 240.87
+    },
+    "responsable_d_enquete_de_recherche": {
+      "label": "Responsable d'enquête / de recherche",
+      "minimum": 209.96
+    },
+    "responsable_de_questions": {
+      "label": "Responsable de questions",
+      "minimum": 197.42
+    },
+    "responsable_des_enfants": {
+      "label": "Responsable des enfants",
+      "minimum": 186.71
+    },
+    "rippeur": {
+      "label": "Rippeur",
+      "minimum": 205.85
+    },
+    "scripte": {
+      "label": "Scripte",
+      "minimum": 240.87
+    },
+    "secretaire_de_production": {
+      "label": "Secrétaire de production",
+      "minimum": 156.67
+    },
+    "storyboarder": {
+      "label": "Storyboarder",
+      "minimum": 223.82
+    },
+    "styliste": {
+      "label": "Styliste",
+      "minimum": 201.43
+    },
+    "superviseur_d_effets_speciaux_image": {
+      "label": "Superviseur d'effets spéciaux image",
+      "minimum": 263.03
+    },
+    "superviseur_d_effets_speciaux_postproduction": {
+      "label": "Superviseur d'effets spéciaux postproduction",
+      "minimum": 295.32
+    },
+    "technicien_de_developpement_web": {
+      "label": "Technicien de développement web",
+      "minimum": 130.11
+    },
+    "technicien_instruments_backliner": {
+      "label": "Technicien instruments (backliner)",
+      "minimum": 223.82
+    },
+    "technicien_truquiste": {
+      "label": "Technicien truquiste",
+      "minimum": 205.85
+    },
+    "technicien_video": {
+      "label": "Technicien vidéo",
+      "minimum": 205.85
+    },
+    "technicien_video_web": {
+      "label": "Technicien vidéo web",
+      "minimum": 115.94
+    },
+    "truquiste": {
+      "label": "Truquiste",
+      "minimum": 245.24
+    }
+  }
+}

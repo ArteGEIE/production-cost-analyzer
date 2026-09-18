@@ -1,0 +1,59 @@
+# Full local stack: PostgreSQL + migrations + app. `docker compose up` serves the
+# app on http://localhost:3000 in demo mode with the fictional dataset loaded.
+#
+# Required in .env (copy .env.example): LLM_BASE_URL, LLM_API_KEY, MISTRAL_API_KEY.
+# Everything else below has a working default; override any of it in .env.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: pcost
+      POSTGRES_PASSWORD: pcost
+      POSTGRES_DB: pcost
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pcost -d pcost"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  migrate:
+    build: .
+    image: production-cost-analyzer:local
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://pcost:pcost@db:5432/pcost
+      SEED_DEMO: ${SEED_DEMO:-true}
+    # Apply migrations, then load the demo dataset + CC barème unless SEED_DEMO=false.
+    command: >
+      sh -c "node scripts/migrate.mjs &&
+             if [ \"$$SEED_DEMO\" = true ]; then node scripts/seed-demo.mjs; fi"
+    restart: "no"
+
+  app:
+    image: production-cost-analyzer:local
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://pcost:pcost@db:5432/pcost
+      AUTH_TRUST_HOST: "true"
+      AUTH_URL: ${AUTH_URL:-http://localhost:3000}
+      AUTH_SECRET: ${AUTH_SECRET:-change-me-in-production-please}
+      DEMO_MODE: ${DEMO_MODE:-true}
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  pgdata:

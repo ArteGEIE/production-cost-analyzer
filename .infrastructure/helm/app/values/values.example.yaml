@@ -1,0 +1,82 @@
+# Example overlay. Copy, adapt the hosts/registry/secret names, and deploy with:
+#   helm upgrade --install production-cost .infrastructure/helm/app \
+#     -n production-cost --create-namespace \
+#     -f my-values.yaml --set image.tag=<git sha or release tag>
+replicaCount: 2
+
+image:
+  repository: ghcr.io/artegeie/production-cost-analyzer
+
+app:
+  env:
+    NODE_ENV: production
+    # Keep LOG_LEVEL at info in production: debug logs excerpts of the devis text.
+    LOG_LEVEL: info
+    # OpenAI-compatible endpoint. Note the trailing /v1/.
+    LLM_BASE_URL: https://litellm.example.com/v1/
+    LLM_MODEL: claude-sonnet-4-6
+    AUTH_TRUST_HOST: "true"
+    AUTH_URL: https://production-cost.example.com
+    AUTH_OIDC_ISSUER: https://sso.example.com/realms/example
+    AUTH_OIDC_NAME: SSO
+    AUTH_REQUIRED_GROUP: production-cost-access
+    # Branding (see docs/configuration.md)
+    APP_NAME: Production cost
+    APP_BADGE: Beta
+
+# Option B — plain Secret managed outside Helm:
+#   kubectl -n production-cost create secret generic production-cost-secrets \
+#     --from-literal=DATABASE_URL=postgres://... \
+#     --from-literal=AUTH_SECRET=$(openssl rand -base64 32) \
+#     --from-literal=AUTH_OIDC_CLIENT_ID=... \
+#     --from-literal=LLM_API_KEY=... \
+#     --from-literal=MISTRAL_API_KEY=...
+secretEnv:
+  existingSecret: production-cost-secrets
+  keys:
+    - DATABASE_URL
+    - AUTH_SECRET
+    - AUTH_OIDC_CLIENT_ID
+    - LLM_API_KEY
+    - MISTRAL_API_KEY
+
+# Option A — External Secrets Operator instead of secretEnv:
+# externalSecret:
+#   enabled: true
+#   secretStoreRef: my-cluster-secret-store
+#   decodingStrategy: None
+#   secrets:
+#     - key: DATABASE_URL
+#       remoteKey: PCOST_DATABASE_URL
+#     - key: AUTH_SECRET
+#       remoteKey: PCOST_AUTH_SECRET
+
+migrate:
+  enabled: true
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    cert-manager.io/cluster-issuer: letsencrypt
+  hosts:
+    - host: production-cost.example.com
+  tls:
+    - secretName: production-cost-tls
+      hosts: [production-cost.example.com]
+
+podDisruptionBudget:
+  enabled: true
+  minAvailable: 1
+
+topologySpread:
+  enabled: true
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: "1"
+    memory: 1Gi
