@@ -7,13 +7,17 @@ it does not prescribe a platform.
 
 ## Container image
 
-Published to GitHub Container Registry by `.github/workflows/docker-publish.yml`:
+Build it from the repository; no public image is distributed:
 
-- `ghcr.io/artegeie/production-cost-analyzer:latest` — every push to `main`
-- `ghcr.io/artegeie/production-cost-analyzer:X.Y.Z` and `X.Y` — tagged releases
-- `ghcr.io/artegeie/production-cost-analyzer:sha-<commit>`
+```bash
+git clone https://github.com/ArteGEIE/production-cost-analyzer.git
+cd production-cost-analyzer
+git checkout v0.1.0          # or any tag or commit you want to run
+docker build -t production-cost-analyzer:0.1.0 .
+```
 
-Build it yourself with `docker build -t production-cost-analyzer .`.
+Push the result to whatever registry your platform pulls from. The build needs
+network access to the npm registry and to cdn.sheetjs.com.
 
 ## What the container needs
 
@@ -34,11 +38,11 @@ Build it yourself with `docker build -t production-cost-analyzer .`.
   memory twice plus the pdfjs document graph, so size for the concurrent uploads you
   expect. Give the process a generous stop grace period so a deploy does not cut an
   in-flight extraction.
-- **Custom script or logo** — add the files to `public/` before building, or derive an
-  image from the published one:
+- **Custom script or logo** — add the files to `public/` before building, or derive
+  a second image from the one you built:
 
   ```dockerfile
-  FROM ghcr.io/artegeie/production-cost-analyzer:0.1.0
+  FROM production-cost-analyzer:0.1.0
   COPY custom.js logo.svg /app/public/
   ```
 
@@ -61,7 +65,7 @@ production-cost.example.com {
 
 `docker-compose.yml` is an evaluation stack, not a deployment: PostgreSQL, migrations,
 the demo dataset and the app in demo mode. `docker compose up`, then open
-<http://localhost:3000>. For a real deployment, run the published image on your own
+<http://localhost:3000>. For a real deployment, run the image you built on your own
 platform with the requirements above.
 
 ## Production checklist
