@@ -58,5 +58,5 @@ with the running version for one release (rolling deployments).
 
 ## Releasing
 
-Maintainers tag `vX.Y.Z` on `main`; the publish workflow pushes the container image to
-GitHub Container Registry with the matching tags.
+Maintainers tag `vX.Y.Z` on `main`. Adopters build the image from a tag; no public
+image is distributed (the organisation's registry policy does not allow public packages).

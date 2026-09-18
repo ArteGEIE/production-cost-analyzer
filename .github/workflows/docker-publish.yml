@@ -1,6 +1,9 @@
 name: Publish image
 
-# Publishes the container image to GitHub Container Registry on every push to
+# Publishes the container image to GitHub Container Registry for the
+# maintainers' own deployments. The organisation does not allow public packages,
+# so this image is NOT available to adopters: build from source instead, see
+# docs/deployment.md. Publishes on every push to
 # main (tag: sha + latest) and on version tags (tag: vX.Y.Z + X.Y). Uses the
 # workflow's own GITHUB_TOKEN — nothing to configure on a fork beyond enabling
 # the workflow.

@@ -72,9 +72,9 @@ Everything deployment-specific is an environment variable or a JSON file — see
 
 ## Deployment
 
-One container, one PostgreSQL database, any platform you already run. The image is
-published as `ghcr.io/artegeie/production-cost-analyzer`; migrations run with
-`node scripts/migrate.mjs` inside it. What the container needs from its environment,
+One container, one PostgreSQL database, any platform you already run. Build the image
+from this repository with `docker build`; migrations run with `node scripts/migrate.mjs`
+inside it. What the container needs from its environment,
 database and reverse proxy is in [`docs/deployment.md`](docs/deployment.md). The Compose
 file in the repo is an evaluation stack, not a prescribed setup.
 
