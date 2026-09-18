@@ -1,0 +1,74 @@
+name: Release
+
+# Cuts a release from main. The version is whatever package.json says: bump it
+# through a normal pull request first (`npm version <patch|minor|major>
+# --no-git-tag-version`), merge, then run this workflow. It tags v<version>,
+# creates a GitHub Release with generated notes and triggers the image publish
+# for that tag. Pushing a v* tag by hand goes through the same job, which fails
+# if the tag does not match package.json.
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read the version from package.json
+        id: v
+        run: |
+          version=$(node -p "require('./package.json').version")
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]]; then
+            echo "::error::package.json version '$version' is not semver"; exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+
+      - name: Refuse a tag that does not match package.json
+        if: github.event_name == 'push'
+        run: |
+          if [ "$GITHUB_REF_NAME" != "${{ steps.v.outputs.tag }}" ]; then
+            echo "::error::tag $GITHUB_REF_NAME does not match package.json version ${{ steps.v.outputs.version }} — bump package.json and re-tag"
+            exit 1
+          fi
+
+      - name: Create and push the tag
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          if [ "$GITHUB_REF_NAME" != "main" ]; then
+            echo "::error::run this workflow from main (got $GITHUB_REF_NAME)"; exit 1
+          fi
+          if git ls-remote --exit-code --tags origin "refs/tags/${{ steps.v.outputs.tag }}" >/dev/null 2>&1; then
+            echo "::error::${{ steps.v.outputs.tag }} already exists — bump the version in package.json first"; exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "${{ steps.v.outputs.tag }}" -m "Release ${{ steps.v.outputs.tag }}"
+          git push origin "${{ steps.v.outputs.tag }}"
+
+      - name: Create the GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "${{ steps.v.outputs.tag }}" >/dev/null 2>&1; then
+            echo "release ${{ steps.v.outputs.tag }} already exists"; exit 0
+          fi
+          gh release create "${{ steps.v.outputs.tag }}" --title "${{ steps.v.outputs.tag }}" --generate-notes
+
+      # A tag pushed with the workflow token does not trigger other workflows,
+      # so the image publish for the tag is started explicitly.
+      - name: Publish the image for the tag
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run docker-publish.yml --ref "refs/tags/${{ steps.v.outputs.tag }}"
