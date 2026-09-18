@@ -21,6 +21,9 @@ FROM node:22-alpine AS build
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+# public/ only holds deployment-provided files (custom.js, a logo) and may be
+# absent from a fresh checkout; the runner stage copies it unconditionally.
+RUN mkdir -p public
 # Placeholder auth env vars satisfy the fail-loud check in src/lib/auth.ts during
 # Next.js static analysis. Real values come from .env at container runtime.
 RUN AUTH_OIDC_ISSUER=https://build-placeholder.invalid \
